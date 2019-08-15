@@ -1,12 +1,10 @@
 $(document).ready(function() {
   html2canvas(document.getElementById("resume")).then(function(canvas) {
+    var doc = new jsPDF("p", "mm", "a4");
+    var width = doc.internal.pageSize.getWidth();
+    var height = doc.internal.pageSize.getHeight();
     var imgData = canvas.toDataURL("image/png");
-    var imgWidth = 220;
-    var imgHeight = (canvas.height * imgWidth) / canvas.width;
-
-    var doc = new jsPDF();
-
-    doc.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
+    doc.addImage(imgData, "PNG", 0, 0, width, height);
     doc.save("Resume.pdf");
   });
 });
