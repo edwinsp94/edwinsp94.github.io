@@ -22,6 +22,10 @@ h1 {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 20px;
 }
+h4 {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
 a {
   text-decoration: none;
   outline: none;
@@ -112,16 +116,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "mouse-500", Arial, Helvetica, sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: bold;
 }
 
 strong {
-  font-family: "mouse-500", Arial, Helvetica, sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 body {
   background-color: #f7f7ff !important;
-  font-family: "mouse-300", Arial, Helvetica, sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   color: #6a6a6a;
 }
 
@@ -494,11 +499,12 @@ ul {
 .home-det .home-dat .links {
   padding: 50px 0px;
 }
-.home-det .home-dat .links .btn-link {
+.btn-link {
   float: left;
   width: 100%;
+  padding: 0px;
 }
-.home-det .home-dat .links .btn-link li {
+.btn-link li {
   float: left;
   width: 100%;
 }
@@ -507,27 +513,33 @@ ul {
     width: 100%;
   }
 }
-.home-det .home-dat .links .btn-link li i {
-  margin-top: 5px;
-}
-.home-det .home-dat .links .btn-link li a {
+.btn-link li a {
   color: #fff;
   float: left;
   width: 100%;
   padding: 10px 0px;
 }
-.home-det .home-dat .links .social-link {
+.social-link {
   float: left;
 }
-.home-det .home-dat .links .social-link li {
+.social-link li {
   float: left;
-  padding: 10px;
-  border: 1px solid #888;
-  border-radius: 50px;
-  width: 100px;
-  height: 100px;
   text-align: center;
   margin-right: 10px;
+}
+.social-link li .icon-redes {
+  float: left;
+  padding: 50px;
+  border: 1px solid #888;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.icon-facebook {
+  float: left;
+  padding: 50px 60px;
+  border: 1px solid #888;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 483px) {
   .home-det .home-dat .links .social-link li {
