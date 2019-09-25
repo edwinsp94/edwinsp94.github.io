@@ -12,12 +12,16 @@
   margin: 0px;
   padding: 0px;
   list-style: none;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 img {
   max-width: 100%;
 }
-
+h1 {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
 a {
   text-decoration: none;
   outline: none;
@@ -59,7 +63,10 @@ textarea {
 
 html,
 body {
+  width: 100%;
   height: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 p {
@@ -95,6 +102,8 @@ p {
 
 .container-fluid {
   padding: 0px;
+  width: 100%;
+  float: left;
 }
 
 h1,
@@ -266,16 +275,14 @@ body {
   }
 }
 
-@media screen and (max-width: 1070px) {
-  .container-fluid {
-    padding: 8px;
-  }
-}
-
 /* ===================================== Header CSS ================================== */
 .cover {
-  background-image: url("../images/background.jpg");
-  background-size: cover;
+  width: 100%;
+  height: 295px;
+  float: left;
+}
+.image-top {
+  float: left;
   width: 100%;
   height: 295px;
 }
@@ -285,6 +292,18 @@ body {
   height: 295px;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 15px;
+}
+@media screen and (max-width: 767px) {
+  .image-top {
+    height: 200px;
+  }
+  .cover .cover-layer {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+  }
 }
 
 .web-portion {
@@ -445,22 +464,21 @@ ul {
   text-align: center;
 }
 .home-det .big-img .links {
-  padding: 50px 0px;
+  padding: 20px 0px;
 }
 .home-det .big-img .links .btn-link li {
   float: left;
-  padding: 5px 76px;
-  border-radius: 15px;
-  border: 1px solid #888;
-  margin: 0px;
-  color: #888;
-  background-color: #00ab9f;
-}
-.home-det .big-img .links .btn-link li i {
-  margin-top: 5px;
+  width: 100%;
 }
 .home-det .big-img .links .btn-link li a {
+  float: left;
+  width: 100%;
   color: white;
+  padding: 5px 0px;
+  border-radius: 15px;
+  margin: 0px;
+  color: #fff;
+  background-color: #00ab9f;
 }
 
 .home-det .home-dat {
@@ -476,26 +494,27 @@ ul {
 .home-det .home-dat .links {
   padding: 50px 0px;
 }
+.home-det .home-dat .links .btn-link {
+  float: left;
+  width: 100%;
+}
 .home-det .home-dat .links .btn-link li {
   float: left;
-  padding: 5px 10px;
-  border-radius: 15px;
-  border: 1px solid #888;
-  margin-right: 10px;
-  color: #888;
+  width: 100%;
 }
 @media screen and (max-width: 483px) {
   .home-det .home-dat .links .btn-link li {
-    margin-right: 5px !important;
     width: 100%;
-    margin-bottom: 10px;
   }
 }
 .home-det .home-dat .links .btn-link li i {
   margin-top: 5px;
 }
 .home-det .home-dat .links .btn-link li a {
-  color: #888;
+  color: #fff;
+  float: left;
+  width: 100%;
+  padding: 10px 0px;
 }
 .home-det .home-dat .links .social-link {
   float: left;
@@ -624,7 +643,9 @@ ul {
     text-align: center;
   }
 }
-
+.Descripcion {
+  text-align: justify;
+}
 .ltitle {
   font-size: 1.4rem;
   margin-top: 20px;
