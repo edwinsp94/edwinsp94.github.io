@@ -447,7 +447,7 @@ header .header-nav .nav-item ul li a:hover {
   padding: 50px;
 }
 .ammenties h2 {
-  color: #444;
+  color: #666;
 }
 .ammenties-white {
   background-color: rgba(255, 255, 255, 0.753);
@@ -473,6 +473,7 @@ header .header-nav .nav-item ul li a:hover {
 .ammenties .ament-item b {
   font-weight: 300;
   font-size: 18px;
+  color: #666666 !important;
 }
 /*
 .ammenties .ament-item:hover {
@@ -510,7 +511,6 @@ header .header-nav .nav-item ul li a:hover {
   float: left;
   width: 50%;
   height: 100%;
-  background-image: url("../images/co-working-bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -581,7 +581,7 @@ header .header-nav .nav-item ul li a:hover {
   padding: 50px 0px;
 }
 .meeting-room h2 {
-  color: #444;
+  color: #666;
 }
 .meeting-room table {
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
@@ -620,7 +620,6 @@ header .header-nav .nav-item ul li a:hover {
 }
 /* ===================================== Co-Working Space Style  ================================== */
 .co-workin-space {
-  background-image: url("../images/co-working-bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -659,6 +658,9 @@ header .header-nav .nav-item ul li a:hover {
   width: 100%;
   margin: 0px;
   padding: 50px 0px;
+}
+.pricing h2 {
+  color: #666;
 }
 .pricing .price-tab {
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
@@ -724,6 +726,9 @@ header .header-nav .nav-item ul li a:hover {
   width: 100%;
   margin: 0px;
   padding: 50px 0px;
+}
+.contact-us h2 {
+  color: #666;
 }
 .contact-us .contat-det {
   text-align: center;
@@ -893,6 +898,14 @@ header .header-nav .nav-item ul li a:hover {
   background-image: url("../images/co-working-bg.jpg");
   background-size: cover;
   background-position: center;
+
+  overflow: hidden;
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+
 }
 .testimonial-container .layy-2 {
   background: rgba(249, 178, 51, 0.9);
