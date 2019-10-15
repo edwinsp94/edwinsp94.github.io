@@ -978,34 +978,34 @@ header .header-nav .nav-item ul li a:hover {
   li.network-link {
 	  position: absolute;
     margin-top: -27.3em; 
-    border-top: none!important;  
+    border-top: none !important;
   }
 
   li.network-link a:hover {
     color: #f9b233;
   }
 
-  li.network-link.lnkin { 
-	  right: 150px; 	
+  li.network-link.lnkin {
+	  right: 150px;
   }
 
-  li.network-link.fb { 
-	  right: 120px; 	
+  li.network-link.fb {
+	  right: 126px;
   }
 
-  li.network-link.youtube { 
-	  right: 90px; 	
+  li.network-link.youtube {
+	  right: 90px;
   }
 
-  li.network-link.globe { 
-	  right: 60px; 	
+  li.network-link.globe {
+	  right: 60px;
   }
 
-  .network-link i{
+  .network-link i {
   	color: white;
   }
 
-  .network-link a{
+  .network-link a {
   	cursor: pointer;
   }
 }
