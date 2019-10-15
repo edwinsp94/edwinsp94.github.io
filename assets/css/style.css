@@ -217,6 +217,9 @@ header .header-nav .nav-item ul li a:hover {
 .scroll-to-fixed-fixed .header-nav ul li a {
   color: #666 !important;
 }
+.scroll-to-fixed-fixed .network-link i {
+  color: #666 !important;
+}
 .scroll-to-fixed-fixed .header-nav ul li a:hover {
   color: #f9b233 !important;
 }
