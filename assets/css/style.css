@@ -127,7 +127,6 @@ header .header-nav {
   width: 100%;
 }
 .logo-img {
-  width: 120px !important;
   height: 60px !important;
   margin-top: 10px;
 }
@@ -972,4 +971,41 @@ header .header-nav .nav-item ul li a:hover {
 }
 .h5-valor {
   font-size: 18px;
+}
+
+/* ===================================== NetWork Link CSS ================================== */
+@media screen and (max-width: 767px) {
+  li.network-link {
+	  position: absolute;
+    margin-top: -27.3em; 
+    border-top: none!important;  
+  }
+
+  li.network-link a:hover {
+    color: #f9b233;
+  }
+
+  li.network-link.lnkin { 
+	  right: 150px; 	
+  }
+
+  li.network-link.fb { 
+	  right: 120px; 	
+  }
+
+  li.network-link.youtube { 
+	  right: 90px; 	
+  }
+
+  li.network-link.globe { 
+	  right: 60px; 	
+  }
+
+  .network-link i{
+  	color: white;
+  }
+
+  .network-link a{
+  	cursor: pointer;
+  }
 }
