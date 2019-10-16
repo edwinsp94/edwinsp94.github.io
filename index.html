@@ -8,10 +8,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="assets/plugins/slider/css/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/plugins/slider/css/owl.theme.default.css" />
-    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/revolution-slider.css" />
-    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/slider.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
     <link rel="stylesheet" type="text/css" href="assets/css/sass-compiled.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/pogo-slider.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="shortcut icon" href="assets/images/yapu.ico" />
     <title>Inicio - YAPU Solutions</title>
@@ -22,25 +21,25 @@
       <div id="nav-head" class="header-nav">
         <div class="container">
           <div class="row">
-            <div class="col-lg-1 col-md-3 no-padding col-sm-12 nav-img">
-              <img class="lo logo-img" src="assets/images/logo-white.png" alt="" />
-              <img class="lob hid logo-img" src="assets/images/logo-black.png" alt="" />
+            <div class="col-lg-2 col-md-3 no-padding col-sm-12 nav-img">
+              <img class="lo logo-img" src="assets/images/logo-white.png" />
+              <img class="lob hid logo-img" src="assets/images/logo-black.png" />
               <a data-toggle="collapse" data-target="#menu" href="#menu">
                 <i class="fas d-block d-md-none small-menu fa-bars"></i>
               </a>
             </div>
             <div id="menu" class="col-lg-8 col-md-9 d-none d-md-block nav-item">
               <ul>
-                <li><a class="enlaces-menu" href="index.html">Inicio</a></li>
-                <li><a class="enlaces-menu" href="nosotros.html">Nosotros</a></li>
-                <li><a class="enlaces-menu" href="servicios.html">Servicios</a></li>
-                <li><a class="enlaces-menu" href="productos.html">Productos</a></li>
-                <li><a class="enlaces-menu" href="clientes.html">Clientes</a></li>
-                <li><a class="enlaces-menu" href="contacto.html">Contáctenos</a></li>
+                <li><a key="MENU_INICIO" class="lang enlaces-menu nav-select" style="color: #f9b233 !important;" href="index.html">Inicio</a></li>
+                <li><a key="MENU_NOSOTROS" class="lang enlaces-menu" href="nosotros.html">Nosotros</a></li>
+                <li><a key="MENU_SOLUCIONES" class="lang enlaces-menu" href="soluciones.html">Soluciones</a></li>
+                <li><a key="MENU_CLIENTES" class="lang enlaces-menu" href="clientes.html">Clientes</a></li>
+                <li><a key="MENU_CONTACTANOS" class="lang enlaces-menu" href="contacto.html">Contáctenos</a></li>
                 <li class="network-link lnkin"><a class="enlaces-menu" href="https://pe.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
                 <li class="network-link fb"><a class="enlaces-menu" href="https://es-la.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
                 <li class="network-link youtube"><a class="enlaces-menu" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
-                <li class="network-link globe"><a class="enlaces-menu" href="#"><i class="fas fa-globe"></i></a></li>
+                <li class="network-link lang-es"><a id="es" class="enlaces-menu js-translate"><img class="flag-lang" src="assets/images/esp.png" /></a></li>
+                <li class="network-link lang-en"><a id="en" class="enlaces-menu js-translate"><img class="flag-lang" src="assets/images/eng.png" /></a></li>
               </ul>
             </div>
           </div>
@@ -49,180 +48,86 @@
     </header>
     <!-- ************************* Header End ************************* -->
 
-    <!--  ************************* Slider Starts Here ************************** -->
-    <div class="slider">
-      <div id="home-slider" class="owl-carousel">
-        <div class="item">
-          <div class="slider-img">
-            <img src="assets/images/slider/silder-01.png" alt="" />
-          </div>
+    <!-- ************************* Slider Starts Here ************************** -->
+    <div class="pogoSlider" id="js-main-slider">
+      <div class="pogoSlider-slide" data-transition="horizontalSlide" data-duration="2000"  style="background-image:url(assets/images/slider/silder-01.png);">
+        <div class="pogoSlider-slide-element">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
-                <div class="slider-captions">
-                  <div class="sub-title alterternate animated bounceInLeft">
-                    Bienvenido a YAPU Solutions!
-                  </div>
-                  <h1 class="slider-title animated bounceInUp">
-                    SOLUCIONES BAJO EL MÓDULO SaaS
-                  </h1>
-                  <p class="slider-text hidden-xs animated bounceInRight">
-                    Somos especialistas en el Desarrollo de Software Agrónomo.
-                  </p>
-                  <a href="contacto.html" class="theme-btn btn-style-one hidden-xs animated bounceInUp">
-                    SEPARA TU PRODUCTO AHORA
-                  </a>
-                  &ensp;
-                  <a href="productos.html" class="theme-btn btn-style-two hidden-xs animated bounceInUp">
-                    VER PRODUCTOS
-                  </a>
-                </div>
-              </div>
-            </div>
+            <h3 key="SLIDER_1_TITULO" class="lang">SOLUCIONES BAJO EL MÓDULO SaaS</h3>
+            <p key="SLIDER_1_TEXTO" class="lang">Somos especialistas en el Desarrollo de Software Agrónomo.</p>
+            <ul class="banner-agileits">
+              <li><a key="SLIDER_BOTON_CONTACTO" href="contacto.html" class="lang link-w3l1">SEPARA TU SOLUCIÓN</a></li>
+              <li><a key="SLIDER_BOTON_VER" href="soluciones.html" class="lang link-w3l2 page-scroll">VER SOLUCIONES</a></li>
+            </ul>
+            <a href="#about" class="btn btn-circle page-scroll">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
           </div>
         </div>
-        <div class="item">
-          <div class="slider-img">
-            <img src="assets/images/slider/slider-02.png" alt="" />
-          </div>
+      </div>
+      <div class="pogoSlider-slide " data-transition="horizontalSlide" data-duration="2000"  style="background-image:url(assets/images/slider/slider-02.png);">
+        <div class="pogoSlider-slide-element">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
-                <div class="slider-captions">
-                  <div class="sub-title alterternate animated bounceInLeft">
-                    Bienvenido a YAPU Solutions!
-                  </div>
-                  <h1 class="slider-title animated bounceInUp">
-                    SOLUCIONES DE ALTO IMPACTO
-                  </h1>
-                  <p class="slider-text hidden-xs animated bounceInRight">
-                    Optimización de recursos – Sostenibilidad – Rentabilidad.
-                  </p>
-                  <a href="#" class="theme-btn btn-style-one hidden-xs animated bounceInUp">
-                    SEPARA TU PRODUCTO AHORA
-                  </a>
-                  &ensp;
-                  <a href="#" class="theme-btn btn-style-two hidden-xs animated bounceInUp">
-                    VER PRODUCTOS
-                  </a>
-                </div>
-              </div>
-            </div>
+            <h3 key="SLIDER_2_TITULO" class="lang">SOLUCIONES DE ALTO IMPACTO</h3>
+            <p key="SLIDER_2_TEXTO" class="lang">Optimización de recursos – Sostenibilidad – Rentabilidad.</p>
+            <ul class="banner-agileits">
+              <li><a key="SLIDER_BOTON_CONTACTO" href="contacto.html" class="lang link-w3l1">SEPARA TU SOLUCIÓN</a></li>
+              <li><a key="SLIDER_BOTON_VER" href="soluciones.html" class="lang link-w3l2 page-scroll">VER SOLUCIONES</a></li>
+            </ul>
+            <a href="#about" class="btn btn-circle page-scroll">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
           </div>
         </div>
-        <div class="item">
-          <div class="slider-img">
-            <img src="assets/images/slider/slider-03.png" alt="" />
-          </div>
+      </div>
+      <div class="pogoSlider-slide " data-transition="horizontalSlide" data-duration="2000"  style="background-image:url(assets/images/slider/slider-03.png);">
+        <div class="pogoSlider-slide-element">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
-                <div class="slider-captions">
-                  <div class="sub-title alterternate animated bounceInLeft">
-                    Bienvenido a YAPU Solutions!
-                  </div>
-                  <h1 class="slider-title">APLICACIONES WEB Y MÓVILES</h1>
-                  <p class="slider-text hidden-xs animated bounceInRight">
-                    Creamos soluciones a medida bajo un enfoque innovador y ágil
-                    para empresas de todo tamaño.
-                  </p>
-                  <a href="#" class="theme-btn btn-style-one hidden-xs animated bounceInUp">
-                    SEPARA TU PRODUCTO AHORA
-                  </a>
-                  &ensp;
-                  <a href="#" class="theme-btn btn-style-two hidden-xs animated bounceInUp">
-                    VER PRODUCTOS
-                  </a>
-                </div>
-              </div>
-            </div>
+            <h3 key="SLIDER_3_TITULO" class="lang">APLICACIONES WEB Y MÓVILES</h3>
+            <p key="SLIDER_3_TEXTO" class="lang">Creamos soluciones a medida bajo un enfoque innovador y ágil para empresas de todo tamaño.</p>
+            <ul class="banner-agileits">
+              <li><a key="SLIDER_BOTON_CONTACTO" href="contacto.html" class="lang link-w3l1">SEPARA TU SOLUCIÓN</a></li>
+              <li><a key="SLIDER_BOTON_VER" href="soluciones.html" class="lang link-w3l2 page-scroll">VER SOLUCIONES</a></li>
+            </ul>
+            <a href="#about" class="btn btn-circle page-scroll">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- ######## Slider End ####### -->
-
-    <!--  ************************* Services Starts Here ************************** -->
-    <section>
-      <div class="ammenties ammenties-white">
-        <div class="container">
-          <div class="row sec-title">
-            <h2>Brindamos Servicios</h2>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="ament-item">
-                <img src="assets/images/services/logo-app-web-64.png" /><br />
-                <b>Diseño y Desarrollo Web</b>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="ament-item">
-                <img src="assets/images/services/logo-app-movil-64.png" /><br />
-                <b>Desarrollo de Aplicaciones Móviles</b>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="ament-item">
-                <img src="assets/images/services/logo-phone-call-64.png" /><br />
-                <b>Soporte 24x7</b>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ************************* Services End ************************* -->
-
-    <!--  ************************* Partners Starts Here ************************** -->
-    <section>
-      <div class="ammenties" style="background: #f0f2f2;">
-        <div class="container">
-          <div class="row sec-title">
-            <h2>Nuestros Partners</h2>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="ament-item">
-                <img src="assets/images/partners/logo-aws.png" />
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="ament-item">
-                <img src="assets/images/partners/logo-lenovo.png" />
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="ament-item">
-                <img src="assets/images/partners/logo-microsoft.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ######## Partners End ####### -->
+    <!-- ************************* Slider End ************************* -->
 
     <!--  ************************* Aboutus Starts Here ************************** -->
-    <section id="about-us" class="row home-about">
-      <div class="about-img">
-        <img src="assets/images/about_home.jpg" alt="About Home" />
-      </div>
-      <div class="adout-det">
-        <div class="layy">
-          <h2>Sobre YAPU</h2>
-          <p>
-              <i class="fas fa-check"></i> 
-              Analizamos, desarrollamos e implementamos soluciones informáticas escalables y adaptables que ayuden a optimizar, agilizar y mejorar los procesos de nuestros clientes. 
-          </p>          
-          <p>
-              <i class="fas fa-handshake"></i> 
-              Nos encontramos profundamente comprometidos con el crecimiento de todos nuestros clientes, por lo que acompañamos con acciones y estrategias concretas para el desarrollo de cada cliente en su camino hacia el crecimiento empresarial.
-          </p>
-          <p><i class="fas fa-quote-left"></i> 
-            Contamos con el mejor equipo de desarrollo para gestionar exitosos proyectos 
-            <i class="fas fa-quote-right"></i>
-          </p>
+    <section id="about" class="home-about">
+      <div class="inlay row">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 div-content">
+              <div class="row sec-title">
+                <h3 key="ABOUT_TITULO" class="lang">Sobre YAPU</h3>
+              </div>
+              <div>
+                <p key="ABOUT_TEXTO_1" class="lang">
+                  Somos una empresa que brinda servicios de consultoría de informática y gestión de instalaciones informáticas al sector agroindustrial.
+                </p>
+                <p key="ABOUT_TEXTO_2" class="lang">
+                  Nuestra core business son las soluciones como Software as a Service (SaaS), con Genesys, RHsys, PSE y dos líneas de servicio que son Software Factory y Asesoría en Proyectos T.I.
+                </p>
+                <p key="ABOUT_TEXTO_3" class="lang">
+                  Somos un equipo altamente cualificado y comprometido con aportar soluciones a las necesidades o problemas del cliente, acompañado de un servicio de calidad.
+                </p>
+                <p key="ABOUT_TEXTO_4" class="lang">
+                  Para cumplir con ese fin nuestra empresa cuenta actualmente con la certificación internacional en Gestión de la Calidad.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 div-image">
+              <div class="about-img">
+                <img src="assets/images/about_home.png" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -232,38 +137,38 @@
     <section id="meeting-room" class="meeting-room row ammenties-white">
       <div class="container">
         <div class="row sec-title">
-          <h2>Productos</h2>
+          <h2 key="SOLUTIONS_TITULO" class="lang">Soluciones brindadas a nuestros Clientes</h2>
         </div>
         <div class="container">
           <div class="row">
             <div class="gallery-filter">
-              <button class="btn btn-default filter-button" data-filter="all">Todas</button>
+              <button key="SOLUTIONS_BOTON" class="lang btn btn-default filter-button" data-filter="all">Todas</button>
               <button class="btn btn-default filter-button" data-filter="1">Hortifrut</button>
               <button class="btn btn-default filter-button" data-filter="2">Talsa</button>
               <button class="btn btn-default filter-button" data-filter="3">Lactea</button>
               <button class="btn btn-default filter-button" data-filter="4">Avo Perú</button>
-              <button class="btn btn-default filter-button" data-filter="1">El Rocío</button> 
+              <button class="btn btn-default filter-button" data-filter="1">El Rocío</button>
               <button class="btn btn-default filter-button" data-filter="2">Proagro</button>
-              <button class="btn btn-default filter-button" data-filter="3">Don Ricardo</button> 
+              <button class="btn btn-default filter-button" data-filter="3">Don Ricardo</button>
             </div>
             <br />
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 1">
-              <img src="assets/images/gallery/gallery_01.jpg" class="img-responsive"/>
+              <img src="assets/images/gallery/gallery_01.jpg" class="img-responsive" />
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 1">
-              <img src="assets/images/gallery/gallery_02.jpg" class="img-responsive"/>
+              <img src="assets/images/gallery/gallery_02.jpg" class="img-responsive" />
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 2">
-              <img src="assets/images/gallery/gallery_03.jpg" class="img-responsive"/>
+              <img src="assets/images/gallery/gallery_03.jpg" class="img-responsive" />
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 2">
-              <img src="assets/images/gallery/gallery_04.jpg" class="img-responsive"/>
+              <img src="assets/images/gallery/gallery_04.jpg" class="img-responsive" />
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 3">
-              <img src="assets/images/gallery/gallery_05.jpg" class="img-responsive"/>
+              <img src="assets/images/gallery/gallery_05.jpg" class="img-responsive" />
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 4">
-              <img src="assets/images/gallery/gallery_01.jpg" class="img-responsive"/>
+              <img src="assets/images/gallery/gallery_01.jpg" class="img-responsive" />
             </div>
           </div>
         </div>
@@ -271,131 +176,51 @@
     </section>
     <!-- ######## Solutions End ####### -->
 
-    <!--  ************************* Quote Starts Here ************************** -->
-    <section class="co-workin-space">
-      <div class="inlay row">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="row sec-title">
-                <h2>Impactando el desarrollo Agrícola en el Perú</h2>
-              </div>
-              <div class="row">
-                <p>
-                  Transformando los negocios de nuestros clientes a través de la innovación y soluciones tecnológicas para mejorar la calidad de vida de las personas y la productividad de sus procesos.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ######## Quote REnd ####### -->
-
     <!--  ************************* Clients Starts Here ************************** -->
     <section id="pricing" class="row pricing">
       <div class="container">
         <div class="row sec-title">
-          <h2>Trabajan con Nosotros</h2>
+          <h2 key="CLIENTS_TTULO" class="lang">Trabajan con Nosotros</h2>
         </div>
         <div class="row">
           <div class="col-sm-3" style="margin-bottom:20px;">
             <div class="price-tab pic">
-              <img src="assets/images/price/hortifrut.jpg" alt="price-1" /><br />
-              <span class="pic-caption bottom-to-top">
-                <h1 class="pic-title">Hortifrut</h1>
-                <p class="p-pic">
-                  Es y ha sido la principal compañía chilena de Berries frescos
-                  liderando el desarrollo de la industria en Chile y en el
-                  mundo.
-                </p>
-              </span>
+              <img src="assets/images/price/hortifrut.png" alt="price-1" /><br />
             </div>
           </div>
           <div class="col-sm-3" style="margin-bottom:20px;">
             <div class="price-tab pic">
               <img src="assets/images/price/talsa.jpg" alt="price-2" /><br />
-              <span class="pic-caption bottom-to-top">
-                <h1 class="pic-title">TALSA</h1>
-                <p class="p-pic">
-                  Empresa precursora de la agricultura a gran escala en el norte
-                  del Perú, primera en implementar el riego por goteo sembrando
-                  espárragos en el desierto de Trujillo.
-                </p>
-              </span>
             </div>
           </div>
           <div class="col-sm-3" style="margin-bottom:20px;">
             <div class="price-tab pic">
               <img src="assets/images/price/lactea.jpg" alt="price-3" /><br />
-              <span class="pic-caption bottom-to-top">
-                <h1 class="pic-title">LACTEA</h1>
-                <p class="p-pic">
-                  Es una empresa ganadera líder en el país, actualmente la más
-                  grande operación lechera del Perú.
-                </p>
-              </span>
             </div>
           </div>
           <div class="col-sm-3" style="margin-bottom:20px;">
             <div class="price-tab pic">
               <img src="assets/images/price/avo-peru.jpg" alt="price-3" /><br />
-              <span class="pic-caption bottom-to-top">
-                <h1 class="pic-title">Avo Perú</h1>
-                <p class="p-pic">
-                  Es una empresa en Perú, con sede principal en Trujillo. Opera
-                  en Cultivo de Árboles Frutales y Nueces industria.
-                </p>
-              </span>
             </div>
           </div>
           <div class="col-sm-3" style="margin-bottom:20px;">
             <div class="price-tab pic">
               <img src="assets/images/price/grupo-rocio.png" alt="price-3" /><br />
-              <span class="pic-caption bottom-to-top">
-                <h1 class="pic-title">Grupo Rocio</h1>
-                <p class="p-pic">
-                  Dedicada a tres rubros en el departamento de La Libertad:
-                  avícola, agrícola, y ganadera.
-                </p>
-              </span>
             </div>
           </div>
           <div class="col-sm-3" style="margin-bottom:20px;">
             <div class="price-tab pic">
               <img src="assets/images/price/el-rocio.jpg" alt="price-3" /><br />
-              <span class="pic-caption bottom-to-top">
-                <h1 class="pic-title">El Rocio</h1>
-                <p class="p-pic">
-                  Es una empresa dedicada a la venta de pollos y alimento para
-                  animales.
-                </p>
-              </span>
             </div>
           </div>
           <div class="col-sm-3" style="margin-bottom:20px;">
             <div class="price-tab pic">
               <img src="assets/images/price/proagro.jpg" alt="price-3" /><br />
-              <span class="pic-caption bottom-to-top">
-                <h1 class="pic-title">Proagro</h1>
-                <p class="p-pic">
-                  Compañía dedicada a la agroindustria, orientada principalmente
-                  a la exportación, pertenece a la Corporación Cervesur.
-                </p>
-              </span>
             </div>
           </div>
           <div class="col-sm-3" style="margin-bottom:20px;">
             <div class="price-tab pic">
               <img src="assets/images/price/don-ricardo.jpg" alt="price-3" /><br />
-              <span class="pic-caption bottom-to-top">
-                <h1 class="pic-title">Don Ricardo</h1>
-                <p class="p-pic">
-                  Es una empresa dedicada al cultivo, procesamiento y
-                  exportación de uvas, paltos, cítricos y arándanos, produciendo
-                  productos de alta calidad.
-                </p>
-              </span>
             </div>
           </div>
         </div>
@@ -407,9 +232,12 @@
     <section id="contact-us" class="contact-us row ammenties-white">
       <div class="container">
         <div class="row sec-title">
-          <h2>CONTACTANOS</h2>
-          <p>
-            No dudes en comentarnos tus dudas, <br />
+          <h2 key="CONTACT_TITULO" class="lang">Contáctanos</h2>
+          <p key="CONTACT_SUBTITULO_1" class="lang">
+            No dudes en comentarnos tus dudas,
+          </p>
+          <br />
+          <p key="CONTACT_SUBTITULO_2" class="lang">
             puedes contactarnos en:
           </p>
         </div>
@@ -419,9 +247,9 @@
               <i class="fas fa-map-marker-alt"></i>
               <br />
               <p>
-                <b>Oficina Trujillo</b><br />
-                Av. Teodoro Valcárcel #999,<br />
-                Urb. Santa Eleonor
+                <b key="CONTACT_OFI_1_TITULO" class="lang">Oficina Trujillo</b><br />
+                <p>Av. Teodoro Valcárcel #999,</p>
+                <p>Urb. Santa Eleonor</p>
               </p>
             </div>
           </div>
@@ -430,9 +258,9 @@
               <i class="fas fa-map-marker-alt"></i>
               <br />
               <p>
-                <b>Oficina Lima</b><br />
-                Av. Manuel Olguín #335,<br />
-                Oficina 303 - Santiago de Surco
+                <b key="CONTACT_OFI_2_TITULO" class="lang">Oficina Lima</b><br />
+                <p>Av. Manuel Olguín #335,</p>
+                <p>Santiago de Surco - #303</p>
               </p>
             </div>
           </div>
@@ -441,8 +269,8 @@
               <i class="fas fa-phone"></i>
               <br />
               <p>
-                <b>Llámanos</b> <br />
-                (+51) 993 094 730<br />
+                <b key="CONTACT_TELEFONO_TITULO" class="lang">Teléfono</b><br />
+                <p>(+51) 993 094 730</p>
               </p>
             </div>
           </div>
@@ -450,7 +278,10 @@
             <div class="contat-det">
               <i class="fas fa-envelope"></i>
               <br />
-              <p>informes@yapu.pe</p>
+              <p>
+                <b key="CONTACT_CORREO_TITULO" class="lang">Correo Electrónico</b><br />
+                <p>informes@yapu.pe</p>
+              </p>
             </div>
           </div>
         </div>
@@ -472,43 +303,43 @@
           </iframe>
         </div>
         <div class="col-sm-6 cop-ck" style="background: #f0f2f2;">
-          <h2>Envianos tu Mensaje</h2>
+          <h2 key="LOCATION_TITULO" class="lang">Envianos tu Mensaje</h2>
           <div class="row">
             <div class="col-sm-3">
-              <label class="col-form-label">Nombre:</label>
+              <label key="LOCATION_NOMBRE" class="lang">Nombre:</label>
             </div>
             <div class="col-sm-8">
-              <input type="text" placeholder="Ingrese su nombre" class="form-control input-group-sm" />
+              <input key="LOCATION_INPUT_NOMBRE" type="text" placeholder="Ingrese su nombre" class=" lang form-control input-group-sm" />
             </div>
           </div>
           <div class="row">
             <div class="col-sm-3">
-              <label>Dirección de Correo:</label>
+              <label key="LOCATION_CORREO" class="lang">Dirección de Correo:</label>
             </div>
             <div class="col-sm-8">
-              <input type="text" placeholder="Ingrese su correo" class="form-control input-group-sm" />
+              <input key="LOCATION_INPUT_CORREO" type="text" placeholder="Ingrese su correo" class="lang form-control input-group-sm" />
             </div>
           </div>
           <div class="row">
             <div class="col-sm-3">
-              <label>Número de Celular:</label>
+              <label key="LOCATION_CELULAR" class="lang">Número de Celular:</label>
             </div>
             <div class="col-sm-8">
-              <input type="text" placeholder="Ingrese su número de celular" class="form-control input-group-sm" />
+              <input key="LOCATION_INPUT_CELULAR" type="text" placeholder="Ingrese su número de celular" class="lang form-control input-group-sm" />
             </div>
           </div>
           <div class="row">
             <div class="col-sm-3">
-              <label>Mensaje:</label>
+              <label key="LOCATION_MESAJE" class="lang">Mensaje:</label>
             </div>
             <div class="col-sm-8">
-              <textarea rows="5" placeholder="Ingrese tu mensaje" class="form-control input-group-sm"></textarea>
+              <textarea key="LOCATION_INPUT_MENSAJE" rows="5" placeholder="Ingrese su mensaje" class="lang form-control input-group-sm"></textarea>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-3"><label></label></div>
             <div class="col-sm-8">
-              <button class="btn btn-success btn-group-sm">Enviar Mensaje</button>
+              <button key="LOCATION_BOTON" class="lang btn btn-success btn-group-sm">Enviar Mensaje</button>
             </div>
           </div>
         </div>
@@ -517,11 +348,11 @@
     <!-- ######## Location End ####### -->
 
     <!--  ************************* Copyright Starts Here ************************** -->
-    <diqv class="copy">
+    <div class="copy">
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            <p>2019 © All Rights Reserved | Designed and Developed by YAPU Solutions</p>
+            <p key="FOOTER_COPY" class="lang">© Diseñado por YAPU Solutions | Copyright 2019</p>
           </div>
           <div class="col-sm-3">
             <span>
@@ -532,18 +363,19 @@
           </div>
         </div>
       </div>
-    </diqv>
+    </div>
     <!-- ######## Copyright End ####### -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/modernizr.js"></script>
-    <script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
-    <script src="assets/plugins/scroll-nav/js/jquery.easing.min.js"></script>
-    <script src="assets/plugins/scroll-nav/js/scrolling-nav.js"></script>
-    <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/scroll-nav/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/scroll-nav/js/scrolling-nav.js"></script>
+    <script type="text/javascript" src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.pogo-slider.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/language/index.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
   </body>
 </html>

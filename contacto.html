@@ -5,37 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/slider.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="shortcut icon" href="assets/images/yapu.ico" />
     <title>Contacto - YAPU Solutions</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- ************************* Header Starts Here ************************** -->
     <header id="menu-jk">
       <div id="nav-head" class="header-nav">
         <div class="container">
           <div class="row">
-            <div class="col-lg-1 col-md-3 no-padding col-sm-12 nav-img">
-              <img class="lo logo-img" src="assets/images/logo-white.png" alt="" />
-              <img class="lob hid logo-img" src="assets/images/logo-black.png" alt="" />
+            <div class="col-lg-2 col-md-3 no-padding col-sm-12 nav-img">
+              <img class="lo logo-img" src="assets/images/logo-white.png" />
+              <img class="lob hid logo-img" src="assets/images/logo-black.png" />
               <a data-toggle="collapse" data-target="#menu" href="#menu">
                 <i class="fas d-block d-md-none small-menu fa-bars"></i>
               </a>
             </div>
             <div id="menu" class="col-lg-8 col-md-9 d-none d-md-block nav-item">
               <ul>
-                <li><a class="enlaces-menu" href="index.html">Inicio</a></li>
-                <li><a class="enlaces-menu" href="nosotros.html">Nosotros</a></li>
-                <li><a class="enlaces-menu" href="servicios.html">Servicios</a></li>
-                <li><a class="enlaces-menu" href="productos.html">Productos</a></li>
-                <li><a class="enlaces-menu" href="clientes.html">Clientes</a></li>
-                <li><a class="enlaces-menu" href="contacto.html">Contáctenos</a></li>
-                <li><a class="enlaces-menu" href="https://pe.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a class="enlaces-menu" href="https://es-la.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a class="enlaces-menu" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
-                <li><a class="enlaces-menu" href="#"><i class="fas fa-globe"></i></a></li>
+                <li><a key="MENU_INICIO" class="lang enlaces-menu" href="index.html">Inicio</a></li>
+                <li><a key="MENU_NOSOTROS" class="lang enlaces-menu" href="nosotros.html">Nosotros</a></li>
+                <li><a key="MENU_SOLUCIONES" class="lang enlaces-menu" href="soluciones.html">Soluciones</a></li>
+                <li><a key="MENU_CLIENTES" class="lang enlaces-menu" href="clientes.html">Clientes</a></li>
+                <li><a key="MENU_CONTACTANOS" class="lang enlaces-menu nav-select" style="color: #f9b233 !important;" href="contacto.html">Contáctenos</a></li>
+                <li class="network-link lnkin"><a class="enlaces-menu" href="https://pe.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="network-link fb"><a class="enlaces-menu" href="https://es-la.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="network-link youtube"><a class="enlaces-menu" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                <li class="network-link lang-es"><a id="es" class="enlaces-menu js-translate"><img class="flag-lang" src="assets/images/esp.png" /></a></li>
+                <li class="network-link lang-en"><a id="en" class="enlaces-menu js-translate"><img class="flag-lang" src="assets/images/eng.png" /></a></li>
               </ul>
             </div>
           </div>
@@ -47,7 +46,7 @@
     <!--  ************************* Slider Starts Here ************************** -->
     <section>
       <div class="slider-2">
-        <img class="slider-2-img" src="assets/images/slider-head.jpg">
+        <img class="slider-2-img" src="assets/images/banner-contact.png" />
       </div>
     </section>
     <!-- ######## Slider End ####### -->
@@ -56,10 +55,10 @@
     <div class="page-nav no-margin row ammenties-white">
       <div class="container">
           <div class="row">
-              <h2>Contáctenos</h2>
+              <h2 key="ROUTER_TITULO" class="lang">Contáctenos</h2>
               <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><i class="fas fa-angle-double-right"></i> Contáctenos</li>
+                <li><a href="index.html"><i class="fas fa-home"></i><label key="ROUTER_NAV_1" class="lang">Inicio</label></a></li>
+                <li><i class="fas fa-angle-double-right"></i><label key="ROUTER_NAV_2" class="lang">Contáctenos</label></li>
               </ul>
           </div>
       </div>
@@ -68,7 +67,7 @@
 
     <!--  ************************* Contact Us Starts Here ************************** -->
     <section id="contact-us" class="contact-us row ammenties-white">
-      <div class="container">            
+      <div class="container">
         <div class="row">
           <div class="col-sm-4">
             <div class="row">
@@ -77,9 +76,9 @@
                   <i class="fas fa-map-marker-alt"></i>
                   <br />
                   <p>
-                    <b>Oficina Trujillo</b><br />
-                    Av. Teodoro Valcárcel #999,<br />
-                    Urb. Santa Eleonor
+                    <b key="CONTACT_OFI_1_TITULO" class="lang">Oficina Trujillo</b><br />
+                    <p>Av. Teodoro Valcárcel #999,</p>
+                    <p>Urb. Santa Eleonor</p>
                   </p>
                 </div>
               </div>
@@ -88,9 +87,9 @@
                   <i class="fas fa-map-marker-alt"></i>
                   <br />
                   <p>
-                    <b>Oficina Lima</b><br />
-                    Av. Manuel Olguín #335,<br />
-                    Oficina 303 - Santiago de Surco
+                    <b key="CONTACT_OFI_2_TITULO" class="lang">Oficina Lima</b><br />
+                    <p>Av. Manuel Olguín #335,</p>
+                    <p>Santiago de Surco - #303</p>
                   </p>
                 </div>
               </div>
@@ -98,46 +97,46 @@
           </div>
           <div class="contact-us-single-2 col-sm-8">
             <div class="col-sm-12 cop-ck">
-              <h2>Envianos tu Mensaje</h2>                    
+              <h2 key="LOCATION_TITULO" class="lang">Envianos tu Mensaje</h2>
               <div class="row">
                 <div class="col-sm-4">
-                  <label class="col-form-label">Nombre:</label>
+                  <label key="LOCATION_NOMBRE" class="lang">Nombre:</label>
                 </div>
                 <div class="col-sm-8">
-                  <input type="text" placeholder="Ingrese su nombre" class="form-control input-group-sm"/>
+                  <input key="LOCATION_INPUT_NOMBRE" type="text" placeholder="Ingrese su nombre" class="lang form-control input-group-sm" />
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-4">
-                  <label>Dirección de Correo:</label>
+                  <label key="LOCATION_CORREO" class="lang">Dirección de Correo:</label>
                 </div>
                 <div class="col-sm-8">
-                  <input type="text" placeholder="Ingrese su correo" class="form-control input-group-sm"/>
+                  <input key="LOCATION_INPUT_CORREO" type="text" placeholder="Ingrese su correo" class="lang form-control input-group-sm" />
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-4">
-                  <label>Número de Celular:</label>
+                  <label key="LOCATION_CELULAR" class="lang">Número de Celular:</label>
                 </div>
                 <div class="col-sm-8">
-                  <input type="text" placeholder="Ingrese su número de celular" class="form-control input-group-sm"/>
+                  <input key="LOCATION_INPUT_CELULAR" type="text" placeholder="Ingrese su número de celular" class="lang form-control input-group-sm" />
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-4">
-                  <label>Mensaje:</label>
+                  <label key="LOCATION_MESAJE" class="lang">Mensaje:</label>
                 </div>
                 <div class="col-sm-8">
-                  <textarea rows="5" placeholder="Ingresa tu mensaje" class="form-control input-group-sm"></textarea>
+                  <textarea key="LOCATION_INPUT_MENSAJE" rows="5" placeholder="Ingresa su mensaje" class="lang form-control input-group-sm"></textarea>
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-4"><label></label></div>
                   <div class="col-sm-4">
-                    <button class="btn btn-success btn-group-sm">Enviar Mensaje</button>
+                    <button key="LOCATION_BOTON" class="lang btn btn-success btn-group-sm">Enviar Mensaje</button>
                   </div>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
       </div>
@@ -147,16 +146,16 @@
     <!--  ************************* Location Starts Here ************************** -->
     <section id="contact" class="contact-us-single">
       <div class="row si-margin">
-          <div class="col-sm-12 no-padding">
-            <iframe 
-              style="width:100%" 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5586.2567781206235!2d-79.03206024981274!3d-8.093319320236223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d9ef5ad6bed%3A0x9713e90946196a63!2sYAPU%20Solutions%20SAC!5e0!3m2!1ses-419!2spe!4v1570650053479!5m2!1ses-419!2spe" 
-              height="480" 
-              frameborder="0" 
-              style="border:0" 
-              allowfullscreen>
-            </iframe>
-          </div>                  
+        <div class="col-sm-12 no-padding">
+          <iframe 
+            style="width:100%" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5586.2567781206235!2d-79.03206024981274!3d-8.093319320236223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d9ef5ad6bed%3A0x9713e90946196a63!2sYAPU%20Solutions%20SAC!5e0!3m2!1ses-419!2spe!4v1570650053479!5m2!1ses-419!2spe" 
+            height="480" 
+            frameborder="0" 
+            style="border:0" 
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </section>
     <!-- ######## Location End ####### -->
@@ -166,7 +165,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            <p>2019 © All Rights Reserved | Designed and Developed by YAPU Solutions</p>
+            <p key="FOOTER_COPY" class="lang">© Diseñado por YAPU Solutions | Copyright 2019</p>
           </div>
           <div class="col-sm-3">
             <span>
@@ -181,13 +180,13 @@
     <!-- ######## Copyright End ####### -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
-    <script src="assets/plugins/scroll-nav/js/jquery.easing.min.js"></script>
-    <script src="assets/plugins/scroll-nav/js/scrolling-nav.js"></script>
-    <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/scroll-nav/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/scroll-nav/js/scrolling-nav.js"></script>
+    <script type="text/javascript" src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+    <script type="text/javascript" src="assets/js/language/contacto.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
   </body>
 </html>
