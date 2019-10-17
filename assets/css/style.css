@@ -6,48 +6,16 @@
   padding: 0px;
   list-style: none;
 }
+body {
+  background: #f4f4f4;
+  overflow-x: hidden;
+}
+/* ===================================== Basic CSS ================================== */
 label {
   font-family: "Roboto", sans-serif !important;
   font-size: 16px !important;
   color: #666 !important;
 }
-.blog-box1 .cdfik li {
-  float: left;
-  padding: 11.5px;
-  text-align: center;
-  font-size: 13px;
-  border-bottom: 1px solid #ededed;
-  border-right: 1px solid #ededed;
-  border-top: 1px solid #ededed;
-}
-.blog-box1 .sd-op {
-  background-color: #f9b233;
-  text-align: center;
-  color: #fff;
-  padding-bottom: 10px;
-  padding-top: 5px;
-}
-.blog-box1 .cdfik {
-  width: 100%;
-}
-.blog-box1 .pof-det {
-  padding: 10px;
-  padding-left: 10px;
-  padding-left: 60px;
-}
-.blog-box1 .pof-det b {
-  font-size: 13px;
-}
-.blog-box1 .pof-det p {
-  font-size: 13px;
-  text-align: justify;
-  text-indent: 20px;
-  margin-top: 5px;
-}
-.blog-box1 .sd-op b {
-  font-size: 22px;
-}
-/* ===================================== Basic CSS ================================== */
 img {
   max-width: 100%;
   box-sizing: border-box;
@@ -66,9 +34,6 @@ input,
 textarea {
   text-decoration: none;
   outline: none;
-}
-.cp {
-  cursor: pointer;
 }
 .layy {
   padding: 30px;
@@ -94,7 +59,7 @@ h3 {
   padding: 20px 0px; 
   color: #666;
 }
-h2,h2,p,label
+h2,h3,p,label
 {
   color:#666;
 }
@@ -126,10 +91,6 @@ p {
 }
 .sec-title p {
   font-size: 14px;
-}
-body {
-  background: #f4f4f4;
-  overflow-x: hidden;
 }
 /* ===================================== Header Style  ================================== */
 .hid {
@@ -265,7 +226,6 @@ header .header-nav .nav-item ul li a:hover {
   height: 14px;
   width: 14px;
 }
-
 .theme-btn {
   display: inline-block;
   transition: all 0.3s ease;
@@ -329,8 +289,8 @@ header .header-nav .nav-item ul li a:hover {
   background: none;
   color: #f9b233;
 }
-
-/* ===================================== Ament Style  ================================== */
+/* ===================================== Ament1,2,3,4 Start Style  ================================== */
+/* ===================================== Ament1 Style  ================================== */
 .ammenties {
   padding: 15px;
 }
@@ -345,6 +305,26 @@ header .header-nav .nav-item ul li a:hover {
   border-radius: 2px;
   margin-bottom: 30px;
   background-color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .ammenties .ament-item {
+    text-align: center;
+    padding: 15px 15px;
+    height: 240px;  
+    border-radius: 2px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ammenties .ament-item {
+    text-align: center;
+    padding: 50px 30px;
+    height: 240px;  
+    border-radius: 2px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
 }
 .ammenties .ament-item i {
   font-size: 42px;
@@ -364,7 +344,174 @@ header .header-nav .nav-item ul li a:hover {
   float: left;
   width: 100%;
 }
-/* === /*
+
+/* ===================================== Ament2 Style  ================================== */
+.ammenties2 {
+  padding: 15px;
+}
+.ammenties-white {
+  background-color: rgba(255, 255, 255, 0.753);
+}
+.ammenties2 .ament-item {
+  text-align: center;
+  padding: 50px 30px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .ammenties2 .ament-item {
+    text-align: center;
+    padding: 15px 15px;
+    height: 125px;  
+    border-radius: 2px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ammenties2 .ament-item {
+    text-align: center;
+    padding: 50px 30px;    
+    height: auto; 
+    border-radius: 2px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+}
+.ammenties2 .ament-item i {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #f9b233;
+}
+.ammenties2 .ament-item img {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.ammenties2 .ament-item b {
+  font-weight: 300;
+  font-size: 18px;
+  color: #666666 !important;
+  margin-top: 10px;
+  margin-bottom: 20px !important;
+  float: left;
+  width: 100%;
+}
+/* ===================================== Ament3 Style  ================================== */
+.ammenties3 {
+  padding: 15px;
+}
+.ammenties-white {
+  background-color: rgba(255, 255, 255, 0.753);
+}
+.ammenties3 .ament-item {
+  text-align: center;
+  padding: 50px 30px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .ammenties3 .ament-item {
+    text-align: center;
+    padding: 15px 15px;
+    height: 190px;  
+    border-radius: 2px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ammenties3 .ament-item {
+    text-align: center;
+    padding: 50px 30px;
+    height: auto;  
+    border-radius: 2px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+}
+.ammenties3 .ament-item i {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #f9b233;
+}
+.ammenties3 .ament-item img {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.ammenties3 .ament-item b {
+  font-weight: 300;
+  font-size: 18px;
+  color: #666666 !important;
+  margin-top: 10px;
+  margin-bottom: 20px !important;
+  float: left;
+  width: 100%;
+}
+/* ===================================== Ament4 Style  ================================== */
+.ammenties4 {
+  padding: 15px;
+}
+.ammenties-white {
+  background-color: rgba(255, 255, 255, 0.753);
+}
+.ammenties4 .ament-item {
+  text-align: center;
+  padding: 50px 30px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .ammenties4 .ament-item {
+    text-align: center;
+    padding: 15px 15px;
+    height: 600px;  
+    border-radius: 2px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ammenties4 .ament-item {
+    text-align: center;
+    padding: 50px 30px;
+    height: auto;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+}
+.ammenties4 .ament-item i {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #f9b233;
+}
+.ammenties4 .ament-item img {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.ammenties4 .ament-item b {
+  font-weight: 300;
+  font-size: 18px;
+  color: #666666 !important;
+  margin-top: 10px;
+  margin-bottom: 20px !important;
+  float: left;
+  width: 100%;
+}
+.ammenties4 .ament-item p {
+  text-align: center;
+}
+/* ===================================== Ament1,2,3,4 End Style  ================================== */
+/* ================================================================================================ /*
 
 /* ===================================== About Us Style  ================================== */
 .home-about {
@@ -504,14 +651,15 @@ header .header-nav .nav-item ul li a:hover {
   margin-bottom: 10px;
 }
 .co-workin-space .sec-title h2 {
-  color: #fff;
+  color: #666666;
+  border-bottom: solid 1px rgb(207, 207, 207);
+  text-align: left;
 }
 .co-workin-space .div-content {
-  padding: 60px;
-  background: rgba(244, 187, 4, 0.97);
+  padding: 0px 40px;
+  background: #f0f2f2
 }
 .co-workin-space .div-image {
-  background: rgba(244, 187, 4, 0.97);
   padding: 0px;
   margin: 0px;
 }
@@ -519,8 +667,10 @@ header .header-nav .nav-item ul li a:hover {
   width: 100%;
 }
 .co-workin-space p {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
+  padding-bottom: 30px;
+  color: #666666 !important;
 }
 /* =====================================  Pricing Style  ================================== */
 .pricing {
@@ -541,18 +691,29 @@ header .header-nav .nav-item ul li a:hover {
 }
 .pricing .price-tab img {
   width: 100%;
-  height: 200px;
+  height: auto;
   margin-bottom: 20px;
 }
-.pricing .price-tab b {
-  font-size: 22px;
-  font-weight: 300;
+@media screen and (max-width: 900px) {
+  .pricing .price-tab {   
+    padding: 0px;
+  }
+  .pricing .price-tab img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+  }
 }
-.pricing .price-tab p {
-  font-size: 16px;
-  margin-top: 15px;
+@media screen and (max-width: 450px) {
+  .pricing .price-tab {   
+    padding: 0px;
+  }
+  .pricing .price-tab img {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 0px;
+  }
 }
-
 /* =====================================  Location Style  ================================== */
 .si-margin {
   padding-bottom: 20px;
@@ -608,6 +769,13 @@ header .header-nav .nav-item ul li a:hover {
 }
 .contact-us .contat-det-2 {
   text-align: center;
+  padding: 70px 0px;
+}
+@media screen and (max-width: 720px) {
+  .contact-us .contat-det-2 {
+    text-align: center;
+    padding: 10px 0px;
+  }
 }
 .contact-us .contat-det-2 i {
   font-size: 32px;
@@ -615,9 +783,9 @@ header .header-nav .nav-item ul li a:hover {
   color: #f9b233;
 }
 .contact-us .contat-det-2 p {
-  font-size: 17px;
+  font-size: 16px;
 }
-.contact-us-single-2 .cop-ck {
+ .cop-ck {
   padding: 20px 30px;
 }
 /* ===================================== Copright Style  ================================== */
@@ -871,6 +1039,58 @@ header .header-nav .nav-item ul li a:hover {
   }
 }
 
+.whatsapbuttom {
+  position: fixed;
+  line-height: 50px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  left: 25px;
+  bottom: 20px;
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  opacity: 1;
+  transition: background-color 0.5s linear;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .15);
+  animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+.whatsapbuttom:hover {
+  background-color: #95C23D;
+  transition: background-color 0.5s linear;
+  color: white !important;
+}
+
+.whatsapbuttom:visited, .whatsapbuttom:active, .whatsapbuttom:link {
+  color: white !important;
+}
+
+.messangerbuttom {
+  position: fixed;
+  line-height: 50px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  left: 20px;
+  bottom: 90px;
+  color: #fff;
+  border-radius: 50%;
+  opacity: 1;
+  transition: background-color 0.5s linear;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .15);
+  animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+.messangerbuttom:hover {
+  transition: background-color 0.5s linear;
+  color: white !important;
+}
+
+.messangerbuttom:visited, .messangerbuttom:active, .messangerbuttom:link {
+  color: white !important;
+}
+
 /* ===================================== Slider Animation CSS ================================== */
 body a {
   transition: 0.5s all;
@@ -916,7 +1136,7 @@ img {
   line-height: 55px;
   width: 80%;
   letter-spacing: 3px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.2);
   margin:0px;
@@ -928,11 +1148,10 @@ img {
   font-size: 16px;
   text-align: left;
   width: 80%;
-  padding: 0 295px 0 0;
+  padding: 10px 0px 20px 10px;
   line-height: 35px;
   background-color: rgba(0, 0, 0, 0.2);
   margin:0px;
-  padding-left: 10px;
 }
 .pogoSlider-slide-element ul.banner-agileits {
   padding-top: 30px;
@@ -952,17 +1171,18 @@ img {
   font-weight: normal;
   color: #fff;
   text-align: center;
-  background-color: #f9b233;
+  background: #f9b233;
   display: inline-block;
+  border: 2px solid #f9b233;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -o-border-radius: 25px;
   -ms-border-radius: 25px;
-  font-family: "Open Sans", sans-serif;
 }
 .pogoSlider-slide-element ul.banner-agileits li a.link-w3l1:hover {
-  background-color: #f9b233;
+  background: none;
+  color: #f9b233;
 }
 .pogoSlider-slide-element ul.banner-agileits li a.link-w3l2 {
   width: 200px;
@@ -980,10 +1200,10 @@ img {
   -moz-border-radius: 25px;
   -o-border-radius: 25px;
   -ms-border-radius: 25px;
-  font-family: "Open Sans", sans-serif;
 }
 .pogoSlider-slide-element ul.banner-agileits li a.link-w3l2:hover {
-  background-color: #f9b233;
+  background: #f9b233;
+  color: #ffffff;
 }
 .pogoSlider-slide-element a.btn-circle {
   color: #f9b233;

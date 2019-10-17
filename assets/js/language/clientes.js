@@ -42,6 +42,17 @@ var arrLang = {
 }
 
 $(document).ready(function() {
+    $("#testimonial-slider").owlCarousel({
+        items: 2,
+        itemsDesktop: [1000, 2],
+        itemsDesktopSmall: [992, 1],
+        itemsTablet: [768, 1],
+        pagination: false,
+        navigation: true,
+        navigationText: ["", ""],
+        autoPlay: true
+    });
+
     $('.js-translate').click(function () {
         var lang = $(this).attr('id');
         $('.lang').each(function(index, element) {

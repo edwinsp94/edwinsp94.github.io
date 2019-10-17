@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="shortcut icon" href="assets/images/yapu.ico" />
+    <link href="assets/css/aos.css" rel="stylesheet" type="text/css" media="all" />
     <title>Soluciones - YAPU Solutions</title>
   </head>
   <body>
@@ -66,15 +67,15 @@
     <!--  ************************* Router End ************************** -->
 
     <!--  ************************* Services Starts Here ************************** -->
-    <section>
-        <div class="ammenties ammenties-white">
+    <section data-aos="zoom-in">
+        <div class="ammenties4 ammenties-white" >
           <div class="container">
             <div class="row">
               <div class="col-sm-4">
                 <div class="ament-item">
                   <img src="assets/images/services/logo-app-web-64.png" />
                   <b key="SERVICES_TITULO_1" class="lang">Software como Servicio</b><br /><br />
-                  <p key="SERVICES_TEXTO_1" class="lang p-valores">
+                  <p key="SERVICES_TEXTO_1" class="lang p-valores" style="text-align: justify;">
                     SaaS ofrece una solución de software integral que se adquiere de un proveedor de servicios en la nube mediante un modelo de pago por uso. Usted alquila el uso de una aplicación para su organización y los usuarios se conectan a ella a través de Internet, normalmente con un explorador web.
                   </p>
                 </div>
@@ -83,7 +84,7 @@
                 <div class="ament-item">
                   <img src="assets/images/services/logo-app-movil-64.png" />
                   <b key="SERVICES_TITULO_2" class="lang">Fábrica de software</b><br /><br />
-                  <p key="SERVICES_TEXTO_2" class="lang p-valores">
+                  <p key="SERVICES_TEXTO_2" class="lang p-valores" style="text-align: justify;">
                     Desarrollamos soluciones de software a medida, llave en mano. En esta modalidad, una vez recibidos los requerimientos por parte del cliente, los mismos son analizados, estimados y presupuestados por nuestra empresa.
                   </p>
                 </div>
@@ -92,7 +93,7 @@
                 <div class="ament-item">
                   <img src="assets/images/services/logo-phone-call-64.png" />
                   <b key="SERVICES_TITULO_3" class="lang">Asesoría y Proyectos T.I</b><br /><br />
-                  <p key="SERVICES_TEXTO_3" class="lang p-valores">
+                  <p key="SERVICES_TEXTO_3" class="lang p-valores" style="text-align: justify;">
                     A través de nuestro servicio de Consultoría TI, deseamos apropiarnos de sus necesidades y oportunidades. Realizar un análisis y diseño de la solución desde las diferentes capas de la Arquitectura Empresarial: Dirección Estratégica, Procesos de Negocio, Sistemas de Información e Infraestructura Tecnológica.
                   </p>
                 </div>
@@ -104,7 +105,7 @@
       <!-- ************************* Services End ************************* -->
 
       <!--  ************************* Solutions Starts Here ************************** -->
-    <section id="meeting-room" class="meeting-room row ammenties-white">
+    <section id="meeting-room" class="meeting-room row ammenties-white" data-aos="zoom-in">
         <div class="container">
           <div class="row sec-title">
             <h3 key="SOLUTIONS_TITULO" class="lang">Soluciones bajo el módulo SaaS</h3>
@@ -113,15 +114,15 @@
             <br />
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
               <img src="assets/images/gallery/gallery_01.jpg" class="img-responsive"/>
-              <input type="button" class="titulo-app" data-toggle="modal" data-target="#exampleModal" value="GENESYS" onclick="goToModal('GENESYS', 'PLATAFORMA DE SOPORTE A LA GESTIÓN AGRÍCOLA', 'Es una solución integral y modular para todos los procesos de la gestión agrícola adaptable a cualquier cultivo tanto para pequeños fundos como grandes extensiones de tierra brindándote información en línea y procesada para el análisis de todo lo que ocurre en el campo y posterior toma de decisiones.')" />
+              <input type="button" class="titulo-app" data-toggle="modal" data-target="#exampleModal" value="GENESYS" onclick="goToModal('GENESYS')" />
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
               <img src="assets/images/gallery/gallery_02.jpg" class="img-responsive"/>
-              <input type="button" class="titulo-app" data-toggle="modal" data-target="#exampleModal" value="RHSYS" onclick="goToModal('RHSYS', 'PLATAFORMA DE GESTIÓN DE NÓMINA', 'Esta plataforma cuenta con el motor de cálculo de planillas, gestión de altas de trabajadores, cálculo de provisiones y una serie de módulos totalmente flexibles y configurables que integra Genesys: Mano de Obra u otras aplicaciones del cliente.')" />
+              <input type="button" class="titulo-app" data-toggle="modal" data-target="#exampleModal" value="RHSYS" onclick="goToModal('RHSYS')" />
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
               <img src="assets/images/gallery/gallery_06.jpg" class="img-responsive"/>
-              <input type="button" class="titulo-app" data-toggle="modal" data-target="#exampleModal" value="PSE" onclick="goToModal('PSE', 'PLATAFORMA DE SERVICIOS ELECTRÓNICOS', 'Esta plataforma permite a nuestros clientes poder emitir todos sus documentos electrónicos cumpliendo con la nueva normativa UBL 2.1 y el decreto 239 -2018/SUNAT del uso obligatorio de OSE bajo una arquitectura de plataforma como servicio.')" />
+              <input type="button" class="titulo-app" data-toggle="modal" data-target="#exampleModal" value="PSE" onclick="goToModal('PSE')" />
             </div>
           </div>
         </div>
@@ -181,5 +182,7 @@
     <script type="text/javascript" src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
     <script type="text/javascript" src="assets/js/language/soluciones.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/lazyload.js"></script>
   </body>
 </html>
