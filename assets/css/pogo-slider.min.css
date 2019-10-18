@@ -3,7 +3,8 @@
 }
 .pogoSlider{ 
 	width:100%;
-	height:925px !important;
+	
+	height: 100vh !important;
 	position:relative;
 	overflow:hidden;
 }
