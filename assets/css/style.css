@@ -305,6 +305,7 @@ header .header-nav .nav-item ul li a:hover {
   border-radius: 2px;
   margin-bottom: 30px;
   background-color: #fff;
+  height: 250px;
 }
 @media screen and (max-width: 900px) {
   .ammenties .ament-item {
@@ -332,8 +333,16 @@ header .header-nav .nav-item ul li a:hover {
   color: #f9b233;
 }
 .ammenties .ament-item img {
-  font-size: 42px;
   margin-bottom: 20px;
+  width: 70px;
+  -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+  transition: width 1s, height 1s;
+}
+.ammenties .ament-item img:hover {
+  width: 100px;  
+}
+.ammenties .ament-item:hover{
+  box-shadow: 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .ammenties .ament-item b {
   font-weight: 300;
@@ -344,7 +353,21 @@ header .header-nav .nav-item ul li a:hover {
   float: left;
   width: 100%;
 }
-
+/* 
+.ammenties .ament-item:hover
+{
+background-color: #f9b233;
+color:#ffffff;
+}
+.ammenties .ament-item i:hover
+{
+color:#ffffff;
+}
+.ammenties .ament-item b:hover
+{
+color:#ffffff;
+}
+*/
 /* ===================================== Ament2 Style  ================================== */
 .ammenties2 {
   padding: 15px;
@@ -414,6 +437,7 @@ header .header-nav .nav-item ul li a:hover {
   border-radius: 2px;
   margin-bottom: 30px;
   background-color: #fff;
+  height: 250px;
 }
 @media screen and (max-width: 900px) {
   .ammenties3 .ament-item {
@@ -443,6 +467,15 @@ header .header-nav .nav-item ul li a:hover {
 .ammenties3 .ament-item img {
   font-size: 42px;
   margin-bottom: 20px;
+  width:80px;
+  -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+  transition: width 1s, height 1s;
+}
+.ammenties3 .ament-item img:hover{
+  width: 100px;  
+}
+.ammenties3 .ament-item:hover{
+  box-shadow: 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .ammenties3 .ament-item b {
   font-weight: 300;
@@ -667,7 +700,7 @@ header .header-nav .nav-item ul li a:hover {
   width: 100%;
 }
 .co-workin-space p {
-  text-align: left;
+  text-align: justify;
   font-size: 18px;
   padding-bottom: 30px;
   color: #666666 !important;
@@ -1131,26 +1164,24 @@ img {
 .pogoSlider-slide-element h3 {
   color: #fff !important;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 50px;
   text-align: left;
   line-height: 55px;
-  width: 80%;
+  width: 100%;
   letter-spacing: 3px;
   padding-bottom: 10px;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.2);
   margin:0px;
-  padding-left: 10px;
+  font-weight: bold;
 }
 .pogoSlider-slide-element p {
   color: #fff !important;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
   text-align: left;
   width: 80%;
-  padding: 10px 0px 20px 10px;
+  padding: 10px 0px 20px 0px;
   line-height: 35px;
-  background-color: rgba(0, 0, 0, 0.2);
   margin:0px;
 }
 .pogoSlider-slide-element ul.banner-agileits {
