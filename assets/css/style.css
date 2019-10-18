@@ -1398,6 +1398,9 @@ img {
   }
 }
 @media (max-width: 1280px) {
+  .pogoSlider {
+    height: 100vh !important;
+  }
   section.banner-w3ls .logo-w3ls {
     left: 85px;
     top: 65px;
@@ -1750,7 +1753,7 @@ img {
     top: 35px;
   }
   .pogoSlider-slide-element {
-    margin-top: 160px !important;
+    margin-top: 100px !important;
   }
   .overlay ul li a {
     font-size: 25px;
@@ -1854,7 +1857,7 @@ img {
     height: 311px !important;
   }
   .pogoSlider-slide-element h3 {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
   }
   section.about-w3l h2 {
     padding-bottom: 20px;
@@ -2089,8 +2092,8 @@ img {
   }
   .pogoSlider-slide-element h3 {
     font-size: 15px;
-    line-height: 30px;
-    padding: 0 0px 10px;
+    line-height: 20px;
+    padding: 0 0px 5px;
   }
   section.about-w3l {
     padding: 30px 0;
