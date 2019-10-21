@@ -25,6 +25,10 @@ var arrLang = {
         'COMMITMENTS_TEXTO_2' : 'Outstanding trajectory in the development of projects of diverse magnitude and complexity provided by a human group full of passion, enthusiasm and dedication to service.',
         'COMMITMENTS_SUBTITULO_3' : 'Quickly answers',
         'COMMITMENTS_TEXTO_3' : 'World class services based on the best practices in the industry and backed by the main technological certifications.',
+        'POLICIES_TITULO' : 'QUALITY MANAGEMENT SYSTEM POLITICS',
+        'POLICIES_TEXTO_1' : 'Meet the requirements of customers, stakeholders, legal and other requirements applicable to the organization, generating a culture of quality by strengthening human talent.',
+        'POLICIES_TEXTO_2' : 'Provide technological services that meet the technical specifications of quality and the achievement of the needs and expectations of the user, guaranteeing their satisfaction.',
+        'POLICIES_TEXTO_3' : 'Promote the continuous improvement of the quality management system by evaluating performance and generating opportunities for improvement throughout all processes.',
         'FOOTER_COPY' : '© Designed by YAPU Solutions | Copyright 2019'
     },
     'es' : {
@@ -53,6 +57,10 @@ var arrLang = {
         'COMMITMENTS_TEXTO_2' : 'Destacada trayectoria en desarrollo de proyectos de diversa magnitud y complejidad provistos por un grupo humano lleno de pasión, entusiasmo y vocación de servicio.',
         'COMMITMENTS_SUBTITULO_3' : 'Respuestas rápidas',
         'COMMITMENTS_TEXTO_3' : 'Servicios de clase mundial basados en las mejores prácticas de la industria y avalados por las principales certificaciones tecnológicas.',
+        'POLICIES_TITULO' : 'POLÍTICA DEL SISTEMA DE GESTIÓN DE CALIDAD',
+        'POLICIES_TEXTO_1' : 'Cumplir los requisitos de los clientes, partes interesadas, legales y demás requisitos aplicables al rubro de la organización, generando una cultura de calidad mediante el fortalecimiento del talento humano.',
+        'POLICIES_TEXTO_2' : 'Brindar servicios tecnológicos que cumplan las especificaciones técnicas de calidad y el logro de las necesidades y expectativas del usuario, garantizando su satisfacción.',
+        'POLICIES_TEXTO_3' : 'Promover la mejora continua del sistema de gestión de la calidad mediante la evaluación del desempeño y generación de oportunidades de mejora a través de todos los procesos.',
         'FOOTER_COPY' : '© Diseñado por YAPU Solutions | Copyright 2019'
     }
 }
