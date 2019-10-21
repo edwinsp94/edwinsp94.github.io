@@ -26,14 +26,13 @@
             </div>
             <div id="menu" class="col-lg-8 col-md-9 d-none d-md-block nav-item">
               <ul>
-                <li><a key="MENU_INICIO" class="lang enlaces-menu" href="index.html">Inicio</a></li>
-                <li><a key="MENU_NOSOTROS" class="lang enlaces-menu" href="nosotros.html">Nosotros</a></li>
-                <li><a key="MENU_SOLUCIONES" class="lang enlaces-menu" href="soluciones.html">Soluciones</a></li>
-                <li><a key="MENU_CLIENTES" class="lang enlaces-menu" href="clientes.html">Clientes</a></li>
-                <li><a key="MENU_CONTACTANOS" class="lang enlaces-menu nav-select" style="color: #f9b233 !important;" href="contacto.html">Contáctenos</a></li>
+                <li><a key="MENU_INICIO" class="lang enlaces-menu" href="index.html">INICIO</a></li>
+                <li><a key="MENU_NOSOTROS" class="lang enlaces-menu" href="nosotros.html">NOSOTROS</a></li>
+                <li><a key="MENU_SOLUCIONES" class="lang enlaces-menu" href="soluciones.html">SOLUCIONES</a></li>
+                <li><a key="MENU_CLIENTES" class="lang enlaces-menu" href="clientes.html">CLIENTES</a></li>
+                <li><a key="MENU_CONTACTANOS" class="lang enlaces-menu nav-select" style="color: #f9b233 !important;" href="contacto.html">CONTÁCTANOS</a></li>
                 <li class="network-link lnkin"><a class="enlaces-menu" href="https://pe.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
                 <li class="network-link fb"><a class="enlaces-menu" href="https://es-la.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="network-link youtube"><a class="enlaces-menu" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
                 <li class="network-link lang-es"><a id="es" class="enlaces-menu js-translate"><img class="flag-lang" src="assets/images/esp.png" /></a></li>
                 <li class="network-link lang-en"><a id="en" class="enlaces-menu js-translate"><img class="flag-lang" src="assets/images/eng.png" /></a></li>
               </ul>
@@ -56,10 +55,10 @@
     <div class="page-nav no-margin row ammenties-white">
       <div class="container">
           <div class="row">
-              <h2 key="ROUTER_TITULO" class="lang">Contáctenos</h2>
+              <h2 key="ROUTER_TITULO" class="lang">CONTACTO</h2>
               <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i><label key="ROUTER_NAV_1" class="lang">Inicio</label></a></li>
-                <li><i class="fas fa-angle-double-right"></i><label key="ROUTER_NAV_2" class="lang">Contáctenos</label></li>
+                <li><i class="fas fa-angle-double-right"></i><label key="ROUTER_NAV_2" class="lang">Contacto</label></li>
               </ul>
           </div>
       </div>
@@ -89,8 +88,8 @@
                     <br />
                     <p>
                       <b key="CONTACT_OFI_2_TITULO" class="lang">Oficina Lima</b><br />
-                      <p>Av. Manuel Olguín #335,</p>
-                      <p>Santiago de Surco - #303</p>
+                      <p>Av. Manuel Olguín #335 - Of. 303,</p>
+                      <p>Santiago de Surco</p>
                     </p>
                   </div>
                 </div>
@@ -99,13 +98,13 @@
             <div class="contact-us-single-2 col-sm-7">
               <div class="col-sm-12 cop-ck">
                 <h2 key="LOCATION_TITULO" class="lang">Envianos tu Mensaje</h2>
-                <form action="https://formspree.io/xpvgwprx" method="POST">
+                <form onsubmit="return valida(this)" action="https://formspree.io/xpvgwprx" method="POST">
                   <div class="row">
                     <div class="col-sm-3">
                       <label key="LOCATION_NOMBRE" class="lang">Nombre:</label>
                     </div>
                     <div class="col-sm-9">
-                      <input key="LOCATION_INPUT_NOMBRE" type="text" name="name" id="full-name" placeholder="Ingrese su nombre" class="lang form-control input-group-sm" />
+                      <input key="LOCATION_INPUT_NOMBRE" type="text" name="name" id="full-name" placeholder="Ingrese su nombre" class="lang form-control input-group-sm" onkeypress="return check(event)" />
                     </div>
                   </div>
                   <div class="row">
@@ -174,7 +173,6 @@
             <span>
               <a href="https://pe.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
               <a href="https://es-la.facebook.com"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
             </span>
           </div>
         </div>
@@ -188,33 +186,6 @@
       </svg>
     </a>
 
-    <a href="#" class="messangerbuttom" style="text-decoration: none;">
-      <svg width="60px" height="60px" viewBox="0 0 60 60">
-        <svg x="0" y="0" width="60px" height="60px">
-          <defs>
-            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
-              <stop stop-color="#00B2FF" offset="0%"></stop>
-              <stop stop-color="#006AFF" offset="100%"></stop>
-            </linearGradient>
-          </defs>
-          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g>
-              <circle fill="#FFFFFF" cx="30" cy="30" r="30"></circle>
-              <svg x="10" y="10">
-                <g>
-                  <rect id="container" x="0" y="0" width="40" height="40"></rect>
-                  <g id="logo">
-                    <path d="M20,0 C8.7334,0 0,8.2528 0,19.4 C0,25.2307 2.3896,30.2691 6.2811,33.7492 C6.6078,34.0414 6.805,34.4513 6.8184,34.8894 L6.9273,38.4474 C6.9621,39.5819 8.1343,40.3205 9.1727,39.8621 L13.1424,38.1098 C13.4789,37.9612 13.856,37.9335 14.2106,38.0311 C16.0348,38.5327 17.9763,38.8 20,38.8 C31.2666,38.8 40,30.5472 40,19.4 C40,8.2528 31.2666,0 20,0" id="bubble" fill="url(#linearGradient-1)"></path>
-                    <path d="M7.99009,25.07344 L13.86509,15.75264 C14.79959,14.26984 16.80079,13.90064 18.20299,14.95224 L22.87569,18.45674 C23.30439,18.77834 23.89429,18.77664 24.32119,18.45264 L30.63189,13.66324 C31.47419,13.02404 32.57369,14.03204 32.00999,14.92654 L26.13499,24.24744 C25.20039,25.73014 23.19919,26.09944 21.79709,25.04774 L17.12429,21.54314 C16.69559,21.22164 16.10569,21.22334 15.67879,21.54734 L9.36809,26.33674 C8.52579,26.97594 7.42629,25.96794 7.99009,25.07344" id="bolt" fill="#FFFFFF"></path>
-                  </g>
-                </g>
-              </svg>
-            </g>
-          </g>
-        </svg>
-      </svg>
-    </a>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
@@ -224,6 +195,7 @@
     <script type="text/javascript" src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
     <script type="text/javascript" src="assets/js/aos.js"></script>
     <script type="text/javascript" src="assets/js/lazyload.js"></script>
+    <script type="text/javascript" src="assets/js/sweetalert2.all.min.js"></script>
     <script type="text/javascript" src="assets/js/language/contacto.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
   </body>

@@ -1,4 +1,25 @@
-/* ===================================== Import Less ================================== */
+/*Loading page*/
+.jm-loadingpage {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999999;
+  
+  background-size:cover;
+  height: 100vh;
+  width: 100%;
+
+ }
+ .jm-loadingpage img{
+  
+  height: 100vh;
+  width: 100%;
+
+ }
+ /*Loading page*/
+ /* ===================================== Import Less ================================== */
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -10,6 +31,7 @@ body {
   background: #f4f4f4;
   overflow-x: hidden;
 }
+
 /* ===================================== Basic CSS ================================== */
 label {
   font-family: "Roboto", sans-serif !important;
@@ -44,7 +66,7 @@ h2 {
   box-sizing: border-box;
   float:left;
   margin:0px;
-  padding: 40px 0px;  
+  padding: 60px 0px;  
   color: #666;
 }
 @media (max-width: 736px) {
@@ -55,19 +77,21 @@ h2 {
 }
 h3 {
   width: 100%;
-  font-size: 16px;
+  font-size: 20px;
   padding: 20px 0px; 
   color: #666;
 }
-h2,h3,p,label
+h2,h3,h4,h5,p,label
 {
-  color:#666;
+  color:#666666;
 }
 p {
   margin-bottom: 5px;
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
+  color:#878787;
+  
 }
 .no-padding {
   padding: 0px;
@@ -90,7 +114,7 @@ p {
   text-align: center !important;
 }
 .sec-title p {
-  font-size: 14px;
+  font-size: 16px;
 }
 /* ===================================== Header Style  ================================== */
 .hid {
@@ -507,7 +531,7 @@ color:#ffffff;
   .ammenties4 .ament-item {
     text-align: center;
     padding: 15px 15px;
-    height: 600px;  
+    height: 620px;  
     border-radius: 2px;
     margin-bottom: 30px;
     background-color: #fff;
@@ -559,6 +583,74 @@ color:#ffffff;
 }
 .ammenties4 .ament-item p {
   text-align: justify;
+  font-size:16px;
+
+}
+/* ===================================== Ament5 Style  ================================== */
+.ammenties5 {
+  padding: 15px;
+}
+.ammenties-white {
+  background-color: rgba(255, 255, 255, 0.753);
+}
+.ammenties5 .ament-item {
+  text-align: center;
+  padding: 50px 30px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  height: 500px;
+}
+@media screen and (max-width: 900px) {
+  .ammenties5 .ament-item {
+    text-align: center;
+    padding: 15px 15px;
+    height: 890px;  
+    border-radius: 2px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ammenties5 .ament-item {
+    text-align: center;
+    padding: 50px 30px;
+    height: auto;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+}
+.ammenties5 .ament-item i {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #f9b233;
+}
+.ammenties5 .ament-item img {
+  font-size: 42px;
+  margin-bottom: 20px;
+  width:70px;
+  -webkit-transition: width 0.3s, height 0.3s; /* For Safari 3.1 to 6.0 */
+  transition: width 0.3s, height 0.3s;
+}
+.ammenties5 .ament-item img:hover{
+  width: 75px;  
+}
+.ammenties5 .ament-item b {
+  font-weight: 300;
+  font-size: 18px;
+  color: #666666 !important;
+  margin-top: 10px;
+  margin-bottom: 20px !important;
+  float: left;
+  width: 100%;
+}
+.ammenties5 .ament-item p {
+  text-align: justify;
+  font-size:16px;
+
 }
 /* ===================================== Ament1,2,3,4 End Style  ================================== */
 /* ================================================================================================ /*
@@ -593,9 +685,9 @@ color:#ffffff;
 }
 .home-about p {
   text-align: justify;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
-  color: #666;
+  color: #878787;
   padding: 0px 20px;
   margin-bottom: 10px;
 }
@@ -718,9 +810,10 @@ color:#ffffff;
 }
 .co-workin-space p {
   text-align: justify;
-  font-size: 18px;
+  font-size: 16px;
   padding-bottom: 30px;
-  color: #666666 !important;
+  color: #878787 !important;
+  line-height: 35px
 }
 /* =====================================  Pricing Style  ================================== */
 .pricing {
@@ -1063,12 +1156,9 @@ color:#ffffff;
     color: #f9b233;
   }
   li.network-link.lnkin {
-    right: 170px;
+    right: 140px;
   }
   li.network-link.fb {
-    right: 150px;
-  }
-  li.network-link.youtube {
     right: 120px;
   }
   li.network-link.lang-es {
@@ -1141,6 +1231,8 @@ color:#ffffff;
   color: white !important;
 }
 
+
+
 /* ===================================== Slider Animation CSS ================================== */
 body a {
   transition: 0.5s all;
@@ -1172,6 +1264,7 @@ img {
   -ms-transition: 0.5s all;
 }
 /*-- /reset code --*/
+
 .pogoSlider-slide-element {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
