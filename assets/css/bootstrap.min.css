@@ -999,6 +999,7 @@ pre code {
     margin-left: 91.666667%;
   }
 }
+/*conf especial*/
 @media screen and (max-width: 830px) {
   .col-sm-6 {
     -webkit-box-flex: 0;
@@ -1007,6 +1008,15 @@ pre code {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 830px) {
+  .col-sm-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/*conf especial*/
 @media (min-width: 768px) {
   .col-md {
     -ms-flex-preferred-size: 0;

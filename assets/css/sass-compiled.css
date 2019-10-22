@@ -23,7 +23,7 @@ img {
   border-radius: 5px;
 }
 .btn-download:hover {
-  background: rgba(149, 194, 61, 0.92);
+  background: rgba(249, 178, 51, 0.92);
 }
 
 @keyframes anima {
@@ -99,8 +99,8 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(149, 194, 61, 0.92);
-  padding: 10px;
+  background: rgba(249, 178, 51, 0.92);
+  padding: 20px;
   text-align: center;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))";
   filter: alpha(opacity=0);

@@ -323,7 +323,7 @@ header .header-nav .nav-item ul li a:hover {
 }
 .ammenties .ament-item {
   text-align: center;
-  padding: 50px 30px;
+  padding: 65px 30px 30px;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
   border-radius: 2px;
@@ -335,7 +335,7 @@ header .header-nav .nav-item ul li a:hover {
   .ammenties .ament-item {
     text-align: center;
     padding: 15px 15px;
-    height: 240px;  
+    height: 240px;
     border-radius: 2px;
     margin-bottom: 30px;
     background-color: #fff;
@@ -512,26 +512,27 @@ color:#ffffff;
 }
 /* ===================================== Ament4 Style  ================================== */
 .ammenties4 {
-  padding: 15px;
+  padding: 15px ;
 }
 .ammenties-white {
   background-color: rgba(255, 255, 255, 0.753);
 }
 .ammenties4 .ament-item {
   text-align: center;
-  padding: 50px 30px;
+  padding: 70px 30px 30px;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
   border-radius: 2px;
   margin-bottom: 30px;
   background-color: #fff;
-  height: 410px;
+  height: 250px;
+  width:100%;
 }
 @media screen and (max-width: 900px) {
   .ammenties4 .ament-item {
     text-align: center;
     padding: 15px 15px;
-    height: 620px;  
+    height: 280px;
     border-radius: 2px;
     margin-bottom: 30px;
     background-color: #fff;
@@ -555,12 +556,12 @@ color:#ffffff;
 .ammenties4 .ament-item img {
   font-size: 42px;
   margin-bottom: 20px;
-  width:90px;
+  width:60px;
   -webkit-transition: width 0.5s, height 0.5s; /* For Safari 3.1 to 6.0 */
   transition: width 0.5s, height 0.5s;
 }
 .ammenties4 .ament-item img:hover{
-  width: 100px;  
+  width: 70px;  
 }
 .ammenties4 .ament-item-4-2 img {
   font-size: 42px;
@@ -595,19 +596,20 @@ color:#ffffff;
 }
 .ammenties5 .ament-item {
   text-align: center;
-  padding: 50px 30px;
+  padding: 90px 30px 30px;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
   border-radius: 2px;
   margin-bottom: 30px;
   background-color: #fff;
-  height: 500px;
+  height: 320px;
+  width:100%;
 }
 @media screen and (max-width: 900px) {
   .ammenties5 .ament-item {
     text-align: center;
     padding: 15px 15px;
-    height: 890px;  
+    height: auto;  
     border-radius: 2px;
     margin-bottom: 30px;
     background-color: #fff;
@@ -1231,8 +1233,34 @@ color:#ffffff;
   color: white !important;
 }
 
-
-
+/* ===================================== Politics CSS ================================== */
+.politics-img {
+  width: 100%; 
+  padding: 25px;
+}
+.politics-p {
+  width: 100%; 
+  padding: 40px 10px;
+}
+@media screen and (max-width: 1199px) {
+  .politics-img {
+    padding: 25px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .politics-img {
+    padding: 0px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .politics-img {
+    padding: 90px;
+    margin-top: -50px;
+    margin-bottom: -70px;
+  }
+}
 /* ===================================== Slider Animation CSS ================================== */
 body a {
   transition: 0.5s all;
@@ -1269,12 +1297,12 @@ img {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   text-align: center;
-  margin-top: 410px !important;
+  margin-top: 400px !important;
 }
 .pogoSlider-slide-element h3 {
   color: #fff !important;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 44px;
   text-align: left;
   line-height: 55px;
   width: 100%;
@@ -1284,12 +1312,18 @@ img {
   margin:0px;
   font-weight: bold;
 }
+.pogoSlider-slide-element .img-slider
+{
+  display: flex;
+  width: 440px;
+  height: 360px;
+}
 .pogoSlider-slide-element p {
   color: #fff !important;
   font-weight: normal;
   font-size: 20px;
   text-align: left;
-  width: 80%;
+  width: 20%;
   padding: 10px 0px 0px 0px;
   line-height: 35px;
   margin:0px;

@@ -29,8 +29,7 @@
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter:alpha(opacity=0);
 	opacity:0;
-	-webkit-perspective:1300px;
-	perspective:1300px;
+	
 	overflow:hidden;
 }
 .pogoSlider-slide img{
@@ -69,7 +68,7 @@
 	background:#fff;
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
 	filter:alpha(opacity=40);
-	background:#f9b233;
+	background:#fff;
 }
 .pogoSlider-dir-btn{
 	position:absolute;

@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
     <link rel="stylesheet" type="text/css" href="assets/css/aos.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/sass-compiled.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="shortcut icon" href="assets/images/yapu.ico" />
     <title>Nosotros - YAPU Solutions</title>
@@ -30,7 +31,7 @@
             <div id="menu" class="col-lg-8 col-md-9 d-none d-md-block nav-item">
               <ul>
                 <li><a key="MENU_INICIO" class="lang enlaces-menu" href="index.html">INICIO</a></li>
-                <li><a key="MENU_NOSOTROS" class="lang enlaces-menu nav-select" style="color: #f9b233 !important;" href="nosotros.html">NOSTROS</a></li>
+                <li><a key="MENU_NOSOTROS" class="lang enlaces-menu nav-select" style="color: #f9b233 !important;" href="nosotros.html">NOSOTROS</a></li>
                 <li><a key="MENU_SOLUCIONES" class="lang enlaces-menu" href="soluciones.html">SOLUCIONES</a></li>
                 <li><a key="MENU_CLIENTES" class="lang enlaces-menu" href="clientes.html">CLIENTES</a></li>
                 <li><a key="MENU_CONTACTANOS" class="lang enlaces-menu" href="contacto.html">CONTÁCTANOS</a></li>
@@ -49,7 +50,7 @@
     <!--  ************************* Slider Starts Here ************************** -->
     <section>
       <div class="slider-2">
-        <img class="slider-2-img" src="assets/images/banner-about.png" />
+        <img class="slider-2-img" src="assets/images/banner-about.jpg" />
       </div>
     </section>
     <!-- ######## Slider End ####### -->
@@ -85,7 +86,7 @@
             </div>
             <div class="col-sm-6 div-image">
               <div class="about-img">
-                <img src="assets/images/logo-mision.png" />
+                <img src="assets/images/logo-mision.jpg" />
               </div>
             </div>
           </div>
@@ -173,10 +174,6 @@
     </section>
     <!-- ######## Differentiators End ####### -->
 
-    <!--  ************************* Values Starts Here ************************** -->
-    
-    <!-- ######## Values End ####### -->
-
     <!--  ************************* Commitments Starts Here ************************** -->
     <section>
       <div class="ammenties4 ammenties-white">
@@ -186,30 +183,36 @@
           </div>
           <div class="row">
             <div class="col-sm-4">
-              <div class="ament-item">
+              <div class="ament-item pic">
                 <img src="assets/images/commitments/logo-cube-64.png" />
                 <b key="COMMITMENTS_SUBTITULO_1" class="lang">Un proveedor flexible</b>
-                <p key="COMMITMENTS_TEXTO_1" class="lang p-valores">
-                  Contamos con un amplio abanico de soluciones TI que tienen la característica de adaptarce a las necesidades de cada empresa para asi brindar una mejor solución.
-                </p>
+                <span class="pic-caption bottom-to-top">
+                  <p key="COMMITMENTS_TEXTO_1" class="lang p-valores p-pic">
+                    Contamos con un amplio abanico de soluciones TI que tienen la característica de adaptarce a las necesidades de cada empresa para asi brindar una mejor solución.
+                  </p>
+                </span>
               </div>
             </div>
             <div class="col-sm-4">
-              <div class="ament-item">
+              <div class="ament-item pic">
                 <img src="assets/images/commitments/logo-idea-64.png" />
                 <b key="COMMITMENTS_SUBTITULO_2" class="lang">Vocación de servicio</b>
-                <p key="COMMITMENTS_TEXTO_2" class="lang p-valores">
-                  Destacada trayectoria en desarrollo de proyectos de diversa magnitud y complejidad provistos por un grupo humano lleno de pasión, entusiasmo y vocación de servicio.
-                </p>
+                <span class="pic-caption bottom-to-top" style="margin: 0px;">
+                  <p key="COMMITMENTS_TEXTO_2" class="lang p-valores p-pic" style="margin: 0px;">
+                    Destacada trayectoria en desarrollo de proyectos de diversa magnitud y complejidad provistos por un grupo humano lleno de pasión, entusiasmo y vocación de servicio.
+                  </p>
+                </span>
               </div>
             </div>
             <div class="col-sm-4">
-              <div class="ament-item">
+              <div class="ament-item pic">
                 <img src="assets/images/commitments/logo-like-64.png" />
                 <b key="COMMITMENTS_SUBTITULO_3" class="lang">Respuestas rápidas</b>
-                <p key="COMMITMENTS_TEXTO_3" class="lang p-valores">
-                  Servicios de clase mundial basados en las mejores prácticas de la industria y avalados por las principales certificaciones tecnológicas.
-                </p>
+                <span class="pic-caption bottom-to-top">
+                  <p key="COMMITMENTS_TEXTO_3" class="lang p-valores p-pic">
+                    Servicios de clase mundial basados en las mejores prácticas de la industria y avalados por las principales certificaciones tecnológicas.
+                  </p>
+                </span>
               </div>
             </div>
           </div>
@@ -218,43 +221,52 @@
     </section>
     <!-- ######## Commitments End ####### -->
 
-    <!--  ************************* Policies Starts Here ************************** -->
-    <section>
-      <div class="ammenties4 ammenties-white" style="background: #f0f2f2;">
-        <div class="container" data-aos="zoom-in">
-          <div class="row sec-title">
-            <h2 key="POLICIES_TITULO" class="lang">POLÍTICA DEL SISTEMA DE GESTIÓN DE CALIDAD</h2>
-          </div>
+    <!--  ************************* POLITICS Starts Here ************************** -->  
+    <section class="co-workin-space" style="background: #f0f2f2;">
+      <div class="inlay row" data-aos="zoom-in">
+        <div class="container">
           <div class="row">
-            <div class="col-sm-4">
-              <div class="ament-item">
-                <img src="assets/images/commitments/logo-politics.png" />
-                <p key="POLICIES_TEXTO_1" class="lang p-valores">
-                  Cumplir los requisitos de los clientes, partes interesadas, legales y demás requisitos aplicables al rubro de la organización, generando una cultura de calidad mediante el fortalecimiento del talento humano.
-                </p>
+            <div class="col-sm-12 div-content">
+              <div class="row sec-title">
+                <h2 key="POLICIES_TITULO" class="lang">POLÍTICA DEL SISTEMA DE GESTIÓN DE CALIDAD</h2>
               </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="ament-item">
-                <img src="assets/images/commitments/logo-politics2.png" />
-                <p key="POLICIES_TEXTO_2" class="lang p-valores">
-                  Brindar servicios tecnológicos que cumplan las especificaciones técnicas de calidad y el logro de las necesidades y expectativas del usuario, garantizando su satisfacción.
-                </p>
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="assets/images/commitments/rombo_1.png" class="politics-img"/>
+                </div>
+                <div class="col-sm-10">
+                  <p key="POLICIES_TEXTO_1" class="lang politics-p">
+                    Cumplir los requisitos de los clientes, partes interesadas, legales y demás requisitos aplicables al rubro de la organización, generando una cultura de calidad mediante el fortalecimiento del talento humano.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="ament-item">
-                <img src="assets/images/commitments/logo-politics3.png" />
-                <p key="POLICIES_TEXTO_3" class="lang p-valores">
-                  Promover la mejora continua del sistema de gestión de la calidad mediante la evaluación del desempeño y generación de oportunidades de mejora a través de todos los procesos.
-                </p>
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="assets/images/commitments/rombo_2.png" class="politics-img"/>
+                </div>
+                <div class="col-sm-10">
+                  <p key="POLICIES_TEXTO_2" class="lang politics-p">
+                    Brindar servicios tecnológicos que cumplan las especificaciones técnicas de calidad y el logro de las necesidades y expectativas del usuario, garantizando su satisfacción.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="assets/images/commitments/rombo_3.png" class="politics-img"/>
+                </div>
+                <div class="col-sm-10">
+                  <p key="POLICIES_TEXTO_3" class="lang politics-p">
+                    Cumplir los requisitos de los clientes, partes interesadas, legales y demás requisitos aplicables al rubro de la organización, generando una cultura de calidad mediante el fortalecimiento del talento humano.
+                  </p>
+                </div>
+              </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ######## Policies End ####### -->
+    <!-- ######## Politics End ####### -->
 
     <!--  ************************* Copyright Starts Here ************************** -->
     <div class="copy">
