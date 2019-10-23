@@ -1,11 +1,12 @@
 $(document).ready(function() {
-  var w = window.innerWidth;
-  setTimeout(loadPlayer,1500);
-  if (w > 767) {
-    $("#menu-jk").scrollToFixed();
-  } else {
-    $("#menu-jk").scrollToFixed();
-  }
+	setTimeout(loadPlayer, 1500);
+	var w = window.innerWidth;
+
+  	if (w > 767) {
+    	$("#menu-jk").scrollToFixed();
+  	} else {
+    	$("#menu-jk").scrollToFixed();
+  	}
 });
 
 function loadPlayer(){
