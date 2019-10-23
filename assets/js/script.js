@@ -1,7 +1,6 @@
 $(document).ready(function() {
-  setTimeout(loadPlayer,1500);
   var w = window.innerWidth;
-
+  //setTimeout(loadPlayer,1500);
   if (w > 767) {
     $("#menu-jk").scrollToFixed();
   } else {
