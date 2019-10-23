@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	setTimeout(loadPlayer, 1500);
-	var w = window.innerWidth;
 
+	var w = window.innerWidth;
   	if (w > 767) {
     	$("#menu-jk").scrollToFixed();
   	} else {
@@ -10,7 +10,7 @@ $(document).ready(function() {
 });
 
 function loadPlayer(){
-	const player = document.querySelector('lottie-player');
+	document.querySelector('lottie-player');
 	$(".jm-loadingpage").fadeOut("slow");
 }
 
