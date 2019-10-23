@@ -7,8 +7,11 @@
   height: 100%;
   z-index: 999999999;  
   background-size:cover;
-  height: 100vh;
-  width: 100%;
+ }
+ .lottie-player 
+ {
+   width: 100%;
+   height: 100%;
  }
  .lds-double-ring{  
   position: absolute;
@@ -88,7 +91,7 @@ p {
   width: 100%;
   font-size: 16px;
   line-height: 24px;
-  color:#878787;
+  color:#666666;
 }
 .no-padding {
   padding: 0px;
@@ -147,37 +150,25 @@ header .header-nav .nav-item ul li {
   font-size: 14px;
   padding: 28px 15px;
 }
-.menu-redes {
-  display: none;
-}
 @media screen and (max-width: 998px) {
   header .header-nav .nav-item ul li {
-    padding: 28px 15px;
-  }
-  .li-redes {
-    display: none;
-  }
-  .menu-redes {
-    display: inline;
-    float: right;
-    color: #fff;
-    font-size: 14px;
-    margin-top: 15px;
-    margin-right: 15px;
-  }
-  .menu-redes a {
-    margin-left: 15px;
+    
   }
 }
 @media screen and (max-width: 767px) {
   header .header-nav .nav-item ul li {
     float: none;
-    padding: 14px;
+    padding: 0px;
+  }
+  header .header-nav .nav-item ul li a {
     border-top: 1px solid #ccc;
+    padding:20px 10px;
   }
 }
 header .header-nav .nav-item ul li a {
   color: #fff;
+  width: 100%;
+  float:left;
 }
 header .header-nav .nav-item ul li a:hover {
   color: #f9b233;
@@ -1169,7 +1160,7 @@ header .header-nav .nav-item ul li a:hover {
   line-height: 40px;
   font-size: 14px;
   font-weight: normal;
-  color: #333;
+  color: #666666;
   text-align: center;
   background: white;
   display: inline-block;

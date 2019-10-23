@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  setTimeout(loadPlayer,2000);
   var w = window.innerWidth;
 
   if (w > 767) {
@@ -8,13 +9,10 @@ $(document).ready(function() {
   }
 });
 
-$(document).ready(function() {
+function loadPlayer(){
+	const player = document.querySelector('lottie-player');
 	$(".jm-loadingpage").fadeOut("slow");
-});
-
-jQuery(document).ready(function() {
-	jQuery(".jm-loadingpage").fadeOut("slow");
-});
+}
 
 function validateEmail(email) {
 	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
