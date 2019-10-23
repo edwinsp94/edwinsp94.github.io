@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  setTimeout(loadPlayer,2000);
+  setTimeout(loadPlayer,1500);
   var w = window.innerWidth;
 
   if (w > 767) {

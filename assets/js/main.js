@@ -5,6 +5,7 @@ $(document).ready(function () {
 		displayProgess: true,
 		targetWidth: 1000,
 		targetHeight: 300,
+		elementTransitionDuration: 500,
 		responsive: true
 	}).data('plugin_pogoSlider');
 });

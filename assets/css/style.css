@@ -5,20 +5,11 @@
   top: 0px;
   width: 100%;
   height: 100%;
-  z-index: 999999999;  
-  background-size:cover;
+  z-index: 99999999999999;
  }
- .lottie-player 
- {
+ .lottie-player {
    width: 100%;
    height: 100%;
- }
- .lds-double-ring{  
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
  }
  /*Loading page*/
  /* ===================================== Import Less ================================== */
@@ -82,8 +73,7 @@ h3 {
   padding: 20px 0px; 
   color: #666;
 }
-h2,h3,h4,h5,p,label
-{
+h2,h3,h4,h5,p,label{
   color:#666666;
 }
 p {
@@ -353,7 +343,7 @@ header .header-nav .nav-item ul li a:hover {
 .ammenties .ament-item img:hover {
   width: 75px;  
 }
-.ammenties .ament-item:hover{
+.ammenties .ament-item:hover {
   box-shadow: 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .ammenties .ament-item b {
@@ -415,7 +405,7 @@ header .header-nav .nav-item ul li a:hover {
   -webkit-transition: width 0.5s, height 0.5s; /* For Safari 3.1 to 6.0 */
   transition: width 0.5s, height 0.5s;
 }
-.ammenties4 .ament-item img:hover{
+.ammenties4 .ament-item img:hover {
   width: 70px;  
 }
 .ammenties4 .ament-item-4-2 img {
@@ -425,7 +415,7 @@ header .header-nav .nav-item ul li a:hover {
   -webkit-transition: width 0.5s, height 0.5s; /* For Safari 3.1 to 6.0 */
   transition: width 0.5s, height 0.5s;
 }
-.ammenties4 .ament-item-4-2 img:hover{
+.ammenties4 .ament-item-4-2 img:hover {
   width: 90px;  
 }
 .ammenties4 .ament-item b {
@@ -491,7 +481,7 @@ header .header-nav .nav-item ul li a:hover {
   -webkit-transition: width 0.3s, height 0.3s; /* For Safari 3.1 to 6.0 */
   transition: width 0.3s, height 0.3s;
 }
-.ammenties5 .ament-item img:hover{
+.ammenties5 .ament-item img:hover {
   width: 75px;  
 }
 .ammenties5 .ament-item b {
@@ -665,7 +655,7 @@ header .header-nav .nav-item ul li a:hover {
 .co-workin-space p {
   text-align: justify;
   font-size: 16px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   color: #878787 !important;
   line-height: 35px
 }
@@ -807,64 +797,6 @@ header .header-nav .nav-item ul li a:hover {
 .copy span i:hover {
   color: #f9b233;
 }
-/* ===================================== Gallery Style  ================================== */
-.gallery-filter {
-  width: 100%;
-  text-align: center;
-}
-.gallery-filter .btn {
-  background-color: #fff;
-}
-.gallery {
-  padding: 30px;
-  background-color: #fff;
-}
-.gallery-title {
-  font-size: 36px;
-  color: #f9b233;
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 70px;
-}
-.gallery-title:after {
-  content: "";
-  position: absolute;
-  width: 7.5%;
-  left: 46.5%;
-  height: 45px;
-  border-bottom: 1px solid #f9b233;
-}
-.filter-button {
-  font-size: 14px;
-  border: 1px solid #f9b233;
-  border-radius: 5px;
-  text-align: center;
-  color: #f9b233;
-  margin-bottom: 30px;
-  margin-right: 5px;
-  width: 120px;
-}
-.filter-button:hover {
-  border: 1px solid #f9b233;
-  color: #ffffff;
-  background-color: #f9b233;
-}
-.btn-default:active {
-  border: 1px solid #f9b233;
-  color: #ffffff;
-  background-color: #f9b233;
-}
-.btn-default:focus {
-  border: 1px solid #f9b233;
-  color: #ffffff;
-  background-color: #f9b233;
-}
-.port-image {
-  width: 100%;
-}
-.gallery_product {
-  margin-bottom: 30px;
-}
 /* ===================================== Page Navegation Style  ================================== */
 .slider-2 {
   width: 100%;
@@ -908,10 +840,7 @@ header .header-nav .nav-item ul li a:hover {
 }
 /* ===================================== Testimonial Style  ================================== */
 .testimonial-container {
-  background-image: url("../images/banner-clients.png");
-  background-size: cover;
-  background-position: center;
-
+  background-image: url("../images/pattern-bg-orange.jpg");
   overflow: hidden;
   box-sizing: border-box;
   float: left;
@@ -920,7 +849,6 @@ header .header-nav .nav-item ul li a:hover {
   padding: 0px;
 }
 .testimonial-container .layy-2 {
-  background: rgba(249, 178, 51, 0.9);
   height: 100%;
   width: 100%;
   color: #fff;
@@ -1073,32 +1001,9 @@ header .header-nav .nav-item ul li a:hover {
   color: white !important;
 }
 /* ===================================== Politics CSS ================================== */
-.politics-img {
-  width: 100%; 
-  padding: 25px;
-}
 .politics-p {
   width: 100%; 
   padding: 10px 0px 10px;
-}
-@media screen and (max-width: 1199px) {
-  .politics-img {
-    padding: 25px;
-    margin-top: 30px;
-  }
-}
-@media screen and (max-width: 990px) {
-  .politics-img {
-    padding: 0px;
-    margin-top: 50px;
-  }
-}
-@media screen and (max-width: 420px) {
-  .politics-img {
-    padding: 90px;
-    margin-top: -50px;
-    margin-bottom: -70px;
-  }
 }
 /* ===================================== Slider Animation CSS ================================== */
 /*-- /reset code --*/
@@ -1129,7 +1034,7 @@ header .header-nav .nav-item ul li a:hover {
   margin:0px;
   font-weight: bold;
 }
-.pogoSlider-slide-element .img-slider{
+.pogoSlider-slide-element .img-slider {
   display: flex;
   width: 440px;
   height: 360px;
@@ -1459,12 +1364,13 @@ header .header-nav .nav-item ul li a:hover {
 }
 @media (max-width: 414px) {
   .pogoSlider-slide-element {
-    margin-top: 80px !important;
+    margin-top: 110px !important;
   }
   .pogoSlider-slide-element h3 {
     font-size: 15px;
     line-height: 20px;
     padding: 0 0px 5px;
+    font-weight: normal;
   }
   .col-lg-3.col-md-3.col-sm-3.team-w3ls {
     width: 100%;
@@ -1480,8 +1386,13 @@ header .header-nav .nav-item ul li a:hover {
     height: 30px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 343px) {
   .pogoSlider-slide-element {
-    margin-top: 65px !important;
-  }  
+    margin-top: 90px !important;    
+  }
+  .pogoSlider-slide-element ul.banner-agileits li a.link-w3l1,
+  .pogoSlider-slide-element ul.banner-agileits li a.link-w3l2 {
+    
+    margin-bottom: 5px;
+  }
 }
