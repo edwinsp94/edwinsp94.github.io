@@ -459,14 +459,19 @@ header .header-nav .nav-item ul li a:hover {
     background-color: #fff;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .ammenties5 .ament-item {
     text-align: center;
-    padding: 50px 30px;
+    padding: 90px 30px;
     height: auto;
     border-radius: 2px;
     margin-bottom: 30px;
     background-color: #fff;
+  }
+  .ammenties5 .ament-item p {
+    text-align: justify;
+    font-size:14px;
+    line-height: 26px;
   }
 }
 .ammenties5 .ament-item i {
