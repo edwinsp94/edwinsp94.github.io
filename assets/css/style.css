@@ -942,14 +942,14 @@ header .header-nav .nav-item ul li a:hover {
 @media screen and (max-width: 767px) {
   li.network-link {
     position: absolute;
-    margin-top: -27.3em;
+    margin-top: -11.3em;
     border-top: none !important;
   }
   li.network-link a:hover {
     color: #f9b233;
   }
   li.network-link.lnkin {
-    right: 140px;
+    right: 120px;
   }
   li.network-link.fb {
     right: 120px;
@@ -996,15 +996,17 @@ header .header-nav .nav-item ul li a:hover {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   transition:.3s;
   padding:5px;
+  outline: none !important;
 }
 span{
-  transition:.5s;  
+  transition:.5s;
 }
 .botonF1:hover span{
   transform:rotate(360deg);
 }
 .botonF1:active{
   transform:scale(1.1);
+  outline: none;
 }
 .btnMesa{
   width:250px;
