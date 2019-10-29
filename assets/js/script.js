@@ -71,3 +71,13 @@ function valida(f) {
 	
 	$('#swal2-title').css("display", "inline");
   }
+
+
+
+
+  $('.botonF1').hover(function(){
+	$('.btnMesa').addClass('animacionVer');
+  })
+  $('.contenedorMesa').mouseleave(function(){
+	$('.btnMesa').removeClass('animacionVer');
+  })
