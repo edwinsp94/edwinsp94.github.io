@@ -494,10 +494,10 @@ header .header-nav .nav-item ul li a:hover {
   margin-bottom: 20px;
   width:70px;
   -webkit-transition: width 0.3s, height 0.3s; /* For Safari 3.1 to 6.0 */
-  transition: width 0.3s, height 0.3s;
+  transition: width 0.2s, height 0.2s;
 }
 .ammenties5 .ament-item img:hover {
-  width: 75px;  
+  width: 73px;  
 }
 .ammenties5 .ament-item b {
   font-weight: 300;
