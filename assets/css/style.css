@@ -821,7 +821,6 @@ header .header-nav .nav-item ul li a:hover {
 .slider-2-img {
   width: 100%;
   position: relative;
-  height: 550px;
 }
 .page-nav {
   padding: 20px;
@@ -1008,7 +1007,6 @@ span{
 }
 .btnMesa{
   width:250px;
-  height:40px;
   border-radius:5px;
   border:none;
   columns: #666666;
@@ -1021,8 +1019,11 @@ span{
   margin-right:26px;
   transform:scale(0);
 }
-.btnMesa a{
+.btnMesa span a{
+  display:block;
+  width:100%;
   color:#666;
+  padding:10px 0px;
 }
 .botonF2{
   background:#fff;
