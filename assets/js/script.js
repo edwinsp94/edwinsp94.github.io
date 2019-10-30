@@ -76,8 +76,8 @@ function valida(f) {
 
 
   $('.botonF1').hover(function(){
-	$('.btnMesa').addClass('animacionVer');
+	$('.contenedorMesa').addClass('animacionVer');
   })
   $('.contenedorMesa').mouseleave(function(){
-	$('.btnMesa').removeClass('animacionVer');
+	$('.contenedorMesa').removeClass('animacionVer');
   })

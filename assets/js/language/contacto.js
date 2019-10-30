@@ -26,7 +26,7 @@ var arrLang = {
     },
     'es' : {
         'MENU_INICIO' : 'INICIO',
-        'MENU_NOSOTROS' : 'NOSTROS',
+        'MENU_NOSOTROS' : 'NOSOTROS',
         'MENU_SOLUCIONES' : 'SOLUCIONES',
         'MENU_CLIENTES' : 'CLIENTES',
         'MENU_CONTACTANOS' : 'CONTÁCTANOS',
