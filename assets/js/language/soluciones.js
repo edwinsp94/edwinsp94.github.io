@@ -68,14 +68,17 @@ function goToModal(title) {
     switch(title) {
       case 'GENESYS': 
         item = '1';
+        $('#verFolleto').attr('href', 'assets/files/brochure-genesys.pdf');
         $('#verFolleto').show();
         break;
       case 'RHSYS': 
         item = '2';
+        $('#verFolleto').attr('href', '#');
         $('#verFolleto').hide();
         break;
       case 'PSE': 
         item = '3';
+        $('#verFolleto').attr('href', '#');
         $('#verFolleto').hide();
         break;
     }
