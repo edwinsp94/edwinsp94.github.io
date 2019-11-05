@@ -68,14 +68,17 @@ function goToModal(title) {
     switch(title) {
       case 'GENESYS': 
         item = '1';
+        $('#verFolleto').show();
         break;
       case 'RHSYS': 
         item = '2';
+        $('#verFolleto').hide();
         break;
       case 'PSE': 
         item = '3';
+        $('#verFolleto').hide();
         break;
     }
     $('#content-modal-subtitle').text(arrLang[language_select]['SOLUTIONS_ITEM_' + item + '_SUBTITULO']);
     $('#content-modal-resume').text(arrLang[language_select]['SOLUTIONS_ITEM_' + item + '_TEXTO']);
-  }
+}
