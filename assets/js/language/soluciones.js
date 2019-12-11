@@ -38,7 +38,7 @@ var arrLang = {
         'SERVICES_TITULO_3' : 'Asesoría y Proyectos TI',        
         'SOLUTIONS_TITULO' : 'SOLUCIONES COMO SERVICIO',
         'SOLUTIONS_ITEM_1_SUBTITULO' : 'PLATAFORMA DE REGISTRO Y SEGUIMIENTO DE LA COSECHA',
-        'SOLUTIONS_ITEM_1_TEXTO' : 'Es una solución integral que permite el registro de producción de campo en línea, para distintos cultivos y operación de cosecha. Además, cuenta con la funcionalidad de conteo para bonos con distintas estrategias e información transparente para la empresa y el trabajador.',
+        'SOLUTIONS_ITEM_1_TEXTO' : 'Es una solución integral que permite el registro y seguimiento de la cosecha, adaptable a cualquier cultivo tanto para pequeños fundos como grandes extensiones de tierra brindándote información en línea y procesada para el análisis de todo lo que ocurre en el campo.',
         'SOLUTIONS_ITEM_2_SUBTITULO' : 'PLATAFORMA DE GESTIÓN DE NÓMINA',
         'SOLUTIONS_ITEM_2_TEXTO' : 'Esta plataforma cuenta con el motor de cálculo de planillas, gestión masiva de personal, cálculo de provisiones y una serie de módulos totalmente flexibles y configurables que integra Genesys: Mano de Obra u otras aplicaciones del cliente.',
         'SOLUTIONS_ITEM_3_SUBTITULO' : 'PLATAFORMA DE SERVICIOS ELECTRÓNICOS',
@@ -71,18 +71,21 @@ function goToModal(title) {
         $('#verFolleto').attr('href', 'assets/files/brochure-genesys.pdf');
         $('#verFolleto').show();
         $('#verImagenes').show();
+        $('#verImagenes2').show();
         break;
       case 'RHSYS': 
         item = '2';
         $('#verFolleto').attr('href', '#');
         $('#verFolleto').hide();
         $('#verImagenes').hide();
+        $('#verImagenes2').hide();
         break;
       case 'PSE': 
         item = '3';
         $('#verFolleto').attr('href', '#');
         $('#verFolleto').hide();
         $('#verImagenes').hide();
+        $('#verImagenes2').hide();
         break;
     }
     $('#content-modal-subtitle').text(arrLang[language_select]['SOLUTIONS_ITEM_' + item + '_SUBTITULO']);
