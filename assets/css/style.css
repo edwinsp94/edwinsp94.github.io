@@ -106,12 +106,14 @@ p {
 .sec-title h2 {
   font-weight: 600;
   text-transform: none;
+  font-family: 'Exo 2', sans-serif;
 }
 .sec-title h3 {
   font-size: 20px;
   font-weight: 600;
   text-transform: none;
   text-align: center !important;
+  font-family: 'Exo 2', sans-serif;
 }
 .sec-title p {
   font-size: 16px;
@@ -169,6 +171,7 @@ header .header-nav .nav-item ul li a {
   color: #fff;
   width: 100%;
   float:left;
+  font-family: 'Exo 2', sans-serif;
 }
 header .header-nav .nav-item ul li a:hover {
   color: #f9b233;
@@ -625,6 +628,7 @@ header .header-nav .nav-item ul li a:hover {
   cursor: pointer;
   border: solid 1px #f9b233;
   outline: none;
+  font-family: 'Exo 2', sans-serif;
 }
 .titulo-app:focus {
   outline: none;
@@ -1016,6 +1020,10 @@ header .header-nav .nav-item ul li a:hover {
   outline: none !important;
   z-index:4;
 }
+.botonF1 img{
+  width:40px;
+  height:40px;
+}
 .btnMesa{
   width:250px;
   border-radius:3px;
@@ -1140,7 +1148,7 @@ header .header-nav .nav-item ul li a:hover {
   text-transform: uppercase;
   margin:0px;
   font-weight: bold;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Exo 2', sans-serif;
 }
 .pogoSlider-slide-element .img-slider {
   display: flex;
