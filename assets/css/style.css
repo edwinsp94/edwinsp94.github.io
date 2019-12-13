@@ -734,8 +734,9 @@ header .header-nav .nav-item ul li a:hover {
     padding: 0px;
   }
   .pricing .price-tab img {
-    width: 100%;
-    height: 280px;
+    
+    width: auto;
+    height: 100%;
     margin-bottom: 0px;
   }
 }
@@ -856,6 +857,7 @@ header .header-nav .nav-item ul li a:hover {
   width: 100%;
   color: #666;
   font-weight: 600;
+  font-family: 'Exo 2', sans-serif;
 }
 .page-nav ul {
   float: none;
@@ -1225,10 +1227,6 @@ header .header-nav .nav-item ul li a:hover {
   transition: all 0.3s ease-in-out;
 }
 /*-- /banner section --*/
-
-
-
-
 
 /*====================================medidas para pc medium================================*/
 
