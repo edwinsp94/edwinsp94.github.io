@@ -81,3 +81,5 @@ function valida(f) {
   $('.contenedorMesa').mouseleave(function(){
 	$('.contenedorMesa').removeClass('animacionVer');
   })
+
+

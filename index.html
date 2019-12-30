@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -16,6 +16,38 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="shortcut icon" href="assets/images/yapu.ico" />
     <title>YAPU</title>
+
+
+
+    <!--Only for demo purpose - no need to add.-->
+    <link rel="stylesheet" type="text/css" href="demo.css" />    
+    <link rel="stylesheet" href="client.css">
+    <script src="1.js" type="text/javascript"></script>
+	  <script src="2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+			$('.customer-logos').slick({
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1500,
+				arrows: false,
+				dots: false,
+				pauseOnHover: false,
+				responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 4
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 2
+					}
+				}]
+			});
+		});
+    </script>
   </head>
   <body>
     <div class="jm-loadingpage">
@@ -60,12 +92,12 @@
         <div class="pogoSlider-slide-element">
           <div class="container">
             <div class="container-text-slider">
-              <h3 key="SLIDER_1_TITULO_1" class="lang">CULTIVAMOS</h3>
-              <h3 key="SLIDER_1_TITULO_2" class="lang">TECNOLOGÍA</h3>            
-              <p key="SLIDER_TEXTO" class="lang"></p>
+              <h3 key="SLIDER_1_TITULO_1" class="lang">Cultivamos</h3>
+              <h3 key="SLIDER_1_TITULO_2" class="lang">Tecnología</h3>            
+              <p key="SLIDER_TEXTO" class="lang">Somos un equipo de profesionales y especialistas en el desarrollo de soluciones tecnológicas.</p>
               <ul class="banner-agileits">
-                <li><a key="SLIDER_BOTON_CONTACTO" href="nosotros.html" class="lang link-w3l1">CONÓCENOS</a></li>
-                <li><a key="SLIDER_BOTON_VER" href="soluciones.html" class="lang link-w3l2">VER SOLUCIONES</a></li>
+                <li><a key="SLIDER_BOTON_CONTACTO" href="nosotros.html" class="lang link-w3l1">Conócenos</a></li>
+                <li><a key="SLIDER_BOTON_VER" href="soluciones.html" class="lang link-w3l2">Ver soluciones</a></li>
               </ul>
             </div>
             <div class="container-img-slider">
@@ -78,12 +110,12 @@
         <div class="pogoSlider-slide-element">
           <div class="container">
             <div class="container-text-slider">
-            <h3 key="SLIDER_2_TITULO_1" class="lang">SOMOS UN EQUIPO</h3>
-            <h3 key="SLIDER_2_TITULO_2" class="lang">ESPECIALIZADO Y CON EXPERIENCIA</h3>            
+            <h3 key="SLIDER_2_TITULO_1" class="lang">Somos un equipo</h3>
+            <h3 key="SLIDER_2_TITULO_2" class="lang">especializo y con experiencia</h3>            
             <p key="SLIDER_TEXTO" class="lang"></p>
             <ul class="banner-agileits">
-              <li><a key="SLIDER_BOTON_CONTACTO" href="nosotros.html" class="lang link-w3l1">CONÓCENOS</a></li>
-              <li><a key="SLIDER_BOTON_VER" href="soluciones.html" class="lang link-w3l2">VER SOLUCIONES</a></li>
+              <li><a key="SLIDER_BOTON_CONTACTO" href="nosotros.html" class="lang link-w3l1">Conócenos</a></li>
+              <li><a key="SLIDER_BOTON_VER" href="soluciones.html" class="lang link-w3l2">Ver soluciones</a></li>
             </ul>
             </div>
             <div class="container-img-slider">
@@ -96,12 +128,12 @@
         <div class="pogoSlider-slide-element">
           <div class="container">
             <div class="container-text-slider">
-            <h3 key="SLIDER_3_TITULO_1" class="lang">SOLUCIONES QUE</h3>
-            <h3 key="SLIDER_3_TITULO_2" class="lang">GENERAN VALOR AGREGADO</h3>         
+            <h3 key="SLIDER_3_TITULO_1" class="lang">Soluciones que</h3>
+            <h3 key="SLIDER_3_TITULO_2" class="lang">generan valor agregado</h3>         
             <p key="SLIDER_TEXTO" class="lang"></p>
             <ul class="banner-agileits">
-              <li><a key="SLIDER_BOTON_CONTACTO" href="nosotros.html" class="lang link-w3l1">CONÓCENOS</a></li>
-              <li><a key="SLIDER_BOTON_VER" href="soluciones.html" class="lang link-w3l2">VER SOLUCIONES</a></li>
+              <li><a key="SLIDER_BOTON_CONTACTO" href="nosotros.html" class="lang link-w3l1">Conócenos</a></li>
+              <li><a key="SLIDER_BOTON_VER" href="soluciones.html" class="lang link-w3l2">Ver soluciones</a></li>
             </ul>
             </div>
             <div class="container-img-slider">
@@ -113,7 +145,7 @@
     </div>
     <!-- ************************* Slider End ************************* -->
 
-    <!--  ************************* Aboutus Starts Here ************************** -->
+    <!--  ************************* Aboutus Starts Here ************************** -->    
     <section id="about" class="home-about" data-aos="zoom-in">
       <div class="inlay row">
         <div class="container">
@@ -152,46 +184,16 @@
           <h2 key="CLIENTS_TTULO" class="lang">NUESTROS CLIENTES</h2>
         </div>
         <div class="row">
-          <div class="col-sm-3" style="margin-bottom:20px;">
-            <div class="price-tab pic">
-              <img src="assets/images/customers/hortifrut.png" alt="price-1" /><br />
-            </div>
-          </div>
-          <div class="col-sm-3" style="margin-bottom:20px;">
-            <div class="price-tab pic">
-              <img src="assets/images/customers/talsa.jpg" alt="price-2" /><br />
-            </div>
-          </div>
-          <div class="col-sm-3" style="margin-bottom:20px;">
-            <div class="price-tab pic">
-              <img src="assets/images/customers/lactea.jpg" alt="price-3" /><br />
-            </div>
-          </div>
-          <div class="col-sm-3" style="margin-bottom:20px;">
-            <div class="price-tab pic">
-              <img src="assets/images/customers/avo-peru.jpg" alt="price-3" /><br />
-            </div>
-          </div>
-          <div class="col-sm-3" style="margin-bottom:20px;">
-            <div class="price-tab pic">
-              <img src="assets/images/customers/el-rocio.jpg" alt="price-3" /><br />
-            </div>
-          </div>
-          <div class="col-sm-3" style="margin-bottom:20px;">
-            <div class="price-tab pic">
-              <img src="assets/images/customers/don-ricardo.jpg" alt="price-3" /><br />
-            </div>
-          </div>
-          <div class="col-sm-3" style="margin-bottom:20px;">
-            <div class="price-tab pic">
-              <img src="assets/images/customers/aviagen.jpg" alt="price-3" /><br />
-            </div>
-          </div>
-          <div class="col-sm-3" style="margin-bottom:20px;">
-            <div class="price-tab pic">
-              <img src="assets/images/customers/jordi.png" alt="price-3" /><br />
-            </div>
-          </div>
+          <section class="customer-logos slider">
+            <div class="slide"><img src="assets/images/customers/hortifrut.png"></div>
+            <div class="slide"><img src="assets/images/customers/talsa.jpg"></div>
+            <div class="slide"><img src="assets/images/customers/lactea.jpg"></div>
+            <div class="slide"><img src="assets/images/customers/avo-peru.jpg"></div>
+            <div class="slide"><img src="assets/images/customers/el-rocio.jpg"></div>
+            <div class="slide"><img src="assets/images/customers/don-ricardo.jpg"></div>
+            <div class="slide"><img src="assets/images/customers/aviagen.jpg"></div>
+            <div class="slide"><img src="assets/images/customers/jordi.png"></div>
+          </section>           
         </div>
       </div>
     </section>
@@ -358,8 +360,8 @@
       </svg>
     </a>
     
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->    
-    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS    
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>--> 
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/lottie-player.js"></script>
