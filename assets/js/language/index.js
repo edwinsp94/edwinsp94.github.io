@@ -77,13 +77,13 @@ var arrLang = {
 
         'SOLUCIONES_TITULO':'Nuestras Soluciones',
         'SOLUCION1_TITULO':'Tendido de Fibra Óptica',
-        'SOLUCION1_DESC':'En nuestra empresa desarrollamos, implementamos y realizamos el tendido de la fibra óptica, con los estándares internacionales, contamos con mas 100 instalaciones que ofrecen mayor capacidad para mejorar la comuni...',
+        'SOLUCION1_DESC':'En nuestra empresa desarrollamos, implementamos y realizamos el tendido de la fibra óptica, con los estándares internacionales, contamos con mas 100 instalaciones que ofrecen mayor capacidad ...',
         
         'SOLUCION2_TITULO':'Instalación de Cámaras',
         'SOLUCION2_DESC':'Ofrecemos tranquilidad para su empresa con la Instalación de Cámaras de Seguridad, ya que al tener todo bajo vigilancia se pueden prevenir robos o atender algún incidente dentro de la ...',
         
         'SOLUCION3_TITULO':'Instalación de Data Center',
-        'SOLUCION3_DESC':'En el rubro de Data Center, nuestra empresa instala servidores para almacenar tanto la información de las empresas directamente, como para ser empleados para la virtualización efectiva, además de ofrecer las redes de ...',
+        'SOLUCION3_DESC':'En el rubro de Data Center, nuestra empresa instala servidores para almacenar tanto la información de las empresas directamente, como para ser empleados para la ...',
         
         'VER_SOLUCIONES': 'Ver Soluciones',
         
