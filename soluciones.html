@@ -23,6 +23,9 @@
 
     <script src="https://kit.fontawesome.com/10254330b3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
+    <!--card view-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164205772-1"></script>
@@ -82,7 +85,7 @@
     <section>
         <div class="slider-2">
             <img class="slider-2-img" src="assets/images/slider/soluciones.png" alt="soluciones IV&RM"/>
-            <h1 key="SLIDER_NUESTRAS_SOLUCIONES" class="lang">Nuestras Soluciones</h1>
+            <h1 key="SLIDER_NUESTRAS_SOLUCIONES" class="lang">Soluciones</h1>
         </div>
     </section>
     <!-- ******* soluciones ******* -->
@@ -93,8 +96,8 @@
 
                 </div>
                 <div class="col-md-8 div-img">
-                    <h2 class="pt-5 pb-5" style="text-align: center;color: #1327f7;font-size: 30px;"><b class="lang" key="SOLUTIONS_TITLE">SOLUCIONES AL ALCANCE DE TU MANO</b></h2>
-                    <p style="text-align: center;" class="lang" key="SOLUTIONS_DESC">
+                    <h2 class="pb-3 subtitulo"><b class="lang" key="SOLUTIONS_TITLE">SOLUCIONES AL ALCANCE DE TU MANO</b></h2>
+                    <p style="text-align: left;" class="lang" key="SOLUTIONS_DESC">
                         La integración de nuestro personal experto en las áreas de servicios, mantenimiento, reparaciones, remodelaciones, redes,
                         instalaciones, telecomunicaciones y consultoría, nos permite analizar, conjuntamente con nuestros clientes, las
                         soluciones a los problemas de cada empresa.
@@ -111,22 +114,27 @@
         <div class="container">
             <div class="row">
                 <div class="solucion col-sm-4 col-md-4 col-lg-4 pt-5 pb-5">
-                    <div class="content-solucion-img">
-                        <img class="zoom-on" src="assets/images/soluciones/tendido-fibra-optica.png" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" onclick="goToModal('fibra-optica')"/>
-                    </div>
-                    <div class="content-ver-solucion">
-                        
-                        <!--<input type="button" key="VER_SOLUCION" class="lang titulo-app" value="Ver Solución" onclick="window.open('https://agritracer.pe/', '_blank')" />-->
+                    <div class="w3-card-4"  style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" onclick="goToModal('fibra-optica')">
+                        <img class="w-100" src="assets/images/soluciones/tendido-fibra-optica.png"/>
+                        <div class="w3-container w3-center pt-3 pb-3">
+                            <p>Tendido de Fibra Óptica</p>
+                        </div>
                     </div>
                 </div>                
                 <div class="solucion col-sm-4 col-md-4 col-lg-4 pt-5 pb-5">
-                    <div class="content-solucion-img">
-                        <img class="zoom-on" src="assets/images/soluciones/data-center.png" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" value="Ver Solución" onclick="goToModal('data-center')"/>
+                    <div class="w3-card-4" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" onclick="goToModal('data-center')">
+                        <img class="w-100" src="assets/images/soluciones/data-center.png"/>
+                        <div class="w3-container w3-center pt-3 pb-3">
+                            <p>Instalación de Data Center</p>
+                        </div>
                     </div>                    
                 </div>
                 <div class="solucion col-sm-4 col-md-4 col-lg-4 pt-5 pb-5">
-                    <div class="content-solucion-img">
-                        <img class="zoom-on" src="assets/images/soluciones/instalacion-camaras.png" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" value="Ver Solución" onclick="goToModal('instalacion-camara')"/>
+                    <div class="w3-card-4" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" onclick="goToModal('instalacion-camara')">
+                        <img class="w-100" src="assets/images/soluciones/instalacion-camaras.png"/>
+                        <div class="w3-container w3-center pt-3 pb-3">
+                            <p>Instalación de Cámaras</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -136,13 +144,19 @@
 
                 </div>  
                 <div class="solucion col-sm-4 col-md-4 col-lg-4 pt-5 pb-5">
-                    <div class="content-solucion-img">
-                        <img class="zoom-on" src="assets/images/soluciones/sistema-contra-incendios.png" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" value="Ver Solución" onclick="goToModal('sistema-contra-incendio')"/>
+                    <div class="w3-card-4" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" onclick="goToModal('sistema-contra-incendio')">
+                        <img class="w-100" src="assets/images/soluciones/sistema-contra-incendios.png"/>
+                        <div class="w3-container w3-center pt-3 pb-3">
+                            <p>Sistema Contra Incendio</p>
+                        </div>
                     </div>
                 </div>
                 <div class="solucion col-sm-4 col-md-4 col-lg-4 pt-5 pb-5">
-                    <div class="content-solucion-img">
-                        <img class="zoom-on" src="assets/images/soluciones/obra-civil-1.png" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" value="Ver Solución" onclick="goToModal('obra-civil')"/>
+                    <div class="w3-card-4" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" onclick="goToModal('obra-civil')">
+                        <img class="w-100" src="assets/images/soluciones/obra-civil-1.png"/>
+                        <div class="w3-container w3-center pt-3 pb-3">
+                            <p>Obra Civil</p>
+                        </div>
                     </div>
                 </div>
                 <div class="solucion col-sm-4 col-md-4 col-lg-2 pt-5 pb-5">
