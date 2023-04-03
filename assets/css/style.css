@@ -603,11 +603,17 @@ header .header-nav .nav-item ul li a {
     margin-left: 15px;
     margin-bottom: 15px;
 }
+.subtitulo {
+    text-align: center;
+    color: #1327f7;font-size: 50px;
+}
+@media (max-width: 768px) {
+    .subtitulo {
+        font-size: 32px;
+    }
+}
 .meeting-room .solucion {
     
-}
-.meeting-room .solucion:hover {
-    background: #d8d8d8;    
 }
 .meeting-room .content-solucion-img {
     float: left;
@@ -835,19 +841,47 @@ header .header-nav .nav-item ul li a {
     transform: scale(1.5);
     transition: 1s;
 }
-.soluciones .solucion p{
+.soluciones .solucion h4>b{
     color: #fff;
 }
-
+.soluciones .solucion p {
+    color: #fff;
+}
+    
+@media (max-width: 768px) {
+    .soluciones .solucion h4>b{
+        font-size: 0.5em;
+    }
+    .soluciones .solucion h4{        
+        line-height: 0.6em !important;
+    }
+    .soluciones .solucion p {
+        font-size: 0.5em;
+        line-height: 1.2em;
+    }
+}
 
 .lideres {
     float: left;
     width: 100%;
 }
 .lideres .sec-title {
-    align-items: center;
+    width: 100%;
+    text-transform: none;
+    margin: 0px;
 }
 .lideres .sec-title h2 {
+    font-size: 60px;
+    text-transform: none;
+    color: #ffffff;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 .lideres .lider {
