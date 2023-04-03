@@ -7,7 +7,7 @@ var arrLang = {
         'MENU_SOLUCIONES': 'Solutions',
         'MENU_CLIENTES': 'Clients',
         'MENU_CONTACTANOS': 'Contact us',
-        'SLIDER_NUESTRAS_SOLUCIONES': 'Our Solutions',
+        'SLIDER_NUESTRAS_SOLUCIONES': 'Solutions',
         
         'SOLUTIONS_TITLE': 'SOLUTIONS AT YOUR FINGERTIPS',
         'SOLUTIONS_DESC': 'The integration of our expert personnel in the areas of services, maintenance, repairs, remodeling, networks, installations, telecommunications and consulting, allows us to analyze, together with our clients, the solutions to the problems of each company.',
@@ -46,7 +46,7 @@ var arrLang = {
         'MENU_SOLUCIONES': 'Soluciones',
         'MENU_CLIENTES': 'Clientes',
         'MENU_CONTACTANOS': 'Contactanos',
-        'SLIDER_NUESTRAS_SOLUCIONES': 'Nuestras Soluciones',
+        'SLIDER_NUESTRAS_SOLUCIONES': 'Soluciones',
         
         'SOLUTIONS_TITLE': 'SOLUCIONES AL ALCANCE DE TU MANO',
         'SOLUTIONS_DESC': 'La integración de nuestro personal experto en las áreas de servicios, mantenimiento, reparaciones, remodelaciones, redes, instalaciones, telecomunicaciones y consultoría, nos permite analizar, conjuntamente con nuestros clientes, las soluciones a los problemas de cada empresa.',
