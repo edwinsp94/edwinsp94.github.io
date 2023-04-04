@@ -297,7 +297,13 @@ header .header-nav {
     margin-right: 15px;
 }
 @media (max-width: 500px) {
-    .info-top {
+    .info-top .info-top-cel {
+        display: none;
+    }
+    .info-top .info-top-correo {
+        display: none;
+    }
+    .info-top p {
         display: none;
     }
 }
@@ -612,9 +618,7 @@ header .header-nav .nav-item ul li a {
         font-size: 32px;
     }
 }
-.meeting-room .solucion {
-    
-}
+
 .meeting-room .content-solucion-img {
     float: left;
     width: 100%;
@@ -683,75 +687,7 @@ header .header-nav .nav-item ul li a {
     color: #1327f7;
     font-weight: bold;
 }
-/* ===================================== Co-Working Space Style  ================================== */
-.co-workin-space {
-    float: left;
-    width: 100%;
-    overflow: hidden;
-    margin: 0px;
-}
-.co-workin-space .inlay {
-    height: 100%;
-}
-.co-workin-space .sec-title {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.co-workin-space .sec-title h2 {
-    padding: 20px 0px;
-    color: #91bf3d;
-    text-align: center;
-}
-.co-workin-space .sec-title img {
-    padding: 20px 0px;
-    color: #91bf3d;
-    text-align: center;
-    width: 500px;
-}
-.co-workin-space .div-content {
-    padding: 0px 20px;
-}
-.co-workin-space .div-image {
-    padding: 0px;
-    margin: 0px;
-}
-.co-workin-space .div-image img {
-    width: 100%;
-}
-.logo-sgs {
-    width: 130px;
-    display: block;
-    margin: 0px auto;
-}
-.logo-yawi-politica {
-    width: 170px;
-    display: block;
-    margin: 20px auto 0px;
-}
-.numeros {
-    display: block;
-    height: 230px;
-}
-.numeros-h {
-    display: none;
-}
-.co-workin-space .desc-politica {
-    padding-bottom: 20px;
-}
-.co-workin-space .p-politica {
-    padding-bottom: 15px;
-}
-@media screen and (max-width: 991px){
-    .numeros {
-        display: none;
-    }
-    .numeros-h {
-        display: block;
-        margin: 30px 0px;
-    }
-}
+/* ===================================== Clientes  ================================== */
 .clientes {
     float: left;
     width: 100%;
