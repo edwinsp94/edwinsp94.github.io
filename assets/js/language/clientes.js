@@ -21,7 +21,7 @@ var arrLang = {
         'CLIENTE_TITLE_4': 'Imaginati Tower',
         'CLIENTE_TITLE_5': 'G4S Security Company',
         'CLIENTE_TITLE_6': 'DHL Callao',
-        'CLIENTE_TITLE_7': 'Building Tirenze',
+        'CLIENTE_TITLE_7': 'Building Firenze',
         'CLIENTE_TITLE_8': 'Yasi Company',
 
         'CLIENTE_ITEM_1_P1': 'April 13, 2022',
@@ -74,7 +74,7 @@ var arrLang = {
         'CLIENTE_TITLE_4': 'Torre Imaginati Tower',
         'CLIENTE_TITLE_5': 'Empresa de Seguridad G4S',
         'CLIENTE_TITLE_6': 'DHL Callao',
-        'CLIENTE_TITLE_7': 'Edificio Tirenze',
+        'CLIENTE_TITLE_7': 'Edificio Firenze',
         'CLIENTE_TITLE_8': 'Empresa Yasi',
 
         'CLIENTE_ITEM_1_P1': '13 de Abril del 2022',
@@ -243,7 +243,7 @@ function goToModal(title) {
             $('#content-modal-p1').text('');
             $('#content-modal-p2').text('');
 
-            $('#modal-imagen').attr('src', '');
+            $('#modal-imagen').attr('src', 'assets/images/soluciones/firenze-1.png');
             $('#modal-imagen1').attr('src', '');
             $('#modal-imagen2').attr('src', '');
             $('#modal-imagen3').attr('src', '');

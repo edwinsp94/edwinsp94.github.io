@@ -104,7 +104,7 @@ function valida(f)
 		alertError(msg);	  
 	return ok;
   }
-  function alertError(msg) 
+  function alertError(msg)
   {
     Swal.fire({
       position: "center",
