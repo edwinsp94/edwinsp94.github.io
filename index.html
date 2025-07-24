@@ -1,612 +1,431 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <title>IV&RM</title>
-    <link rel="shortcut icon" href="assets/images/Logo-Yawi.ico"/>
-    <meta charset="utf-8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-es="Curriculum Vitae - Edwin Sanchez" data-en="Curriculum Vitae - Edwin Sanchez">Curriculum Vitae - Edwin Sanchez</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      padding-top: 72px;
+      transition: background 0.3s, color 0.3s;
+    }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="Copyright" content="IV&RM"/>
-    <meta name="description" content="Somos expertos en soluciones de integración de servicios con una gama de productos, capaces de 
-    resolver todas las necesidades de conectividad en el área de redes y telecomunicaciones, cámaras de
-    seguridad y sistema contra incendio.">
-    <meta name="keywords" content="IV&RM, Tecnología">
+    .dark-mode {
+      background-color: #121212;
+      color: #f4f4f4;
+    }
 
-    <!--Fuente-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    
+    .dark-mode .card {
+      background-color: #1e1e1e;
+      color: #f4f4f4;
+    }
 
-    <!-- loadingpage -->
-    <link rel="stylesheet" type="text/css" href="assets/css/loadingpage.css"/>
-    <!-- Cookies -->
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <!-- carousel -->
-    <link rel="stylesheet" type="text/css" href="assets/plugins/slider/css/owl.carousel.min.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/plugins/slider/css/owl.theme.default.css"/>
-    <script src="https://kit.fontawesome.com/10254330b3.js" crossorigin="anonymous"></script>
-    <!-- slider Principal -->
-    <link rel="stylesheet" type="text/css" href="assets/css/pogo-slider.min.css"/>
-    <!-- bootstrap -->
-    <link rel="stylesheet" type="text/css" href="assets/css/css/bootstrap.min.css"/>
-    <!-- stilos -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-    <!-- slider Principal Estilos-->
-    <link rel="stylesheet" type="text/css" href="assets/css/PogoSlider.css"/>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164205772-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-164205772-1');
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 10px;
+    }
 
-    <link href="assets/css/image-hover/imagehover.min.css" rel="stylesheet" media="all">
+    .skills-grid div {
+      padding: 10px;
+      background: #e0e0e0;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .dark-mode .skills-grid div {
+      background: #2a2a2a;
+    }
+
+    .dark-mode .card-custom div {
+      background: #2a2a2a;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .dark-mode .dropdown-menu {
+      background: #2a2a2a;
+    }
+
+    .dark-mode a {
+      color: #f4f4f4;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- ******* Carga Principal ******** -->
-    <div class="jm-loadingpage">
-        <img src="assets/images/cargando.gif" alt="Logo IV&RM">
-        <lottie-player src="https://assets9.lottiefiles.com/datafiles/w8kbBwzPRk7sTCe/data.json" style="background-color: #fff;" speed="1" loop autoplay>
-        </lottie-player>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary text-white p-3 fixed-top">
+    <div class="container-fluid">
+      <span class="navbar-brand text-white"><i class="fas fa-code"></i> Edwin Sanchez Pedro</span>
+      <div class="ms-auto d-flex align-items-center gap-2">
+        <div class="dropdown">
+          <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-globe"></i><span data-es="Idioma" data-en="Language" class="ms-1">Idioma</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" onclick="setLanguage('es')"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAaElEQVR4nO3XsQ3AIAxEUe/GTqzhIdiExtvQIcqLsgBKkeKK/6WjfqWJIKJ71ZqcF+9zMi1XABNgAjxfgM6LPbu0huX27AAFUAAHQAGUAUYAF8DhCSyDk6r41SXAtFwBzJ+AzgsiimsPgdPhD/7FeEYAAAAASUVORK5CYII=" alt="Spain Flag" style="width:24px; height:24px;"> Español</a></li>
+            <li><a class="dropdown-item" href="#" onclick="setLanguage('en')"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAgElEQVR4nO2UMQqAMAxFc7fsHsgrdOhpxCP867h1VDoUxKlJqoGaB59O7SM/UKJgepZ1OzUBsylUH0n7IUq9U3JWB3dxpedsYgt4TtwrHyqWTjys6iScOHYsAf/ecRJ+IBbQxJqYxWA21aauGp7ir4G7uMSOXwbu4uJVNRxCwfRc4at9UfLX2rYAAAAASUVORK5CYII=" alt="USA Flag" style="width:24px; height:24px;"> English</a></li>
+          </ul>
+        </div>
+        <button onclick="toggleDarkMode()" class="btn btn-outline-light btn-sm"><i class="fas fa-moon"></i></button>
+      </div>
     </div>
-    <!-- ******* Info Top ******* -->
-    <div class="info-top background-negro">
-        <div class="container">
-            <img class="info-top-cel" src="assets/images/cel.svg" alt="cel">
-            <p>(+51) 933 159 443</p>
-            <img class="info-top-correo" src="assets/images/send.svg" alt="send">
-            <p>ivilchez@ivrm.pe</p>
-            <a id="en" class="enlaces-menu js-translate" style="cursor:pointer;"><img class="flag-lang" src="assets/images/eng.svg" /></a>
-            <a id="es" class="enlaces-menu js-translate" style="cursor:pointer;"><img class="flag-lang" src="assets/images/esp.svg" /></a>
-        </div>
-    </div>
-     <!-- ******* Header ******* -->
-    <header id="menu-jk">
-        <div id="nav-head" class="header-nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2 col-md-3 col-sm-12 nav-img">
-                        <a href="index.html"><img class="lo logo-img" src="assets/images/logo-iv&rm.png" alt="Logo IV&RM"/></a>
-                        <a href="index.html"><img class="lob hid logo-img" src="assets/images/logo-iv&rm.png" alt="Logo IV&RM"/></a>
-                        <a data-toggle="collapse" data-target="#menu" href="#menu">
-                            <i class="fas d-block d-md-none small-menu fa-bars"></i>
-                        </a>
-                    </div>
-                    <div id="menu" class="col-lg-10 col-md-9 d-none d-md-block nav-item">
-                        <ul class="mb-0 p-0">
-                            <li><a key="MENU_INICIO" class="lang enlaces-menu nav-select active" href="index.html">Inicio</a></li>
-                            <li><a key="MENU_NOSOTROS" class="lang enlaces-menu" href="nosotros.html">Conócenos</a></li>
-                            <li><a key="MENU_SOLUCIONES" class="lang enlaces-menu" href="soluciones.html">Soluciones</a></li>
-                            <li><a key="MENU_CLIENTES" class="lang enlaces-menu" href="clientes.html">Clientes</a></li>
-                            <li><a key="MENU_CONTACTANOS" class="lang enlaces-menu" href="contacto.html">Contáctanos</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ************************* PogoSlider ************************* -->
-    <div class="pogoSlider" id="js-main-slider">
-        <div class="pogoSlider-slide" data-transition="horizontalSlide" data-duration="1000" style="background-image: url(assets/images/slider/slider-1.png);">
-            <div class="pogoSlider-slide-element">
-                <div class="container">
-                    <div class="container-text-slider">
-                        <img class="decoration" src="assets/images/slider/alto-impacto.svg" alt="Foco">
-                        <h3 key="SLIDER_1_TITULO_1" class="lang">Soluciones</h3>
-                        <h3 key="SLIDER_1_TITULO_2" class="lang">de alto impacto</h3>
-                        <p key="SLIDER_TEXTO" class="lang"></p>
-                        <ul class="banner-agileits d-none">
-                            <li>
-                                <a key="SLIDER_BOTON_CONTACTO" href="nosotros.html" class="lang link-w3l1">Conócenos</a>
-                            </li>
-                            <li>
-                                <a key="SLIDER_BOTON_VER" href="soluciones.html" class="lang link-w3l2">Ver Soluciones</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="container-img-slider">
-                        <img class="img-slider" src="assets/images/slider/slider-principal1.png" alt="Slider en blanco">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="pogoSlider-slide" data-transition="horizontalSlide" data-duration="1000" style="background-image:url(assets/images/slider/slider-2.png);">
-            <div class="pogoSlider-slide-element">
-                <div class="container">
-                    <div class="container-text-slider">
-                        <img class="decoration" src="assets/images/slider/integracion.svg" alt="Mano">
-                        </br>
-                        <h3 key="SLIDER_2_TITULO_1" class="lang">Expertos en</h3>
-                        <h3 key="SLIDER_2_TITULO_2" class="lang">soluciones de</h3>
-                        <h3 key="SLIDER_2_TITULO_3" class="lang">integración</h3>
-                        <p key="SLIDER_TEXTO" class="lang"></p>
-                        <ul class="banner-agileits d-none">
-                            <li>
-                                <a key="SLIDER_BOTON_CONTACTO" href="nosotros.html" class="lang link-w3l1">Conócenos</a>
-                            </li>
-                            <li>
-                                <a key="SLIDER_BOTON_VER" href="soluciones.html" class="lang link-w3l2">Ver Soluciones</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="container-img-slider">
-                        <img class="img-slider" src="assets/images/slider/slider-principal1.png" alt="Slider en blanco">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="pogoSlider-slide " data-transition="horizontalSlide" data-duration="1000" style="background-image:url(assets/images/slider/slider-3.png);">
-            <div class="pogoSlider-slide-element">
-                <div class="container">
-                    <div class="container-text-slider">
-                        <img class="decoration" src="assets/images/slider/pieza.svg" alt="Pieza">
-                        <h3 key="SLIDER_3_TITULO_1" class="lang">Servicios</h3>
-                        <h3 key="SLIDER_3_TITULO_2" class="lang">avanzados, ágiles</h3>
-                        <h3 key="SLIDER_3_TITULO_3" class="lang">y seguros</h3>
-                        <p key="SLIDER_TEXTO" class="lang"></p>
-                        <ul class="banner-agileits d-none">
-                            <li>
-                                <a key="SLIDER_BOTON_CONTACTO" href="nosotros.html" class="lang link-w3l1">Conócenos</a>
-                            </li>
-                            <li>
-                                <a key="SLIDER_BOTON_VER" href="soluciones.html" class="lang link-w3l2">Ver Soluciones</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="container-img-slider">
-                        <img class="img-slider" src="assets/images/slider/slider-principal1.png" alt="Slider en blanco">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ************************* Clientes ************************* -->
-    <section class="pricing ammenties-white">
-        <div class="container p-4 mt-sm-5 mb-sm-5">
-            <div class="row sec-title">
-                <h2 style="color: #1327f7;" key="ALIADOS_TITULO" class="lang">Nuestros <b>Aliados</b></h2>
-            </div>
-            <div class="row">
-                <div class="slideshow">
-                    <div class="slide">
-                        <img src="assets/images/customers/carso-logo.svg" alt="Logo Carso">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/images/customers/fiberlux.jpg" alt="Logo Fiberlux">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/images/customers/nubyx.png" alt="Logo Nubyx">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/images/customers/logo-on.webp" alt="Logo On">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/images/customers/logo-wow.svg" alt="Logo Wow">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/images/customers/logo-waoo.png" alt="Logo Waoo">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/images/customers/win.jpg" alt="Logo Win">
-                    </div>
-                </div>
-                <div class="slideshowX1">
-                    <div class="slide">
-                        <img src="assets/images/customers/carso-logo.svg" alt="Logo Carso">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/images/customers/fiberlux.jpg" alt="Logo Fiberlux">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/images/customers/nubyx.png" alt="Logo Nubyx">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/images/customers/logo-on.webp" alt="Logo On">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/images/customers/logo-wow.svg" alt="Logo Wow">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/images/customers/logo-waoo.png" alt="Logo Waoo">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/images/customers/win.jpg" alt="Logo Win">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="soluciones">
-        <div class="container p-5">
-            <div class="row sec-title pb-5">
-                <h2 style="color: #fff;" key="SOLUCIONES_TITULO" class="lang w-100">Nuestras <b>Soluciones</b></h2>
-            </div>
-            <div class="row">
-                <div class="solucion col-sm-12 col-md-6 col-lg-4 pt-3 pb-3">
-                    <figure class="imghvr-push-right"><img src="assets/images/soluciones/tendido-fibra-optica.png" alt="example-image">
-                        <figcaption>
-                            <h4><b class="lang" key="SOLUCION1_TITULO">Tendido de Fibra Óptica</b></h4>
-                            <p id="solp1" class="lang" key="SOLUCION1_DESC">
-                                En nuestra empresa desarrollamos, implementamos y realizamos el tendido de la fibra óptica, con los estándares internacionales, contamos con mas 100 instalaciones ...
-                            </p>
-                        </figcaption><a href="javascript:;"></a>
-                    </figure>
-                </div>
-                <div class="solucion col-sm-12 col-md-6 col-lg-4 pt-3 pb-3">
-                    <figure class="imghvr-push-down"><img src="assets/images/soluciones/instalacion-camaras.png" alt="example-image">
-                        <figcaption>
-                            <h4><b class="lang" key="SOLUCION2_TITULO">Instalación de cámaras</b></h4>
-                            <p class="lang" key="SOLUCION2_DESC">
-                                Ofrecemos tranquilidad para su empresa con la Instalación de Cámaras de Seguridad, ya que al tener todo bajo vigilancia se pueden prevenir robos o atender algún incidente dentro de la ...
-                            </p>
-                        </figcaption><a href="javascript:;"></a>
-                    </figure>
-                </div>
-                <div class="solucion col-sm-12 col-md-6 col-lg-4 pt-3 pb-3">
-                    <figure class="imghvr-push-left"><img src="assets/images/soluciones/data-center.png" alt="example-image">
-                        <figcaption>
-                            <h4><b class="lang" key="SOLUCION3_TITULO">Instalación de Data Center</b></h4>
-                            <p class="lang" key="SOLUCION3_DESC">
-                                En el rubro de Data Center, nuestra empresa instala servidores para almacenar tanto la información de las empresas directamente, como para ser empleados para la ...
-                            </p>
-                        </figcaption><a href="javascript:;"></a>
-                    </figure>
-                </div>                
-            </div>
-            <div class="row pt-5">
-                <div class="col-12" style="text-align: center;">
-                    <a class="lang titulo-app pl-5 pr-5" href="soluciones.html" key="VER_SOLUCIONES">
-                        Ver Soluciones
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact" class="Formulario-De-Contacto" style="background: #1327f7;">
-        <img src="assets/images/cohete.svg" alt="cohete">
-    </section>
-    <!--  ********* Location Starts Here ********* -->
-    <section id="contact" class="Formulario-De-Contacto" style="z-index: 999;">
-        <div class="row sec-title" style="position: relative;">
-            <!--<img src="assets/images/titles/verde2.png">-->
-            <h2 key="CONTACT_TITULO" class="lang">Contacto</h2>
-        </div>
-        <div class="container p-4 mt-md-4 mb-md-4">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-6">
-                    <h3><b key="LOCATION_TITULO_1" class="lang">Cotiza con Nosotros</b></h3>
-                    <form onsubmit="return valida(this)" action="https://formspree.io/f/xpzeyjge" method="POST">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-10">
-                                <input key="LOCATION_INPUT_NOMBRE" type="text" name="Nombre" id="full-name" placeholder="Escribe tu Nombre" class="lang input-form mb-3 w-100 p-2 input-group-sm input-formulario" onkeypress="return check(event)" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-lg-10">
-                                <input key="LOCATION_INPUT_CORREO" type="email" name="Correo" id="email-address" placeholder="Escribe tu E-mail" class="lang input-form mb-3 w-100 p-2 input-group-sm input-formulario" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-lg-10">
-                                <input key="LOCATION_INPUT_CELULAR" type="tel" name="Teléfono" id="number-phone" placeholder="Escribe tu Teléfono" class="lang input-form mb-3 w-100 p-2 input-group-sm input-formulario" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-lg-10">
-                                <textarea key="LOCATION_INPUT_MENSAJE" rows="5" name="Mensaje" id="message" placeholder="Escribe tu Mensaje" class="lang input-form mb-3 w-100 p-2 input-group-sm input-formulario"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-lg-10">
-                                <button key="LOCATION_BOTON" class="lang btn btn-success btn-group-sm" type="submit">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-6">
-                    <h3><b key="LOCATION_TITULO_2" class="lang">Solicita un Asesor</b></h3>
-                    <form onsubmit="return valida(this)" action="https://formspree.io/f/xpzeyjge" method="POST">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-10">
-                                <input key="LOCATION_INPUT_NOMBRE" type="text" name="Nombre" id="full-name" placeholder="Escribe tu Nombre" class="lang input-form mb-3 w-100 p-2 input-group-sm input-formulario" onkeypress="return check(event)" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-lg-10">
-                                <input key="LOCATION_INPUT_CORREO" type="email" name="Correo" id="email-address" placeholder="Escribe tu E-mail" class="lang input-form mb-3 w-100 p-2 input-group-sm input-formulario" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-lg-10">
-                                <input key="LOCATION_INPUT_CELULAR" type="tel" name="Teléfono" id="number-phone" placeholder="Escribe tu Teléfono" class="lang input-form mb-3 w-100 p-2 input-group-sm input-formulario" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-lg-10">
-                                <textarea key="LOCATION_INPUT_MENSAJE" rows="5" name="Mensaje" id="message" placeholder="Escribe tu Mensaje" class="lang input-form mb-3 w-100 p-2 input-group-sm input-formulario"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-lg-10">
-                                <button key="LOCATION_BOTON" class="lang btn btn-success btn-group-sm" type="submit">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                
-            </div>
-            <!--<div class="row">
-                <div class="col-md-12 col-lg-6 pt-4 pt-lg-0">
-                    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5586.2567781206235!2d-79.03206024981274!3d-8.093319320236223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d9ef5ad6bed%3A0x9713e90946196a63!2sYAPU%20Solutions%20SAC!5e0!3m2!1ses-419!2spe!4v1570650053479!5m2!1ses-419!2spe"
-                        height="380" frameborder="0" style="border:0;" allowfullscreen>
-                    </iframe>
-                </div>
-            </div>-->
-        </div>
-    </section>
-    <!-- ********* Datos de Contacto ********* -->
-    <section class="contact-us">
-        <div class="container p-4">
-            <div class="row">
-                <div class="col-sm-5">
-                    <div class="contat-det">
-                        <img src="assets/images/location.svg" alt="dirección de IV&RM">
-                        <p><b key="CONTACT_OFI_2_TITULO" class="lang">Dirección</b></p>
-                        <p>Av. Salvador Allende #686 - int 301,</p>
-                        <p>Villa María del Triunfo</p>
-                    </div>
-                </div>                
-                <div class="col-sm-3">
-                    <div class="contat-det">
-                        <img src="assets/images/phone.svg" alt="teléfono de IV&RM">
-                        <p><b key="CONTACT_TELEFONO_TITULO" class="lang">Teléfono</b></p>
-                        <p>(+51) 933 159 443</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="contat-det">
-                        <img src="assets/images/correo.svg" alt="correo electrónico de IV&RM">
-                        <p><b key="CONTACT_CORREO_TITULO" class="lang">Correo Electrónico</b></p>
-                        <p>ivilchez@ivrm.pe</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <div class="copy">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12" style="text-align: center;">
-                    <div class="row pt-3 pb-3">
-                        <div class="col-sm-12 col-md-4 col-lg-10">
-                            <a href="index.html"><img src="assets/images/logo-iv&rm-blanco.png" alt="Logo IV&RM"></a>
-                        </div>
-                        <div class="col-sm-12 col-md-8 col-lg-2">
-                            <a class="redes ml-2" target="_blank" href="https://www.facebook.com/iv.rmtecnologia">
-                                <i class="fa fa-facebook" style="padding-left: 12px;padding-right: 12px;" aria-hidden="true"></i>
-                            </a>
-                            <a class="redes ml-2" target="_blank" href="https://www.instagram.com/tecnologiaiv.rm/?fbclid=IwAR1dTMhSkNlOD4dZjvIVCnAv2cy7k-pH5BvlsWz0DgLdagahS014i6aDpjg">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                            <a class="redes" target="_blank" href="https://www.linkedin.com/company/iv-rm-contratstas-generales/about/">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="f-copy pt-1 pb-1">
-        <div class="container">
-            <p key="FOOTER_COPY" class="lang">© Diseñado por IV&RM | Copyright 2023</p>
-            <a key="Privacidad" class="lang float-right" class="d-block" href="privacidad.html">Política de privacidad</a>
-            <a key="Cookies" class="lang float-right mr-3" class="d-block" href="cookies.html">Política de cookies</a>
-        </div>        
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center p-4">
+    <h1 data-es="Desarrollador FullStack Senior" data-en="Senior FullStack Developer">Desarrollador FullStack Senior</h1>
+    <p data-es="Trujillo, Perú (GMT-5)" data-en="Trujillo, Peru (GMT-5)">Trujillo, Perú (GMT-5)</p>
+    <p>
+      <i class="fas fa-envelope"></i> <a href="mailto:edwin_pj_94@hotmail.com">edwin_pj_94@hotmail.com</a>&nbsp;|&nbsp;
+      <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/edwin-sanchez-pedro" target="_blank">LinkedIn</a>&nbsp;|&nbsp;
+      <i class="fab fa-github"></i> <a href="https://github.com/edwinsp94" target="_blank">GitHub</a>
+    </p>
+  </header>
+
+  <!-- Body -->
+  <div class="container my-4">
+    <!-- Sección: Perfil -->
+    <div class="card mb-4 shadow-sm border-0">
+      <div class="card-header bg-info text-white d-flex align-items-center">
+        <i class="fas fa-user me-2"></i>
+        <h5 class="mb-0" data-es="Perfil Profesional" data-en="Professional Profile">Perfil Profesional</h5>
+      </div>
+      <div class="card-body"
+        data-es="Ingeniero informático con más de 5 años de experiencia en implementación de tecnologías para el sector agrícola, desarrollo de aplicaciones móviles Android con Java y Kotlin, desarrollo web en Angular e implementación de microservicios y APIs en .NET, con gran capacidad de trabajo en equipo y liderazgo y amplios conocimientos en distintos lenguajes de programación con motivación constante por seguir creciendo profesionalmente."
+        data-en="A computer engineer with over five years of experience implementing technologies for the agricultural sector, developing Android mobile applications with Java and Kotlin, developing web applications in Angular, and implementing microservices and APIs in .NET, he is highly skilled at teamwork and leadership, and has extensive knowledge of various programming languages. He is constantly motivated to continue growing professionally.">
+        Ingeniero informático con más de 5 años de experiencia en implementación de tecnologías para el sector agrícola, desarrollo de aplicaciones móviles Android con Java y Kotlin, desarrollo web en Angular e implementación de microservicios y APIs en .NET, con gran capacidad de trabajo en equipo y liderazgo y amplios conocimientos en distintos lenguajes de programación con motivación constante por seguir creciendo profesionalmente.
+      </div>
     </div>
 
-    <div id="contenedor_cookies">
-        <div id="cajacookies">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-9">
-                        <p>IV&RM  le informa de que el sitio web <a href="https://www.nombre.pe/">https://www.nombre.pe/</a> utiliza cookies técnicas que garantizan el correcto funcionamiento de la misma, 
-                            tales como poder gestionar adecuadamente las sesiones, así como cookies analíticas que, de aceptarlas, analizarán sus hábitos de navegación, 
-                            así como el uso del sitio web en general para recopilar estadísticas que permitirán la mejora del sitio. 
-                            de IV&RM.
-                        </p>
-                        <p>
-                            Al hacer clic en “Acepto las cookies de IV&RM", usted acepta todas las cookies del sitio web y será redirigido al sitio web de forma instantánea. 
-                            Si por el contrario, hace clic en <a type="button" data-toggle="modal" data-target="#exampleModal" style="color: #007bff; cursor: pointer;">“Ver configuración de las cookies”</a>, podrá configurar y aceptar o rechazar el tipo de cookies que se instalarán 
-                            en su navegador, sin perjuicio de que existen cookies de obligatoria aceptación, debido a que son necesarias para el correcto funcionamiento del 
-                            Sitio Web. Puede encontrar más información sobre cookies en nuestra<a href="cookies.html"> "Política de cookies"</a>.
-                        </p>
-                    </div>
-                    <div class="col-sm-3 pt-4 pt-md-0">
-                        <button onclick="aceptarCookies()" class="pull-right w-100">Acepto las cookies de IV&RM</button>
-                    </div>
-                </div>
+    <!-- Sección: Experiencia -->
+    <div class="card mb-4 shadow-sm border-0">
+      <div class="card-header bg-success text-white d-flex align-items-center">
+        <i class="fas fa-briefcase me-2"></i>
+        <h5 class="mb-0" data-es="Experiencia Laboral" data-en="Work Experience">Experiencia Laboral</h5>
+      </div>
+      <div class="card-body">
+        <div class="row g-4">
+          <div class="col-md-12">
+            <div class="card border-0 shadow-sm h-100 card-custom">
+              <div class="card-body">
+                <h6 class="card-title text-primary">
+                  <i class="fas fa-briefcase me-2"></i>&nbsp;
+                  <span data-es="YAWI S.A.C. (2024–2025)" data-en="YAWI S.A.C. (2024–2025)">YAWI S.A.C. (2024–2025)</span>
+                </h6>
+                <p class="card-text">
+                  <strong data-es="Coordinador de Proyectos" data-en="Project Coordinator">Coordinador de Proyectos</strong><br>
+                  <span data-es="Coordinación con los clientes, planificación, estimación e implementación, despliegue y presentación de proyectos, así como la distribución de tareas, revisión de performance de código, feedback y capacitación a mi equipo y la solución de problemas que surjan post publicación."
+                    data-en="Coordination with clients, planning, estimating and implementing, deploying and presenting projects, as well as distributing tasks, reviewing code performance, providing feedback and training to my team, and troubleshooting any issues that arise post-publication.">
+                    Coordinación con los clientes, planificación, estimación e implementación, despliegue y presentación de proyectos, así como la distribución de tareas, revisión de performance de código, feedback y capacitación a mi equipo y la solución de problemas que surjan post publicación.
+                  </span>
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card border-0 shadow-sm h-100 card-custom">
+              <div class="card-body">
+                <h6 class="card-title text-primary">
+                  <i class="fas fa-briefcase me-2"></i>&nbsp;
+                  <span data-es="YAWI S.A.C. (2022–2023)" data-en="YAWI S.A.C. (2022–2023)">YAWI S.A.C. (2022–2023)</span>
+                </h6>
+                <p class="card-text">
+                  <strong data-es="Desarrollador Senior" data-en="Senior Developer">Desarrollador Senior</strong><br>
+                  <span data-es="Migré la arquitectura de los proyectos que tiene la empresa a las nuevas versiones de cada tecnología para los servicios .NET 6, para la web Angular 14 y para las aplicaciones móviles a Android 13 y además de integración de servicios Cloud Google (Firebase, BigQuery, Cloud Functions), Azure (Azure Directory), AWS (Cognito, Identity Pool, lambdas, S3)."
+                    data-en="I migrated the architecture of the company's projects to the new versions of each technology for .NET 6 services, for the web Angular 14 and for mobile applications to Android 13 and in addition to integration of Google Cloud services (Firebase, BigQuery, Cloud Functions), Azure (Azure Directory), AWS (Cognito, Identity Pool, lambdas, S3).">
+                    Migré la arquitectura de los proyectos que tiene la empresa a las nuevas versiones de cada tecnología para los servicios .NET 6, para la web Angular 14 y para las aplicaciones móviles a Android 13 y además de integración de servicios Cloud Google (Firebase, BigQuery, Cloud Functions), Azure (Azure Directory), AWS (Cognito, Identity Pool, lambdas, S3).
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card border-0 shadow-sm h-100 card-custom">
+              <div class="card-body">
+                <h6 class="card-title text-primary">
+                  <i class="fas fa-briefcase me-2"></i>&nbsp;
+                  <span data-es="YAWI S.A.C. (2019–2021)" data-en="YAWI S.A.C. (2019–2021)">YAWI S.A.C. (2019–2021)</span>
+                </h6>
+                <p class="card-text">
+                  <strong data-es="Analista Programador" data-en="Programmer Analyst">Analista Programador</strong><br>
+                  <span data-es="Implementé aplicaciones sobre transporte de personal (recojo y traslado de pasajeros, distribución de paraderos, geolocalización y gráficos en Google Maps), aplicación de capacitaciones (registro de temas y resolución de pruebas y emisión de certificados), aplicación para recursos humanos (comunicados, encuestas, boletas de pago, CTS, LBS y gratificaciones), usando .NET Core 2.1, Angular 8, SQL Server y Android 10."
+                    data-en="Implemented applications for personnel transportation (passenger pickup and drop-off, bus stop distribution, geolocation, and Google Maps graphics), training applications (subject registration, test completion, and certificate issuance), and human resources applications (announcements, surveys, payslips, CTS, LBS, and bonuses) using .NET Core 2.1, Angular 8, SQL Server, and Android 10.">
+                    Implementé aplicaciones sobre transporte de personal (recojo y traslado de pasajeros, distribución de paraderos, geolocalización y gráficos en Google Maps), aplicación de capacitaciones (registro de temas y resolución de pruebas y emisión de certificados), aplicación para recursos humanos (comunicados, encuestas, boletas de pago, CTS, LBS y gratificaciones), usando .NET Core 2.1, Angular 8, SQL Server y Android 10.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card border-0 shadow-sm h-100 card-custom">
+              <div class="card-body">
+                <h6 class="card-title text-primary">
+                  <i class="fas fa-briefcase me-2"></i>&nbsp;
+                  <span data-es="A&S CONSULTORES S.A.C. (2019)" data-en="A&S CONSULTORES S.A.C. (2019)">A&S CONSULTORES S.A.C. (2019)</span>
+                </h6>
+                <p class="card-text">
+                  <strong data-es="Analista Desarrollador de Software" data-en="Software Developer Analyst">Analista Desarrollador de Software</strong><br>
+                  <span data-es="Implementé servicios de transacciones de un sistema bancario para Caja Trujillo en Visual Basic 6.0 y Oracle Database, además desarrollé el módulo de almacén del sistema de gestión comercial Saga Falabella en ASP.NET MVC y SQL Server."
+                    data-en="I implemented transaction services for a banking system for Caja Trujillo in Visual Basic 6.0 and Oracle Database, and I also developed the warehouse module for the Saga Falabella commercial management system in ASP.NET MVC and SQL Server.">
+                    Implementé servicios de transacciones de un sistema bancario para Caja Trujillo en Visual Basic 6.0 y Oracle Database, además desarrollé el módulo de almacén del sistema de gestión comercial Saga Falabella en ASP.NET MVC y SQL Server.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <!--  ******* Modal Cookies ******* -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document" style="max-width: 600px !important;">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="title-modal">Configuración de las cookies</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="border: 0px;background: #fff;font-size: 36px;">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body row">
-                    <div class="col-sm-12" style="display: flex; align-items: center;">
-                        <div>
-                            <div style="color: #007bff; font-size: 14px; display: contents;">
-                                <i class="fa fa fa-check-square" aria-hidden="true"></i>
-                            </div>
-                            <label id="content-modal-p1" key="content-modal-p1" class="lang mb-2" style="text-align: left;margin-bottom: 10px;">
-                                <b>* Cookies técnicas obligatorias:</b> Estas cookies son necesarias para garantizar el funcionamiento de la web, garantizando, 
-                                entre otras funcionalidades, al acceso a áreas seguras o recuerde la información sobre el control de las cookies que ha aceptado.
-                            </label>
-                            </br></br>
-                            <input type="checkbox">
-                                <label id="content-modal-p2" key="content-modal-p2" class="lang" style="text-align: left;margin-bottom: 30px;">
-                                <b>Cookies analíticas:</b> Estas cookies permiten, entre otras funcionalidades, analizar sus hábitos de navegación y analizarlos para poder 
-                                optimizar el sitio web así como para proporcionarle mejores contenidos y gestionar adecuadamente las sesiones con el fin de recordarle 
-                                al iniciar sesión.
-                            </label>
-                            </br></br>
-                            <button onclick="aceptarCookies()" class="folleto btn pull-right w-100">Acepto las cookies de IV&RM</button>                            
-                        </div>
-                    </div>
-                </div>
+    <!-- Sección: Educación -->
+    <div class="card mb-4 shadow-sm border-0">
+      <div class="card-header bg-secondary text-white d-flex align-items-center">
+        <i class="fas fa-graduation-cap me-2"></i>
+        <h5 class="mb-0" data-es="Educación" data-en="Education">Educación</h5>
+      </div>
+      <div class="card-body">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100 card-custom">
+              <div class="card-body">
+                <h6 class="card-title text-primary">
+                  <i class="fas fa-graduation-cap me-2"></i>&nbsp;
+                  <span data-es="Universidad Nacional de Trujillo (2018–2020)"
+                    data-en="National University of Trujillo (2018–2020)">
+                    Universidad Nacional de Trujillo (2018–2020)
+                  </span>
+                </h6>
+                <p class="card-text">
+                  <strong data-es="Título Ingeniero Informático – Tercer Puesto del Décimo Superior."
+                    data-en="Degree in Computer Engineering – Third Place in the Tenth Grade.">
+                    Título Ingeniero Informático – Tercer Puesto del Décimo Superior.
+                  </strong><br>
+                  <span data-es="Proyecto: Sistema de seguridad para control de acceso mediante reconocimiento de voz con coeficientes cepstrum MFCC y DTW."
+                    data-en="Project: Security system for access control using voice recognition with cepstrum coefficients MFCC and DTW.">
+                    Proyecto: Sistema de seguridad para control de acceso mediante reconocimiento de voz con coeficientes cepstrum MFCC y DTW.
+                  </span>
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100 card-custom">
+              <div class="card-body">
+                <h6 class="card-title text-primary">
+                  <i class="fas fa-graduation-cap me-2"></i>&nbsp;
+                  <span data-es="Universidad Nacional de Trujillo (2013–2017)"
+                    data-en="National University of Trujillo (2013–2017)">
+                    Universidad Nacional de Trujillo (2013–2017)
+                  </span>
+                </h6>
+                <p class="card-text">
+                  <strong data-es="Bachiller en Ciencias de la Computación – Tercer Puesto del Décimo Superior."
+                    data-en="Bachelor of Computer Science – Third Place in the Tenth Grade.">
+                    Bachiller en Ciencias de la Computación – Tercer Puesto del Décimo Superior.
+                  </strong><br>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-    <!-- *********** Flotador *********** -->
-    <!--
-    <button class="botonF1">
-        <img src="assets/images/headphones.svg" alt="mesa de ayuda">
-    </button>
-    <div class="contenedorMesa" data-aos="zoom-in">
-        <button class="btnMesa botonF2">
-            <span><a target="_blank" key="LIBRARY_APP" href="http://www.yapu.pe/biblioteca-apps/" class="lang">Biblioteca de Aplicaciones</a></span>
-        </button>
-        <button class="btnMesa botonF3">
-            <span><a target="_blank" key="HELP_DESK" href="https://soporte.yapu.pe" class="lang">Mesa de Ayuda</a></span>
-        </button>
-        <button class="btn botonF4">
-            <span>+</span>
-        </button>
-        <button class="btn botonF5">
-            <span>+</span>
-      < /button>
-    </div>-->
-    <!-- *********** Whatsapp *********** -->
-    <a href="https://wa.me/51933159443?text=Deseo%20conocer%20más%20sobre%20sus%20servicios" target="_blank" class="whatsapbuttom" style="text-decoration: none;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
-        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" fill="currentColor"></path>
-      </svg>
-    </a>
 
+    <!-- Sección: Premios -->
+    <div class="card mb-4 shadow-sm border-0">
+      <div class="card-header bg-warning text-dark d-flex align-items-center">
+        <i class="fas fa-award me-2"></i>
+        <h5 class="mb-0" data-es="Premios" data-en="Awards">Premios</h5>
+      </div>
+      <div class="card-body">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100 card-custom">
+              <div class="card-body">
+                <h6 class="card-title text-primary">
+                  <i class="fas fa-award me-2"></i>&nbsp;
+                  <span data-es="Innóvate Perú – Reto Innova COVID-19 (2020)"
+                    data-en="Innóvate Perú – Innova COVID-19 Challenge (2020)">
+                    Innóvate Perú – Reto Innova COVID-19 (2020)
+                  </span>
+                </h6>
+                <p class="card-text">
+                  <strong data-es="Ganador" data-en="Winner">Ganador</strong><br>
+                  <span data-es="WCARE validación técnica y comercial de una plataforma inteligente integrada con una cabina para la prevención del COVID-19."
+                    data-en="WCARE technical and commercial validation of an intelligent platform integrated with a booth for the prevention of COVID-19.">
+                    WCARE validación técnica y comercial de una plataforma inteligente integrada con una cabina para la prevención del COVID-19.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100 card-custom">
+              <div class="card-body">
+                <h6 class="card-title text-primary">
+                  <i class="fas fa-award me-2"></i>&nbsp;
+                  <span data-es="Universidad Nacional de Trujillo – Concurso Universitario de Proyectos Informáticos Tegnológicos (2017)"
+                    data-en="National University of Trujillo – University Competition for Computer Technology Projects (2017)">
+                    Universidad Nacional de Trujillo – Concurso Universitario de Proyectos Informáticos Tegnológicos (2017)
+                  </span>
+                </h6>
+                <p class="card-text">
+                  <strong data-es="Segundo Puesto" data-en="Second Place">Segundo Puesto</strong><br>
+                  <span data-es="Simulación de rutas óptimas para el congestionamiento del tráfico en Trujillo."
+                    data-en="Simulation of optimal routes for traffic congestion in Trujillo.">
+                    Simulación de rutas óptimas para el congestionamiento del tráfico en Trujillo.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-     
-    <!--<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>-->
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
-    
-    <!-- Loading principal -->
-    <script type="text/javascript" src="assets/js/lottie-player.js"></script>
+    <!-- Sección: Habilidades Técnicas -->
+    <div class="card mb-4 shadow-sm border-0">
+      <div class="card-header bg-dark text-white d-flex align-items-center">
+        <i class="fas fa-tools me-2"></i>
+        <h5 class="mb-0" data-es="Habilidades Técnicas" data-en="Technical Skills">Habilidades Técnicas</h5>
+      </div>
+      <div class="card-body skills-grid">
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACHElEQVR4nO2WT0hUURTGz3HUGUSEUNL8FxYmQgWF4UJRRDAQlRYuoqyViButdiUi7WoT0sZoIVorCcHMSKQ0cSEKKZX2oGhhhbQRDZRAxL6483jebjNKEr65A+eDj4Fz7rw5v3nnnXeIRCKRyErBIdhkEgBHACAA+1GsC4YAOLEvGgLg2GMSAEcAIAD7UawLhgA4//uDvOMn3WZuYZhwsZaRlcFIDDCyDzOa6hmLz+IAYLyPEArqHP3hlBCH89YCbC8SCnJ1PJjMKD7mfnqx0tOMXx8sBXg7pOMJCYz3T934l3HC8TzGtSuM9TcW34HJRzqu2mjznT7/cz4OHuKvE2b8QjVj6dW/Xs8CAOXz5eaDGwoymhsZn0bjBGB5knCmOHICBQIuyMac5QDKqsiOFkZqSiTIqROM1RnLATyvTBPu3CBkppsQbZc5tgBq3u8F8Pec/zFL4fnvnc/L8hFATZGGKsbzBzr2ecwEGOnRucd3CSUnI+d99039neQknwAG7lH49e9Nk+tXGT1dhLKzZkuo3UedV/uPF6sqZXybcONrs4TKczqn3ta+AHx8oQF2c+FRvRrc7zDvDDMjJ9NcJZRvtfjYQq/7CWmp0YtXrfCy1+z9zta9gStKoo/SAwNQ/j5FaG9i5B9x57lakxtrGHOD0c/PDBAu1TGKCtx//1CaW/jD24Sthd2m2gEC+GESAEcA4CuASCQSkR/6DRH0JVWM43R/AAAAAElFTkSuQmCC" alt="JavaScript" style="width:48px;">
+          <br>JavaScript
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACHUlEQVR4nO2Xy2sTURTG59+YilbUTZciWNBNKVUUFyKIiLTFXcF1mbTaRTdqG5DGIorYpg+ouJCuW/FRkRKlL0jSZjJpHk2DTjENOmkaa5P7lRna2GviI0KSGzwffIuZe+bM+TH3cUaSSCQSSUjJihsiWSIAhQBAAMWo0gXLBKBUvmiZABRxLBGAQgAggGJU6YJlAlB+n3A2kkKxsk/quedrb3pgG4/hxZKBaGILXzYzlnVjG3MrKYy+X8cpu19MgOO3fVD19B/jm51hMQGm/Mm8se0sQyKV4e5dfhwsHcC5/gCuPAnlfHUgxL186WOaGzdd36Pi5F2Vi8syoP15DIc6PVbeI7e8aB2K4I3fwIUHy+VbxAc7PFxhrtBGwbhrg2Eu7rVq/DLnAZtbPIAWJw/g+5S2FnTZd6F/BThxxwfG+Pk/G0nh7P1AdQCYfjaTyFvEjAETi1/R2KeJD1DXvYiF1c08CFOZLMOwK47DP00roQBMH+vyYsS1bu1ChfQhvJHbmYQE2PMZRwCvVKMgRM+ELj6AvOtLj4JYTXzncpjXVQMgK26ctvu5HOb0qrEJBtBwT8ONp9FcYfI+myf1fpnNnXBf4OLDoDWurX1D76RuHWxNDs1q3OajfH/1VkuKC/A3uj4cqU4AxoC+l2vcc8IAHO3yom1sBc7pON4tJxGOb1lt9Ofkjx+Z8/35bUXJAUpt6b8DIJFIJKkc2gEW3WdIAKRLQgAAAABJRU5ErkJggg==" alt="TypeScript" style="width:48px;">
+          <br>TypeScript
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,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" alt="C#" style="width:48px;">
+          <br>C#
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFEUlEQVR4nO2ZXUxbZRjHn46oUQE/ksULvWBBr7xw48K4TJ1LjNmFF462zs0BMc6puC8+CgiFUhhkyeaFZm5hOYdtgA6aCWgYLkP6AaUU+R6Er8BAhgutbPJVoKX0Me+BUCk9H6Wn0Av+yZOcnNP3nN//Pc/zvG9zALa1rSDU6caXQFFngJz2JVB3OEGhr4VT1Tsh6CXHEEjSXQJ1uxPyu3FNqNuckKQvBpXmSQhKJepOQVaLbR24Z2S1zEOSPhWCRgk1ByHD/JAX3DMyzI8g8c5HWweedudVSDG2QJ6P4GuiCyGtYQDO1r6+eeCq6nBINf4CuR2ujYN7RG6nCxSGGjhT8XzgwBEloKjLgexWh2jg+Z6F3r4IKYYCUOEOceFPa+NA+ecUH0BU4SDmGK2o+2sWeycWcNaxxAQ5JufU9VbmN7xGMptnIaEm3n/wxPq3Id00xPUwSX43ystHsf+RHYWqb2IBZeWjzFhOI8qmcUg2fOA7uMr0IqQazZDXxfmAyCsDaP57DjeqxrE53HV5gNsEYUgxmkFhDBNuIN08wvea9xXdR4ttEf3VxJwTD/w0zG3iWyPCyeo+4Qby7nHe8L2SYbQ7XSiW7E4Xvlt8f/2zVM0IZ+8iKPQISVoUboADPuLHfrSKMPPe3kTklZV0yu1ESPgDIVm3DM+Ezn8DpOj8yXk+NTywoYTAEvhVcBENkG7DJ1IXGXoL7qYH8dkLPUzsoQdRabBwvrmm0Wnce6nNC7hIBsjsk/bHJU3vFIZd7GFNv/DvevBW39SaMQ8mFzDmZi9KUtjARTJAFiA+eN6+vjIRxITNsYSqu8P4dHodD7hIBsgKy5U2XDPv2dcJ9Cu5JoHgIhkgWwE2kZwXBJ/W4G6LCv3qeG/A66/5aYBrq/AGxbO/yWpGOOMG3xIDM/YlVgOhbOlzzls/d8N5ivuanwamOQysz/8uhGQ9wtEShOPlCMlaEQzoA5dCpOe79y0mhNibCDLaHR9fR/jyV9Y3AYJSyE8D2hH2Is40WBBULQhfVK4F94wjRQjxVVtjQF3P3katM3YMjyvhhv9fhH6uwTd/aPWxjeoDu5DdahxGiZwffoe8ECuaRtDlQtR0WjHyfNPmGBCylSAmwmOKWOGfiy3G8qaRNWMcThcWmB/izuyGwBogISsb4jTApNPUPGaWtmJUSiWGHivCsJgi5jirtBX/mZ5nHfd4bhFTbw9hSEAM5HYgnPwdJYevYWO/BQMlY+84Sj65gfDVb8t9328D5P9oohbhyI3VNIj4uoyZZbE1Mb2Akd9o3Cn3aQkzaRszcO7e8r7l2M9ec3l/1m20L7IvbL7KvriE72RWea+d2NLl/RNZQwTrM00FXzfZp6xCy+S8KDN/ILuau3vJCxHiNFrhBk4UPAFSSg0y2sZ1413xGjT5URPG3nEmJXkmy8awHPz+KfBZ8usvg5QqACnlZHsA6f3Si7XYOzYpGLxn7F+MvlDLA065QEZr4PC1CPBbhwqjQEbr+NJqj6ISszVtWNv1kDE0M+9gghyTc6qyNtydXCFktW4EObUXRFc0/T7I6G6hWwbfgxoAGSWHgIrUh5w+AVLKKhq4lH4MUip1Y3m+UR29/ALI6PMgoxf8AHcwNSant/ADYHTha0yxLRedL+lSA9Krm/hlhk+Hrr4FUtokALwV5PR+CE6hhClCKTW8Pl2oMaZ25JoQCHp9WPAMyCglyKihlVAy57a1LQg6/QeJ2JhT+6JnrAAAAABJRU5ErkJggg==" alt="C++" style="width:48px;">
+          <br>C++
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,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" alt="Java" style="width:48px;">
+          <br>Java
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtUlEQVR4nO2XW0hTcRzH10NURhFEQRBERFJ2Q7vSY9lDBBU6W1lWqK0sNXfRTc/OmdPptozKzKKXHoJ6KijoIWhRdDsQ9eK2M93cdFtE4ZyXTKakv/ivztzlnF1o21lwvvB5/3zOn/PwEwj48ePHLysnxJxQwkAR5oAauQuaaz1xua+4O/qzfSX4DYv+Df3CV0kHFLTZoVjFHFGMOeBinIi7igcjXnwXICbaVmVWHm2T3gb57TYoYokQqpxQVc8c0al8PErLByNaV2dOng5AbGu3s0aUYA441zAYJt+heD4+hO8Ok6f5oV2TGfnQgECEzgZHVQ7ml8CcUK4YCMhr699MDBF7GOVpxlrWgt+Qk175yADEVp0NjuBsLzEAyqYX49/jyM9FrAO/Pid98kwBiC06OxzGo1+iFP/s/0rsnklEPhihyWUKSI08WwBis84Gh4i5CBHeM2WVimddkjLwqfMTDkCMajaAX5/iL09vxTUrsEbobXCQcEAxTk1T0sqZwboKQLgkZ8BHJBcxot4Ik7ocoyDl67bA8uu9kMcSsV3XM22SiX/R8jTuurMwnMRLjDbnpvbLhwYglt2wQp4h4gUM1MzH+vNR8kEk5TCMF3AoHxKAWNI5F5Gnt86+U1yaYpUPRlSAl9jBkXxEAGLxTSog/7Kx1h9XPgQvvpPp502zPEPAvG4zPJR3TPbXVINLcjrhAMSQag94iUx9eXqh8rcscEd5Y8JUcR0Q/dVScEnLkovA9sJYxuQFAsGCLjrADFewrnFansZ2sQHc0pMJB3xTFmZOHm1JJwWLbppmW4lbY5HyNH1VTeCWncg+ebSlnRb4JK35yiZPYz2vBo9MlF3yaB9kde548nMRLeCRHYuSfyS9N6CudesFXKzvkiIh+WCEWAtf5CVBeQlm9NE3AicRpMgIvVVNSUVQYh145MIwec4iSJERAhEXCDBVXks44nLT2yh5TiLIvwEI6wU1mCriR5Sq3/pOK8NPzKiIGk9zxgNIkREosRbMlVdjyL/2BW4ElRPKlH9OTE5fgowIQFjEV8Bc2cEuT5MNESRDAAIJm88Z2OVDIk41chhBsgQgespvg0XcDgfaXvkKNf0shz7HEWSMAMT+tjfDgQNHZ4f92RhBxpLXvveFnZjZGEEmKp9MRCZ/bJJB/rjmmWt9xH0cjh32ZUsEGSF/UvN0AN0H87soWG/oY4/IlpcgGeRp/osIkkU+pRGNaYyIJZ+qCCGWxohTmieDseT/iwh+/PjxE6R7vwHpwkGS7i/bmgAAAABJRU5ErkJggg==" alt="Kotlin" style="width:48px;">
+          <br>Kotlin
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFc0lEQVR4nO2Yz3MaZRjHOXV69e7BkzrqzYP9b3q2QEhKgM6UhLbaCQ2LxCSAWZZ3a0dME9M2RmpLMuNRPajtNGUskqkJNhCS6sSzbR/n2R/wsrvsvrtAnHHeZ+a9wPLyfj/Pj/d51ufjxo0bN27cuHHjxo0bN27cXFkisXpq5sPSaywrcVY+zbzvWfk0876J1VO+/8KEgPy2ECDP0gEZ2Bb5K3Wu+IHTvvgMPsu6L54Bz+I7cfF+0lQOEZQhGyG2ayHcOfCxHQRVvHyMz84HCSw6rA4EP2meGATB//mb6YC8r//5wnkZ4Khgu161C/CtqB5Y8JO/00H5jGnfsevv656/NV6EowtL8KfDmqcjwS8ffHLu+rsn5vnMTIkZAK6X7QKUPytaRgLt+dvjRXjOIJ4GkEysjz4SBMrzc8kS5Kr3XQEwRoIiOCif8eJ5I4D4vX1IXimPLhIE2vOpZcjvbEKuXnENoBMJeQqCB8+bAGy2IL7VpiAMMRIEC/H53S3PAHQIt+c66eBJvBHAxe+Ohg9BMIZ9XRU/KICDRxJkJ9UocBv2dgDMEAZIB8FG/CAA3IqvR0XYmpCgFWMDMBQIgoN4rwC8eL48ISnP3wgRE4R+AAaCIPTJeROAqgrg03EC/7ScxTcfSLAYdp/zjagI4pgKbX2i2Pkc4c0F1f2m7u+bAHiuCYKf/O4kPl+rQOaq2gco3szYQ3Ar/llMhCYNISbCcqgIP4QLHfG4j/7/KBLF9oVwaUN91k+eOgJIa5syifeTHQwvOwhuxaM4bHNzQQJPo6Ll95T443SAtOwgTG/sQiqy3IHFDmDXIuxR/MeqeIyUTEh+IxOS3tJTZk2BIA1c7Vc0gQihQeU9wlunxWMjRdWra5e+7qkH03cbMBu92TM8eQdQ6/V8Mii+rv8mFSy+Y4wErzmP6zC2pIQ8/rYaUaMA4SFEq1aarlvJK98okTBV3oOUJj6T/HJAALX+4q0g3JwlrsTvREW4ESrCw0k1x3XBu1Fn8VYQrl3e6IqfwVusMgCAmrN4KwhuPP/LZEE9bECGBxQEVvFWEJT9rpYg/5tay7wBqPVWe6erxOtUh2vzfDfvafFrVLVHuAi53/+jc9BJunisWboj3QOodcWnYiudq6QfBLfiscP72eDt78MS/KR9RotfCJNXmFZ2EIzi8fx0GrsGkKHEx+82bJsKL57Hzg6fR89bXXVfaeIXwwRaDyWlsGKBtYLgJN4TgHRAVq6Q6XLDtr30Os9jwcOcx9/9GJZsxevX6ouDAtyZ10dp0k6NSe+heCEg1xXxH5Ug98Qs3hOAlOZ5u/ZSa0KYPY/Xm7H4Yc7rqXB4YQlWNfHZSRnaj7ri9WWMBCfP67WMGYAQII+Vq2TqDsQrTccem1U8NjQ4vKyEiiYQJvERAu1ts3grCCziu7eYvO0IIEnl06wNBBxA8BkcSFhyvhkTFW8rfYIBmFH8oY14GgIOYsrNUWURb3+F9xidV7PxWxCvmKctbDnxe/Qq61WHvX1Wm+D0Frc37InSPrOO1ziKKwDqFaa23efGkg4QWAD8GhVhfVxSpjn9sz+iIjyJmHM+F5XhqMou3g7AwOJZILAAqGjNDc7zNASj+HyMuBbfD8DQxDvVBBYA+AZHv+9XQ8Ue8frEp3wnsL1UcQTgNee9QGCtAQhhY6Lb4dHi8Rpzep/ADGBU4vulA46bbougEvbamKs3MnbvE1gBZLfvDTfsmSLh4porAHj34/Vn1cpavU9wAyBz+YvRed4uElgBqAWvt4U17uslEnQAI/e8EwT2ZS3eCoKbdaLieyGobTPjIffsZvnedCB7zPsGyOORhz03bty4cePGjRs3bty4cePm+1/Zv9xN/KKPtHJTAAAAAElFTkSuQmCC" alt="Visual Basic" style="width:48px;">
+          <br>Visual Basic
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAHRUExURVEr1FAp1FAq1FEq1FYx1WVE2VIs1GE/2GVD2VUw1WZF2Vk11l4712ZE2Vg01k8o03dZ3eTe+Ovn+qCL6Fgz1se78eLc+G9P200m03ha3uXf+O3p+u3p+4xz47Oj7O/s++zo+urm+uvm+ohu4k4o03xf3/r5/v///+7q+3RW3Vk01tjP9fj2/XNV3Ewl031h3/v6/vXz/dHI9M/F84Fl4KGM6NLI9M/E89vT9vb0/X5i3/n3/ff2/f7+/8e68dfO9fb1/XNU3H1g3/v7/lw511Mt1FQu1drS9l4611It1NbN9dDG8/39/5R85E8p03pd3tnQ9szB8vLv/OTf+GlI2lo21lMu1dnR9s7E86iV6ren7fr4/vLw/MvA8sm98sq+8rqr7l882FQv1WA+2Pj3/YRp4fn4/vz7/vHu/PDt+93W92RC2YVq4dfP9WdG2tzU9nBR3GlJ2mpJ2mdF2ban7a6c61cy1U8p1GhH2uPd+PTx/PXz/NXM9U4n03lc3rut7pF55OPc+Ity4oZr4YZs4Ydt4XFT3Leo7cq/8lEs1MO28Lus7nte3lo11nhb3rmq7oNo4KKO6I1042tL2qOO6J+K56GN6KSR6aaS6aKN6JJ65FRgcJQAAAABYktHRCctD6gjAAAAB3RJTUUH6QcYAA0vxG0AngAAAZNJREFUSMftkmVfwkAYwLcDlMOYgQn25GxQDFCxZyAidrfYHczC7u76tO42feOYfoH9X1w+/989z90RhIyMjE9IUugByU8wAJDfKMTxSpVKiZf9/NUQKFUaTECgRiAoWBRPhYSGhQNuoI2IjIqOiQ3T6fS6uPgEfWJSsk6fmEL/FuhUA0pLpwhFRmZWdo7RlJtnNpvzCwqLLMhaaC4qpsRCSamtTAsUweUVlTlV1eU1EEKmFjJGQ109hA2EWDDZGx1Nzh/BrgXCerPBFQB83BEntBhb29qpnxM6mE4G19Zs6JISumEP6mUEoa9/YHBoeAT8LYyOucbdSl6YmJyabp2ZJf85gZ4bn1+wY8G0uLS8sjr6X0qgcw2t26180R4nS0rWAAiSFwh2Y3MrYRsLO9Dr9bISAtjdc3t5gaD2TWgLp3RweHR8ciolnKHzi1RHIycAzyWy4pdGNpsNXXGpXk9abkTC7d09q3p4xPfOPj2/+FOa1zeOdze3p/74hOKfzX1pQLOCTVOAa3hYfu4kZGRkfPAFSTRb85iPtukAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjUtMDctMjRUMDA6MTM6NDArMDA6MDCj1awAAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI1LTA3LTI0VDAwOjEzOjQwKzAwOjAw0ogUvAAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyNS0wNy0yNFQwMDoxMzo0NyswMDowMEA6C+0AAAAASUVORK5CYII=" alt=".Net" style="width:48px;">
+          <br>.Net, Asp.Net, .Net Core
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFF0lEQVR4nO1Z208cVRhfbw/2RePlSX3wbzAa++SLIXvOQltjqKaN8UmTqqnGRGvQBJNausywbaX0QlrFC2krCL3QVtQ2G85ZlgILLNdti0BZoFQoC+WysNfPfLM7lFlYZoaZ3QfDLzlhObv7ze87l9/3O2ctlk1s4v8Lhzv/yaw8qKoq/zHBlbu1mJECgZEagdNekZOAwGhY5DSSeE26RUZqBU6/cnDr6wCWR1RjMlqZUeIlDTkvCZzYBUZGRU5BZxsROD1gd1pfXCt2sYu8IzAaFxvyXjad+AFmfV7gpFxkJLQB4srGMAYpLXHmPifHx9kRGPHi+wIjX5pKXuBkl8DolGHiq9uEyOlOfIbIrXlyv8CJxxTi5Z5XnhA4PZUB4qBspBRJK/qMLqNCT+4WgdGrmSdPl9vRpp1Qd7NYel3CyafGRj7L5EVOwTt+BQYDrcllRK9tOIHsLBuqaJd8RYCIxEJwuHEHoBwfdm5/Wjf5Epd1d7bJn+38AsLRRZBR3fON1I+yqot8UfOOZwVOJrNJ/kLffgjHlmAl2sYuyu8f15WApPNZIn7ItQ2a/OcgDnFIxVRwJLEPGPFqJo/V0ZQipaH91l0Ak/NDkB5xSZFERmL2v998Suvo2zNJ2uHKg/N9+2F42gtagElKs+Cy5qiSL4TCR9GnmEH0SONbcKL5Paho2yOtbzZUAb6JBliMzIEeNAz9mIjJ6F710Xflbt0I0Yu+Ikm7Rx/0wsziPUkCzULXeH1yH9CjqgmgJdZM3P02NPnP6h5RNQTDDxT/35nuSCTASb36DDBSo4X8rx2fSSNtNqLxCNyd9Sn6AsExWYl8qgmIjPaokT/XtU9RbMxEz7/XYCkyr+hbCM/Izx7RMAPrW+XylvdhMTKbEfLByCw4B0+v6seEkntgSsMMrK///0zdgEzh8k0R7s31r+pHQUioEAkZSuDn9k8yRr79bh3U+expZyaxiemSoSXUOlqTEfKDAQ+UNuWnFYWJ+UFZhSYNbeLxudumk/fPdEmW2Tt+Ne1nBgIt8gx0aVlCtekSQDUwE7cmuUT+Qt93634OZz6ZQLWhQmZWwYrHY+AePgMit0n1RE2Sa3u/TXKw7VNNAC+d0s/AtGHyuM7x0ILxKtr2qMZECT3UuD3BodH6qiYzJ3DqN1tC8aDSPFIt2Q+M9UvHXk1LUl4+IiPDyE01geQ+OLhWAtcHyjfka9AvHbuxazkO3jaEo0HV74aiC3C8ebdcxIosRg80KHValtF8KCCpSlX31+BwbVN8v3P8D83J/9lfuqz/DrftBYseCIyeWGsWqroLVlllHCmUOufgKfip/WNpc6YeGetvH5ES04qWkd+Xv6/JRqfC4c55Jt2hHkmi9/+rvwwq2j+CkhTCcvvB8yE0DlfCfGhKM/FoLAzXB04+HARG7q+8N9UFkdne1WKtU5ND0lg99SAaC0tO9LTnA0U8gdvyN0T+YRLkZCpJvEFA7ca/OFKV3s8lhZleHFuXZCwelWoJepv7C364M90OraO1cMl3EL5PqpOiMVpmMQrphwZOz68MLPv1UDSoa3b0NIGTy4XONx63mAG83BUZvSIHd/vPSORRHjOUQB0+02Imkpe8ayqTqY3RMtNGPu1PP5m5cpwwvGF13psewwJjfK3TJdR5lG1LtoHVEW1HOu+kQtyP9kB3hc0E0GTZG2yv4U+o6Nnx4CGd7NCOMBJKnvI68T20xOgqNRuzTWxiE5b18B8TCUhihWZcuQAAAABJRU5ErkJggg==" alt="Java EE" style="width:48px;">
+          <br>Java EE, JSP, Hibernate
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,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" alt="Angular" style="width:48px;">
+          <br>Angular
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAIR0lEQVR4nO1Ze4xUVxm/rdi09VFbtOzc75vZbB8byyqIWChQFAwpuLSJ1VqrtQVRq1Ex1Tb2LaZRqLykD1NbAxrTELqiUJg5Z/YBQ6EsUGfOuQuz95y551yW5S20vCmvwJjvziwZMf1zZ+cPfskkc889Z+Z7/r5zvuM4l3EZtQHPDxulto9KZVcKbfYXi8UrnFpHVvd8Vmo7T2pr6CO0fS1XsA8IbU9sDoJPOrWKbdt3DRfKbhcqPOip4BURBEMr3wttCp5vP+fUIqQ290tt9pGQQttjFC5S2/ekMh1S2/miYB6WyqwhTzi1iI1z5p6KQqdQAFJEKjMx6++ICW2/JpR5Wii7WShzQepwqVOLSA8bfqp15MhsEmC0p+1XpTZ7SSF6J1T43cgb2v6acqImE7lt2LDJHPFkCrGHIx5sHzVarn/s8SPvzFuQ37JilZXrO8fRPKlMFyno1CIY4r0MYG86kRjLXPeejubm5W2j78gyAMUAznKAD1qHDe9aO/372zniD1Ox2Lh21x3s1BKY605jiEHrkCEfo+fViMAB1nFEmQZoZwBvtjY1/ZYDLOaImzjAYQ5wiAPsYK47O404pQXxmoFVAmAJA3gljTiKA+zjiM9mHGdQKh7/EkcUffNSrtvIEP/JAI5wgNPcdV9giBkOcJTG0wDfbHGcj1RdgfabbrqOLMvi8RMMcXbL0KFX0Ximvv5qEm5VLHYtA5hLlmeIsxjiTIa4um99GvGGFMDDHHEzQ+xlAAvYLbdUtwCmAZZygHfJ4hzxGENMcoAfU6IzRMUB3uCJRIzmMsROjvidvrU8Hm9iAE9S6KUATnHEInPd3dx176+eAohTOOIa+p5MJK5niA9yAJ+EIcFYIhFV6TTAcAawJ1NfX8cAHuUA3RxxFwP4C4UQB3iaI7akASYyAEOhtSoW+3S/K9AWj7sMYH9ZmRs4YgcD2MYRNzCAX3LEHRxgRarkIcEQ36PcIWZyyuhoaBjCEQ+kY7GonlByM8QXGUAPAxjWrwrMcpwrGeK5NoBbyfLlP36LwihSynXv5gAnOeIFsmzrkCE3Vq4vOs4VHDFFOXLpbxMFEzn0uxIM4AxZkAM8lHbdeNnKzVEIAeQZwI40wI84wDJ6TtbV3XZRSICnOMCGD2MhygeqOcm6uvr+YyLE8xxgK4VFxPukEEBIf55EnMUBWi8qizgjsqrrjuAA32CIOxkA0jvyDgeYwF33JwxxEa0rs9NZjvh6vyjA4vG7GEBnCvHn5UJ1Ju26zxCVkpAM8T+XWo+YiJe89D5HXMgAVtK8ci1ZwxD/zOPxX3GAqRSaVFv6RfhIAYC/RlyPuIlRnLvuZmKWlYMHf4IhagZwH82jGpFsaJjEE4n50dwSbXaTpRniA+2xWKLfhPxQ4ePxmxniibI1SaCFEYMA7ClX2jcYwCPEQlSF28eMfb+juXkZhRp5yBlIEHtEdAmwO2IdxA6yMqur+wxH9HhDw9l0Y+Pp1i+MSFLI0GZOKvOMUOYFpxbAEZ9jiBtTrruQA/w7CfBQuQofJlrcuOilfaKr+2WpTa9QZoNQwX25ILxHKsMGWnaHA3yLikwrbRPi8V3pxsajbXeOP7h26tQnaHeaz+evEtqeyfT0XJ3JZAaVjqF2k1Bmt9R278AK77qTGADF/J4UwOm2UaPe3vLm8pxU5nmpzYs0h05oQtmwch0pIbQ5RIoNmPBJxC/zeJw2bBeIYWh/Q60Uqe0TW3x/sFB2V5dvvhgd7LVtoTW5QuE2ocwaoW1eKjOBzsstxWL1t87p22+fyevrz7fdOf74O/MXtNNYJLQ2h7bke+ro2fPDu6WyVmrzD6Htb6KekTJHhLbPUVjRGVkocz6b3XNtVYVfN33GnPYJE89s+N3vlwltXxc6+AGNR0Iq+/fKuV0FO11qe04qe1Zos4S6F5XvKYSy2exHqyb8xjnz/rjp1dcO5XwzpiSAWSyVnZ5TypXKHvS0bujzhlT22XKr5aBQpktos5XGcsqO3Lq19/psGF4nlfmgasIL304TKthf2WUjgYSyC4Wyy4Qyf+gqhOMpD0oJapYIZZJS29k0N+sHd1BilxjInibrC20OV0f4bnsrWfj/2oZBMFQqc1Ioe5SSVmizTfjmKc/aG4k2pbIHaG3ffAoXqewjQtndnrZtwg86qqKAp8y/hB+socoptJkrtVkutQmktsekNufImtIP7vof5Xw7TWq7jr4Xi8UrpQofJDqVyqTIi0KZx6W2L1VFAaHMIanMn0oKhE9GxajbNMlCuEEo81iZ9/dKbb5O7FK2tM0qM5lyhHqnpAxRZ99vkhGEby+eifsVUpuT+Xz+45VjEato+1ZfyzBqLSrjSWXelcr8TWobSm12RLzvB1+pXEtrpLZ7+ii33yG0XVvZYS5Z3XbLnp5PVQq1NeydJJSVUtsiMYz0bUtOmymXcr1QZiwVM6dayPlmDCWpFwQjaCNGSZjr3l5PFxeyYO8tVWDTKwvhNqHogiNcRLc0FOdCmfVSmVNSWT8KG21flgXTQQXNqSY8ZSZ72h6IChOFhjY9QtvjUtm3iXm6VPj5Ui7YTtq0Va4lD9AcotccUawyx7P5sPqHli2mt0loK6QyKqfMTM/zol4ogeiRFKNqS6xDHvBUOENqs7TcZt8kdPBTT9lfCG1XOQMJQRcY2qwu3ciYV2XBLo4uMko3Mxsjz5S8tETq4HtUqWld586d11CoeYXCaKcWkM2HCanNz4QyvVFlVXYfsY5U4fOeNt+W2o7LBsHNtHUoFTY6hdkVTi0ik8kMigpUafs8j7YX5A2qB+W9/wn6UPIPtKyXcRmX4dQm/guvH+Rcw0PJ2AAAAABJRU5ErkJggg==" alt="SQL Server" style="width:48px;">
+          <br>SQL Server
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,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" alt="MySQL" style="width:48px;">
+          <br>MySQL
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACAElEQVR4nO2Uv2tUQRDHV1Ko8W7m3vvOi54eChoLUbCwEhT9EyzEf8EfsRELwUqwsVH8ERSChY1YCFZiI2ilWIi2ImhI1MiZe7MviqWe7OXu3Ny9A00XmA9Ms7uzM9/ZmXXOMAzDMAzDMAzDMIy1yXyjsdGz3FLGomdpB1OW38p4r4SptnPrwrneXt8IPwvCycH7PMk9JczEa1/q9XHPckdZ8pX3YEFr2f7e/aNyLEhOeJK5oRwYl50Srinh4fdKXWKnPEn2ecYLzzhfFkBrclgZzRWBWA4oyTPPeKJJdqgvinHTs9wvmJNRSfoRAgrKJpXxoaBs1whHfP02LvWyvVaaNpQwWxbAM456kvmBtcdakyN5kuxVltdt58Y6YhnNwQL9qwAlTCnhjbJcGTLC6RB0YRHYWuqcJNtjAa003aaEt902yz3jWO9sXk0OhupHCd1WSs/+FbAlW6WAM6ETCsaFIQuvooSrSvLox6bNEz2n0PehN5XllWc5FwdoZlmlU2nCTNtNru8HYnkaqq8kF6NZ0pC4Z9zwjAdL1Sr+V0DBEztDEVuVdE+p46zbscETrocqRYF/Kcu7nHAqHuJI4JhnmfYsL8PrdRN/PpwULinhbneIp+OPYvkjkLkwa52zJJ8G9j4vVWX38j3ZcSV8LB1iwzAMwzAMwzAMwzDcmuQPOgsVOlpddvAAAAAASUVORK5CYII=" alt="Oracle Database" style="width:48px;">
+          <br>Oracle Database
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,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" alt="SQLite" style="width:48px;">
+          <br>SQLite
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,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" alt="PostgreSQL" style="width:48px;">
+          <br>PostgreSQL
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADhUlEQVR4nO2ZT4hVVRzHP5WTqOQiNy0UAsGFG8lVuJFU3GQrUchNtCjdxKihhqNpKqXhzHNMxMFm7i3BYEAo/EM66jhzjv9wIFGRFKU/lhsLXEiBf+Yr97zxed+8e59N99w374E/+O7u4vM5v/PO/M4ZeF4NWAqZr5C/FTCXRiyFtCtECrisDbxIo5UCepxAMe/SaKWAP2IC19VBE41S2sdEBQzGBKKt9AGNUgp4swy+mD/VzTgaoRTyfoJA1IXlZd+JF1TgpAp8Tz2VQr5MEbijr3ml9F0bi1VALq3Mpl5KIYcSBYoSLe6bbl5SG1dLAgVOUi+lkJupAiF3tZdXVWBpDP6ZXVC03SxbZbils7yeH3w34xTyqIqA1MU2tXGrQiClC4rgDTtlkYvhvfwEvuGNqvBRtvFQ2yvgE7ugaKtZOkvwRYEt+Ql0saQqfCfSSqTPUgRiXRiC/7YMvpju/AQCNlcV+BypGWk5qtYFXeFlWQ4kwEcd+Ck/gZADqfB7kVYMCUTZmCKwg1My/JAIb13uRb+LfAQCrqYKbIrBp3WhHelIKrhKOcdk//AdNCnkfiJ8xxBw87B8+j/gLdJp5vgX6GR66upvSICPd2En0o//Ed66LPMvELAwEX53yuo/SXQiHR0RvGRozUNgfaLAuirwa5AOjxDeuhzMQ2B/BfxXVeA/GfG2USzX/AuEXBw2uElrU+DXZoKXLA804PGWF13cFfBPmUAhBb4F6VgmeLn0M82fQMjUitVfkwC/HqnHA7x1R+nb/gS6eKdMYHsCfPSX94QneOuywp9AwOrYuCytyh1eMuz2JxASxMblcvjNSL2e4a0TOO5PIOB82bj8BH4L0qkc4K3L737goxtTdFWMj8tRvkDqyw1eMgzqKBOyC+xjcsW4vNUdc/nB25LEDF8v0U/H5dYawVsnsMiHQHNpXC4MtbYW8NalJbtAwB43Lu+qObxkCbML7OJndfBoFOAlw5nsAt/xW83BbUngr+wChnmyXBkFgevqZ0FmAScxQJMMzTLcrQH4PRk26ghjvcCXiZxnkgztsjzMYbsMuoeuXl7zDl4h0sdMWYxH+As6zazcwRMeZRfJ8GsG+NsyfCiN4n86NcB4t2ct/45gxe+7rXiOidRLqY8pKY+1w9OjfqZTryXLWzJcSjwWfV4T8yz1MkaWj2S4IcMvMnzs9ZXheVE/9RhWKOxUDYbwOwAAAABJRU5ErkJggg==" alt="Firebase" style="width:48px;">
+          <br>Firebase
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,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" alt="AWS" style="width:48px;">
+          <br>AWS
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,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" alt="Azure" style="width:48px;">
+          <br>Azure
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyElEQVR4nO2XXWgUVxiGv02yM0qkUFt1JomEeqPEi4ppoT8zBipGGywJ2BgCglJorgom25xJhcJCG1LobW0j4o22IupFtE1tDCE7Y9qCUJOekxhCEaNibyr4U7GNqfEts/mB4J7Zmd3ZmIt54YW92Dk873fO950ZokiRIkWKtJyEKlJgUDW20V4Y1AKTDmAb1eEt2oIaKqHlKNRQCQxqhEmnYNB9mISMNugeDDoNk/aAqIiWg2BQAwwal0LLw4y6QZ4feA2tgkk9gcGf9Ql3raWFf5MqYRIPAR6uf657/WxF20j50sAb9CIM+iMs+NGdm4bK20dmNEtMrD0k1hW+WU0aCA9+YxpetwRmzW1qPFNcuAAmMR9g12BQEm+TMXfU1qd/m/QpDLo+/z8xV3l9AX7W6xhnhYF/g1bDpLse4I9hUiuqKZ5l3CZ+31U1mAled83E/bJPxl8KP4BBXQuw78eAD4uA1mLgYDFwoGgKTfSu37XKGN+uMfEoY4B0CP5Z+AF2xW6hswQ4rwCOmsn/wlZPwVHf8bOe1iH2SQNY/AYRYuHBfxfvRH9G6My2lW/xK63OGoLxflkIjfG2/MFBMdjKYd/gi0NcR2plhXcAUSffhfRROkJJ5P7KAVv9PCf4hRDqBC6XSRuyKjmmaIw/9gxhiS9zg3fUWtjq03wCzDilx4Gk5xuoZnGeJQD09tHaYPCgIjjqcJ7wJ7LBu9KZuJw1AOPjgY4SHHWnN6DSn96h1MoKOPGtsNUu2Oo/QSo/L+3Q8BrdEju8Gjrd1Bb3PaYJttLtAf+N29zPPJNaYcBRp4LALxZiusW7PabSMfIr2CqXwN/GBVJlz/3nvFCbG/ysKpOTKzRL/Cm5ocfIr+AodySj8QgVWBoTRyWX29++F4GtTkvGYm4jLYA0xr+Q9MCU70VgK39JjtBPBaUndyrxXskRmvS9CGzFluzADFLxLYWCL+8YfVW3xJPMOyAG/Ae4pLR5vCLcwlC8uiDwTEzKx6hI+A/wS+laaR84Kq4ObrjS+H3LSPMPrSebexPdXtaZ6PCyxniXbvEfZZWf87T28dXKQBWBo3ydCX5i8JXh987VP93d0wA/znrLWtmtMf5V4C3FRSqFo1xbBJ8KBh9GAI3xm3rit5cDB5jdhfjW+TshaOVDCcD4w7L2sfyGBobim8XARicX+HwCaJa4rTHxGoWhFqdTb+r9qG/3uYYnSxBgWmficM7Hxkv7+5Kbmi8kju45/8F4fU/TAz+BsleaT7nfwO6cd0dl4GkTKVKkSJEiRaLnp/8BG4qSjEocTe4AAAAASUVORK5CYII=" alt="Google Cloud" style="width:48px;">
+          <br>Google Cloud
+        </div>
+      </div>
+    </div>
 
-    <script type="text/javascript" src="assets/plugins/slider/js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/scroll-nav/js/jquery.easing.min.js"></script>
-    <!-- Mensajes de alerta -->
-    <script type="text/javascript" src="assets/js/sweetalert2.all.min.js"></script>
-    <!-- Traductor a ingles -->
-    <script type="text/javascript" src="assets/js/language/index.js"></script>
-    <!--carrusel clientes-->
-    <script src="assets/js/slick/jquery-latest.js"></script>
-    <script src="assets/js/slick/slick.min.js"></script>
-    <script>
-        $('.slideshow').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-        });
-        $('.slideshowX1').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-        });
-    </script>
-    <!--carrusel clientes-->
-    <!--Slider Principal-->
-    <script type="text/javascript" src="assets/js/jquery.pogo-slider.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <!--Slider Principal-->
-    <script type="text/javascript" src="js/index.js"></script>
-    <script>
-        try {
-            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", {
-                method: 'HEAD',
-                mode: 'no-cors'
-            })).then(function(response) {
-                return true;
-            }).catch(function(e) {
-                var carbonScript = document.createElement("script");
-                carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
-                carbonScript.id = "_carbonads_js";
-                document.getElementById("carbon-block").appendChild(carbonScript);
-            });
-        } catch (error) {
-            console.log(error);
-        }
-    </script>
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-36251023-1']);
-        _gaq.push(['_setDomainName', 'jqueryscript.net']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-    <!--=============Contador==============-->
-    <script src="assets/js/plugins/jquery.inview.min.js"></script>
-    <script>
-        $(function() {
-            $('.counter-section').on('inview', function(event, visible, visiblePartX, visiblePartY) 
-            {
-                if (visible) 
-                {
-                    $(this).find('.timer').each(function() {
-                        var $this = $(this);
-                        $({
-                            Counter: 0
-                        }).animate({
-                            Counter: $this.text()
-                        }, 
-                        {
-                            duration: 2000,
-                            easing: 'swing',
-                            step: function() 
-                            {
-                                $this.text(Math.ceil(this.Counter));
-                            }
-                        });
-                    });
-                    $(this).off('inview');
-                }
-            });
-        });
-    </script>
-    <!--=============Contador==============-->
-    <script type="text/javascript" src="assets/plugins/scroll-nav/js/scrolling-nav.js"></script>
-    <script type="text/javascript" src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
-    
-    <!-- fuente -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    <!-- slidershow3 clientes -->
-    <link rel="stylesheet" href="assets/js/slick/slick.css">
-    <link rel="stylesheet" href="assets/js/slick/slick-theme.css">
-    <!-- slidershow3 clientes -->
+    <!-- Sección: Habilidades Blandas -->
+    <div class="card mb-4 shadow-sm border-0">
+      <div class="card-header bg-light text-dark d-flex align-items-center">
+        <i class="fas fa-users me-2"></i>
+        <h5 class="mb-0" data-es="Habilidades Blandas" data-en="Soft Skills">Habilidades Blandas</h5>
+      </div>
+      <div class="card-body skills-grid">
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,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" alt="Trabajo en Equipo" style="width:48px;">
+          <br><span data-es="Trabajo en equipo" data-en="Teamwork">Trabajo en Equipo</span>
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,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" alt="Fiabilidad" style="width:48px;">
+          <br><span data-es="Fiabilidad" data-en="Reliability">Fiabilidad</span>
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFW0lEQVR4nO2WfUhVdxjHT9uIgrHB/s394YaVNkvT0uk2W7qWhESFRUiT3u1trbVyCXp/+ZJm+QYKuWGQo2LX9Krn2r2m956rV10sWKwYjUVtjf27v/ZGNPYZz+3erplXz8apDPzCl/uc3/n9ns/zhXM5R9OmNa1pTeuZ0Jw9qKi9YNL/RO2lSrPxnKYxY84eCqP28rfZ83P2oCwPEL0LFb0bondTNZlf203m2POyZuZstDB2PYYAMTtRMQVgdn+unec/HKFq/wjNNoMXTHMKQFia1YrdjorbEQ5w8DJJn4yQFckfD3Px4AiIpZ5o78HLJIX6CkNYlgeI34pauC0c4PAwRuEwRPLhYe4dHmJ7wMPcm2SvEeorDGFZHiBpMyppSzjAkSGMoiGYyEf8fFrk56NJ9w2FAwhDWJYHSNmMStkcDlA8iFHih2L/ozB55kv82OV+0Pbx/gfFflSgx2A4gDBSHkeA9HxUen44wNEBjNJBKB2kbLz9MnDpAHZxpD9x6SBl0kN6jeIgLMsDZGxCLdsUDlAxgHFsACp8/FkxwNZIISINX+5jyzEffwR6jAogDGFZHiAzD5WVFw5w3CC52uBWtQ/Ex318YTN4cbI+NSPMPu7jswfnDH6u9pIeui8MYVkeIHsjKnvjw++Bqj5ervVirzVAXGPwfY2P+Eg9ThrMr/Vy7cF+L901bl4Zw0FYlgfI2YDK2fDoiwyYUe9lf4PB3QYD6r381eBlx9h9dR4+aDD4XfY0eLnXYKBsgU+NRzgIy/IAa3JRa3Mjv4kbvaQ0evixyQsBezCaPNwWN3rxPlj38pPsjdRnbS4Iy/IAuetQ69dN/CnRcJGXmj3Ymz0Qwd2fj3lkxkoYwtKsVt4aVN6ayb+F5JFq6eNASz9XWvoh6CuyJvdMcBCWZrXyV6PyV5v/mDvThzrTB0GbHih/NQhLs1pbc1DbcswFOHuJwrO99J29BAHfrwvNnN2WA8LSrNbOVaiCVeYCfNkL49nM2YJVICzNau3LRu3LNv8ItblQF9wglvo/cBCWZrUOvI86sNJ8AIcL1ekCsdSmOStBWJrVOvQe6tAK8wF0F8rpArHUpjkrQFia1TqSiSrKGj+AuwfDfRFCljVXDyp0LbVZTlEWCEuzWsXvokqWjx+gvwejvwdClrW+HlToWmqznJLlICzNapVloMqWjR/A58TwOcGn02o4yZI1Q0cF1pwgtWnOMhCWZrUq30ZVvgO2DGaNvTfUjTGkw5BOq99Jlljq4Bp+kwFsGcwShrAsD3AijYKTb8GJdFxjQ4x0YXzVDRHdNflAtgxmSe8AI40C7XGoLo3K+jSoe5PemlRmh9a/7sK40gUTeMIAtjhm1qWhS+/6NOrQJv9m+t9qSqWyKRUaU8Mhrnaw/ptO7l7tBHFgzYEKXUsdqZ89jplNKejSsymFOu1J6NQSjjUvheYl4RDfOsi85uC36477Aa47UFIHrSINf2opuvQ6tYRa7UmqJYmK08lwOpleezDEd52k3HDwq9Q3HKgbDghajTf86WR06dGSTI32NHQmkYrWxdCaGA7xQxuJ8nuzHXWzAwJufziADN+aiB44u/gpDR/SuQTKzyfAuYRwCNGtdtTtdhBLPXr4cwnocub8Ik5qU0FtCylvWwT2heEQv3Qw984F7oilDg1vX4Que9umyvAhOd6gzBEPjvhRIc7zqjg0vCMeXfZ0xHNCm4pyLqDUuQCccQ8/TjK8Hocu9/Q4qrWpLHcspe5YcMXSa49itgzvikWXNff8KT58SJ65lHvmgWcerqCRNe1Z0kAMaiAGgq7SnkUNv85R8dOeY1rT0iLrXzr4l/ephwV8AAAAAElFTkSuQmCC" alt="Resiliencia" style="width:48px;">
+          <br><span data-es="Resiliencia" data-en="Resilience">Resiliencia</span>
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAG70lEQVR4nO1Ya3ATVRSOjK8ZnFH/CI44/lBG0doHfaZJyfZJ+qaFbShNjLQ0tECl0kLt2JrVAqalsZVKkJZSpFKw4AjqWIcCqQ4jrx/44I+MT/AxDjKjUth77qZc52wSEtPQJi0WfuSb+ebe+53vnHvPZnfTRqEIIYQQQghhKpGxQnwibSWtTVtJ66aS6atAr1CwOybdQOpK+l3qKspuCaug5CZ8ApSlV4Iw6UK3al9tBUDmchjUVtK6qWRmBWWZy2n9pBvIKYcN2SaAHBNlU8pyek5rEh9X3Azkl4GwYBllN6XYrdhr4VIQFpZOTQML/4+9eCMIRcapaYD/P/YqNoBQbAiuaLFBylqshz8xbywu1sPIYj18pNGwOye615jgeXafoYT2GEooM5TQNXo9WYDaeHmGJTCgX0J/NpSApXY9PY80lIAFWVFF+uo3SQxHwxLah7X1ehov55WAgOtJH9xkYncZi+krxsXwz/PFlHkTNWMxbTS7rpo/PF8MdiTO93/qGEIqXNg3IHHvf+pgOBp1EifX1EkcxozFIOB6Uoc3Gtm9pUVwqEwH18p0dM8yHU3S69l0ZGkRnVemo++V6SgrLYIBnmd3+6tRWgR2JM6HDkhDSIUL9g8k7rMDEsOxTIekDEeMlelAwPWkGjDxYCtfBCMmHow39CyCpSYerpXzsNlfvJyHARNPfzDxtM6ymvYjTTytQ9YaJUtbDR3E0bSIdpp4ykwLnbdQOQ8Crid++ELyVEUBjFQUgHU8b2UhtKF3BS8+4RurWCBlVhbCxcpCysZkATgqC+lB9+1YWQAC6hNuoCofhKp8cFQUsIfG876Qy2agd1U+bZzwhv72XzDBBmqz2MzqXDhRnUe/CTRndR49uzoPjmOut16TzqZX59GVq3Np3bjMocrr9XJBqM6bQAMv5tKEmhz4uyaHsppsuP7AjQf0Ys6aHPgLa7j1NdmwVa4VANdkA6zTXpnlqiegFnQD6zLJibVZ8OPaLHJ2babz7dF1xFHffVT6q8vufEMgth+WklHbftRRh2v0yjnO3ONuH+rrsoh8IXoPO4aQChd6ByXu3UEHw7EuW+TWZQHD0ZUn4DroBuq1ZLheC2/Wa8GORO3IAannyEGJHTngeM7tGzzoMB7+UGKDB6UdzjynH3Nf0pLLnnqeOgMfS0NIhQsDH0ncwMcSw7FuvsjVa4HhKOfNBwHXQTfQkE6+aEiHHxsyyDc4R+3cJ+yek/0Q6es90w+RGMN5YwY5jjmN6fBTQwY55vY0poO9IcP5CZzeLw0hFS6c3idxp/dLDMeX54tcYwYwHF15Aq6DbsCcQuOEFHJJSAUmpMAfZjObhvq2QXa/zS6leRM1OcfMpgmp5KIzh1x6NZXGeuoRm6wHQHMKIWaN8xkwp4KAWtANyMma4ZlNyWBpSga2PoVkotZ3mM3oOyTBnkMOhsQ5ahhbz5Fs9GLOhpTLsubGpnQ2vSlZrHLVuyFf46Bpvcbz8Dclg4A1J9SAfKik4Yc3aghs0MC3Zg17ALVT+xz6U/vpL8iT/Q75H+3X1ezBjRo4h17MUdwkbNCAsFEzwQYs88icFjVcaE4iV5vVhDQnka82aSDM19eihvAWNfkaPS1qIjar4Xyrhjzl7WlOAntLEjAv/tqixp9KxkZzEgjoD/7wcVdmWRPh91YV+dOaQOOsiWIyrq0qMtKqgqNWFbwhMxHsqGFsk0rkrCqa0Koil1oT4TdrwpVH3PVa1dTUmggWD8lxq4pAe/x/bzVfWFUgWFVBNsAU7I72BPJ5u5IMtys9V7xNwx5oVwJrV5JLbUryNxLnqGHM7dusgog2JbnSpiRDWMvfHu1KMVXOU9J5Y52lTQkC+oJqYHMM6DrigHXEilW+sY44MtIRB02eNTSh5sdXjTXeioUif3t0xIucvEe883Up7xsLdlnzw6AasEWTU1ui4ZxZ4Xx1emNLNPnSFg0XbNGk0Ul5fsbXh7m2aPh+S4zn29gbW6NFzhYDDMfr+8ZQky0GLN7cEkOOoS/gw2+PuvpY51xgnVGkwV98WxTplOPejCJd/rydc4l521xybUfM1Ud9Y13RIoe5OI51nm1RIKAv4Aa6I6CoOxLYjkjPl5AbPbHDM7dHEEd3JHkb/15H4hw1jI2qFU7jsVZ3JFk0qoEIkXPGAmPADewMJ7U7w4F1hY1+O7zzLF2Bse5I8vT1Q0aSp1HD2KhDhl2egbGecFIz6mJEiJwr1tcTDpYbceez5Bj6Am5gVxgx94YB8/f22BUG9t4wctZXRw1jvjrWwFpYc1TOMyKHMRzHOk/vMyCgL+AGds8BoW8OsNuRu+cE8Ov03tliWv+TYLkduXe2mBbwJxFCCCGEEIIiAPwLZ4AXkoIyJ2kAAAAASUVORK5CYII=" alt="Ética de Trabajo" style="width:48px;">
+          <br><span data-es="Ética de trabajo" data-en="Work Ethic">Ética de Trabajo</span>
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,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" alt="Resolución de Problemas" style="width:48px;">
+          <br><span data-es="Resolución de problemas" data-en="Problem Solving">Resolución de Problemas</span>
+        </div>
+        <div style="height: 116px; width: 131.33px;">
+          <img src="data:image/png;base64,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" alt="Inteligencia Emocional" style="width:48px;">
+          <br><span data-es="Inteligencia emocional" data-en="Emotional Intelligence">Inteligencia Emocional</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+
+    }
+
+    function setLanguage(lang) {
+      document.querySelectorAll('[data-es][data-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
